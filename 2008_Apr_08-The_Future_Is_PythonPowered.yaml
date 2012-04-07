@@ -1,0 +1,53 @@
+---
+title: The Future Is Python-Powered
+created: '2008-04-08T15:06:10+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "At least the future of web-apps. \n\nI'll admit, that's a really broad
+  statement.  The future is not, in fact, Python-Powered, but it makes for an incredibly
+  catchy title that draws you in to the rest of my article.\n\nAnybody who browses
+  <a href=\"http://reddit.com/r/programming/\">programming.reddit.com</a> or any tech
+  news sites to stay abreast of current trends should be familiar with the brand new
+  <a href=\"http://code.google.com/appengine/\">Google AppEngine</a>. \n\nThe Google
+  AppEngine could be considered a direct competitor to Amazon's Cloud Computing infrastructure-
+  but where Amazon provides a configuration-friendly piecemeal offering that offers
+  a great deal of flexibility and configurability, the Google AppEngine takes an entirely
+  different tack and provides a stable, secure system that's not to be fiddled with-
+  providing an application environment out-of-the-box- this is what you get, take-it-or-leave-it,
+  and nothing more. \n\nGoogle provides a limited environment.  You are only allowed
+  to use one language- Python- but the Google folks have <acronym title=\"brutally
+  hacked\">pleasantly massaged</acronym> the Django libraries into there.  The Django
+  model for database access doesn't work, however- you're stuck with the Google-built
+  <code>webapp</code> system.  This also means that you can't use Django's <code>admin</code>
+  interface, but that's not too much of a loss, either. \n\nThe Google environment
+  also doesn't allow for a lot of server-side junk that was traditionally allowed
+  if you were to have your own server.  No writing files to hard-disk, for example-
+  there is no hard-disk to write to!  \n\nWell, I can't give you too-in-depth of a
+  review. I'm busy stewing over <acronym title=\"HASKELL!\">Haskell</acronym>, marking,
+  and emergency-studying.  Oh, but come Friday, there's going to be a serious net-fiddling.
+  Fortunately, Todd Hoff at highscalability.com has already done all of the ground
+  work for me!\n\n<a href=\"http://highscalability.com/google-appengine-first-look\">Google
+  AppEngine: A First Look!</a>\n\n<blockquote> \n  The idea is clearly to take advantage
+  of our massive multi-core future by creating a shared nothing infrastructure based
+  firmly on a core set of infinitely scalable database, storage and CPU services.
+  Don't forget Google also has a few other services to leverage: email, login, blogs,
+  video, search, ads, metrics, and apps. A shared nothing request is a simple beast.
+  By its very nature shared nothing architectures must be composed of services which
+  are themselves already scalable and Google is signing up to supply that scalable
+  infrastructure. Google has been busy creating a platform of out-of-the-box scalable
+  services to build on. Now they have their scripting engine to bind it all together.\n\nEverything
+  that could have tied you to a machine is tossed. No disk access, no threads, no
+  sockets, no root, no system calls, no nothing but service based access. Services
+  are king because they are easily made scalable by load balancing and other tricks
+  of the trade that are easily turned behind the scenes, without any application awareness
+  or involvement.  <a href=\"http://highscalability.com/google-appengine-first-look\">...more>></a>
+  </blockquote> \n\nI don't see this even directly competing with Amazon's Cloud Computing
+  services, really- it seems like it would be more likely to be popular with hobbyist
+  developers- the type to tool about with a shared PHP server in their spare time,
+  instead of a massive homebrew beast-machine running a custom-compiled version of
+  every language under the sun and <acronym title=\"in-joke: see: theorem\">failing
+  constantly</acronym>.  The type that demands easy, well-documented interfaces with
+  minimal fuss and muss.  The type that is... well... me! \n\nLet the amateur hackery
+  begin! "

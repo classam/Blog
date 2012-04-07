@@ -1,0 +1,45 @@
+---
+title: Hashtables and Environment Variables
+created: '2008-05-14T10:11:35+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- Tutorials
+content_type: html
+content: ! "This post is going to be full of pretty ugly technical stuff, methinks.\n\nI'm
+  going to discuss one of my favourite programming language constructs, the mighty
+  hashtable. \n\nLet's start with a little code snippet to illustrate what I'm talking
+  about. (I hope I remembered to include a .code class in my stylesheet, but if I
+  haven't, it'll be around later today to provide monospacing and special effects
+  and whatnot.) \n\n<div class=\"csharp code\">\n  Hashtable hashy = new Hashtable();
+  <br />\n  Cookie cookie = new Cookie(); <br />\n  hashy.add(\"name\", \"Curtis Lassam\");
+  <br />\n  hashy.add(\"number\", \"822-8819\"); <br />\n  hashy.add(\"cookie\", cookie);
+  <br /><br />\n  hashy[\"name\"];  // this evaluates to \"Curtis Lassam\" <br />\n
+  \ hashy[\"cookie\"]; // this pulls out the Cookie object from earlier  <br />\n</div>\n\nJust
+  about every language has something that passes for a decent hashtable- C# has the
+  Hashtable object, Python has the Dictionary, PHP has a sort of multi-purpose list
+  object that can store objects hashtable style in a \"associative list\". \n\nThe
+  basic meaning of the whole thing is that, instead of using numbers as array indices,
+  you can use anything you want, so long as it can be hashed.  Some languages restrict
+  you to strings, but that's pretty much all you need, most of the time.\n\nThere
+  are lots of ways to implement a Hashtable- I built one in CMPT 379 using a chained-linked-list-
+  but you should almost never have to, as all modern languages provide one for you.
+  \ The only reason to know the details are if you want to start fiddling around with
+  the implementation for optimization purposes. \n\nOkay, enough jibba-jabba about
+  what Hashtables are- what are they good for?\n\nWell, a lot of things. They're a
+  general problem-solving tool, a-la regular expressions, that tend to come in handy
+  quite often. \n\nYou can use them as a lazy/quick replacement for a struct, although
+  you probably shouldn't. (Sometimes I do, but then I feel bad about it later- it's
+  a bit junk-foody) \n\nReally, any time that you have data that would be better indexed
+  by strings than integers, a hashtable is a good way to store it. \n\nA good example
+  is Environment Variables- they tend to come in big batches.  You'll often get them
+  in a string like this: <code> \"PATH='/eat/my/ass';NUMBER_OF_BOOTIES=9;QUIDGETS='jambipoop'\"</code>\n\nNow,
+  a lot of people will just separate that into an array of strings via \";\", containing
+  pairs of 'equals' separated values- <code>\"PATH='/eat/my/ass'\"</code> - and that's
+  a perfectly valid way to go about things.  But it's only marginally more work to
+  parse the set into a hashtable, and then you can do this: \n\n<div class=\"csharp
+  code\">\n  Hashtable environment = parseEnvironmentVariables( stringEnvironmentVariables);
+  <br/>\n  environment[\"PATH\"];  // pulls out '/eat/my/ass' <br/>\n  environment[\"QUIDGETS\"];
+  \  //pulls out 'jambi' <br />\n</div>\n\nOn top of that, there are a lot of other
+  fun things you can now do with the resulting hashtable- filter it by keys, if you
+  like, or easily add or remove entries. \n\nWhich is pretty slick, right? "

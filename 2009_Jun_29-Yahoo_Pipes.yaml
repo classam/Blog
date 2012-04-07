@@ -1,0 +1,31 @@
+---
+title: Yahoo, Pipes!
+created: '2009-06-29T09:49:40+00:00'
+visible: true
+categories:
+- Links To Other Stuff That Is Good
+- Web
+content_type: html
+content: ! "So, I recently discovered <a href=\"http://pipes.yahoo.com/\">Yahoo Pipes</a>.
+  \n\nYahoo Pipes is a staggeringly useful platform for performing various server-side
+  transformations on tree-shaped data. It's designed to work especially well with
+  RSS feeds, although it works with JSON, as well. \n\nIt's built entirely with a
+  slick (albeit buggy) YUI interface that allows you to link transformations together,
+  piping the output from one into another, in a chain. \n\nThe JSON from the site
+  is set up in such a way as to allow <a href=\"http://ajaxian.com/archives/jsonp-json-with-padding\">JSONP</a>
+  pulls, but its own data-access is server-side, so it's a quick way to noodle around
+  Javascript's restrictive-but-secure Same Origin Policy.\n\nI've built three pipes
+  so far &mdash; a <em>reddit pipe</em>, which pulls all of your most recent links
+  and comments from reddit, and posts them to <a href=\"http://pipes.yahoo.com/lassam/reddit\">http://pipes.yahoo.com/lassam/reddit</a>
+  \n\nA <em>twitter pipe</em>, which pulls all of your recent twitter posts from your
+  Twitter RSS feed, available at <a href=\"http://pipes.yahoo.com/lassam/twitter\"
+  >http://pipes.yahoo.com/lassam/twitter</a>\n\nAnd a <em>#sfucsss pipe</em>, which
+  uses my PieRC IRC logger, from <a href=\"http://curtis.lassam.net/pierc/\">http://curtis.lassam.net/pierc/</a>,
+  to pull a feed of the most recent things you have said on the IRC channel #sfucsss
+  on irc.freenode.net, available at <a href=\"http://pipes.yahoo.com/lassam/sfucsss\">http://pipes.yahoo.com/lassam/sfucsss</a>.
+  \ \n\nThen, I piped all of these things together,  to create the \"Social Megapipe\"
+  &mdash; ( <a href=\"http://pipes.yahoo.com/lassam/social_megapipe\">http://pipes.yahoo.com/lassam/social_megapipe</a>
+  ) and am now using is as an all-purpose social-tracking widget thang (see 'twitter++'
+  on my sidebar) - and it can be targeted on people who use reddit, twitter, and #sfucsss.
+  \ Like Allen, or Dan. \n\nAfter processing, these pipes can be consumed as RSS data,
+  JSON data, as a site widget, or in a number of other useful formats.\n"

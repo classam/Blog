@@ -1,0 +1,28 @@
+---
+title: CodeIgniter
+created: '2009-07-02T21:13:19+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "CodeIgniter is right for you if...\n\n<ul>\n<li> <em>You want a framework
+  with a small footprint.</em> - Wouldn't necessarily say that's my top priority,
+  but hey, it's not bad, either.. </li>\n<li> <em>You need exceptional performance.</em>
+  - I don't <strong>need</strong> exceptional performance, but I wouldn't turn my
+  nose up at it, either.  </li>\n<li> <em>You need broad compatibility with standard
+  hosting accounts that run a variety of PHP versions and configurations.</em> - Okay,
+  I definitely don't need this.  I like to always have at least enough control over
+  my server to be running PHP5.</li>\n<li> <em>You want a framework that requires
+  nearly zero configuration.</em> - I'm pretty comfortable configuring things. </li>\n<li>
+  <em>You want a framework that does not require you to use the command line.</em>
+  - What's wrong with the command line? I <em>like</em> the command line. </li>\n<li><em>You
+  want a framework that does not require you to adhere to restrictive coding rules.</em>
+  - What's wrong with restrictive coding rules? I <em>like</em> restrictive coding
+  rules. </li>\n<li> <em>You are not interested in large-scale monolithic libraries
+  like PEAR.</em> - Is PEAR really that monolithic?  </li>\n<li> <em>You do not want
+  to be forced to learn a templating language (although a template parser is optionally
+  available if you desire one).</em> - I can see why one might avoid template languages
+  (see: performance) - but I don't avoid frameworks based on whether or not they enforce
+  template usage. </li>\n<li> <em>You eschew complexity, favoring simple solutions.</em>
+  - Well, I like to imagine that I do. </li>\n<li> <em>You need clear, thorough documentation.</em>
+  - I like clear, thorough documentation, I'll admit. </li> \n</ul>\n"

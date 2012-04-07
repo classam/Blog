@@ -1,0 +1,77 @@
+---
+title: Nobody Wants To Register For Your Site
+created: '2009-10-30T13:13:52+00:00'
+visible: true
+categories:
+- Web
+content_type: html
+content: ! "My last post ( <a href=\"http://www.curtis.lassam.net/?p=944\">Comments!</a>
+  ) has me thinking about a few hard-and-fast laws that I keep in my head when I'm
+  thinking about website design. \n\nI quoted \"Nobody Wants To Register For Anything,
+  Ever\" like it was a well-defined rule that everybody understands, without really
+  qualifying it.  Of course, I assume everybody knows this about the internet, but
+  I thought I might share my too-obvious-to-need-discussing rules, anyways. \n\n<h3>
+  Nobody Wants To Register For Anything, Ever </h3>\nThis seems practically given,
+  but you'd be surprised at how loosely people seem to understand this rule.  Registration
+  for a site is a pain in the pooper. Nobody wants to do it. The only way to get someone
+  to register a name and user combination for a site is to convince them that there
+  is some tangible benefit.  \n\n<strong>Landing pages</strong> often (and should!)
+  offer big, bright sales-pitches telling everybody about how amazing the product
+  is, why they will love it, and to register now - it's free! <a href=\"http://www.mint.com/\">Mint.com
+  understands</a> - setting up a Mint account involves no small amount of effort,
+  so they are sure to prime potential registrants with a big sales pitch to get them
+  through the process. \n\nSome sites offer live demos of their product - <strong>Lazy
+  Registration</strong> and <strong>Anonymous Participation</strong> are strong techniques
+  for getting people involved enough in a site that they want to register.  Amazon.com
+  knows lazy registration - as users browse their site, they gather data about them,
+  building a shopping cart and a pile of 'preferences', and soon users start to see
+  why they might want to register.\n\nDevelopers have to understand that <em>users
+  must be <del>coerced</del> convinced to register.</em> \n\n<h3> The Longer A Registration
+  Takes, The Less Likely Somebody Will Do It </h3> \nOf course, the easier a registration
+  is, the more likely it is that a user will get across the finish line.  For every
+  step, every bit of user data that the developer requests, the user has to take a
+  bit of time waiting, filling out forms, and wondering exactly why JimBob's Bacon
+  Factory needs his e-mail address and phone number. \n\nSeriously, I am pretty unfriendly
+  towards an as-yet-unused web service or store I've signed up for sending me a status
+  update that means nothing to me.  Some sort of direct interaction that I would have
+  otherwise missed? (\"apike has commented on your blog!\") - welcome.  Discount offers
+  and sales? Slightly relevant.  Newsletters? Don't care.  And the poor behavior of
+  some web services with my e-mail address makes me less likely to want to give it
+  out again in the future.  Yes, as a <em>developer</em>, I know we take down e-mail
+  addresses in order to offer password recovery as a feature.  As a <em>user</em>,
+  though, I don't care enough about my account to _want_ password recovery.  Security
+  questions are even worse.\n\nThe worst thing in the world - when I go to a site,
+  I want to use a service, they ask me to register, take down my address, e-mail,
+  phone number, zip code, and blood type, and then tell me that I can't register because
+  I've <em>already registered</em> with that e-mail account.  I can't log-in, because
+  I've forgotten my password, so now I have to go through whatever convoluted password-retrieval
+  they have set up.  I am then assigned a safe, secure password (\"x871@@moobs\")
+  by some internal process, one that I would be totally unwilling to memorize on my
+  own, and mention that I can go through the even-more-obscure process of changing
+  it- without even offering a link.  I guess I'll have to learn enough about their
+  system to go into the site preferences.  Ultimately, the point of this entire escapade
+  is ... to view an article.  Way to GO, Linux Magazine, New York Times, or whatever,
+  you have successfully made me utterly unwilling to try to view articles on your
+  website. \n\nSavvy internet users just have a 'throwaway' identity that they use
+  for every crappy website registration in the world.  One name, one e-mail address,
+  one password, endlessly reusable.  Of course, being as different websites have different
+  requirements for passwords (\"Your password must be at least 8 characters long,
+  composed of letters and numbers, and cannot start with a dictionary word.\") - a
+  single password doesn't always work.  They think they're promoting security, but
+  what they are actually promoting is me using a throwaway password (\"fuckthisshit99281\"),
+  saving their password in GMail (insecure!), and eventually leaving their site and
+  never coming back.  What, do they think, I'm going to give them my secure passphrase
+  (or, worse, construct a new one) for their half-assed non-existant \"social networking\"
+  features?  I want security from e-commerce solutions and my student account - from
+  everything else, I just want convenience. \n\nreddit is, in my opinion, the no-contest
+  <em>king</em> of the registration world.  reddit offers Anonymous Participation,
+  but it shows the user buttons that he really wants to press. Oh, he wants to press
+  'em bad.  But when he does, it tells him that in order to participate, he needs
+  to register. The horror! Okay, he's not going to go to all that trouble just to
+  tell the world that he likes Onion articles. Here's the thing, though - the registration
+  is all right there in front of him, and it looks so easy - they don't even need
+  his e-mail address- how could he lose?  It's <em>sales-pitch and quick registration
+  all in a devastatingly effective one-two punch</em>.  Sure, sometimes people lose
+  accounts because they don't remember the password and they didn't include an e-mail
+  address, but it's reddit- the stakes are low and re-registration takes 3 seconds.
+  \ \n\nBam.\n\n\n"

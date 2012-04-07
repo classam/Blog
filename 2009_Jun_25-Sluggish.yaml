@@ -1,0 +1,13 @@
+---
+title: Sluggish
+created: '2009-06-25T14:51:08+00:00'
+visible: true
+categories:
+- Web
+content_type: html
+content: ! "One of the longest-to-load elements of my page is the external call to
+  Twitter.  That wouldn't be a problem, except the Javascript UI elements running
+  the left-side of the page wait for the site to load completely before they kick
+  in- so new visitors get a few seconds of ugly UI-less page while waiting for the
+  Twitter feed to load, then the whole thing folds up into a tidy accordion. \n\nHum.
+  \n\n"

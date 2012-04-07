@@ -1,0 +1,73 @@
+---
+title: Corrupt Heap Blues
+created: '2007-02-08T10:35:00+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! 'So, I spent the greater portion of Wednesday with a bad case of the corrupt
+  heap blues. Bad, angry errors.
+
+
+  It started with the innocious discovery that my Lexical Analyzer (the course is
+  Compilers- the current project? Lexical Analysis.) crashed on large input.. but
+  not on small input. No specific single input could crash the program, just large
+  amounts of miscellaneous input. Okay, shit.
+
+
+  So, several hours of searching through the internet for the true meanings of assorted
+  error messages, I discovered that my heap was hopelessly corrupt (think ''Russian
+  judicial system'' corrupt) and that it was taking bribes to allow organized crime
+  to infiltrate my program.  I fiddled around with a bunch of methods of potentially
+  find the source of the problem, and then was stuck by a stroke of genius (It may
+  have been an actual stroke- I''ve been unable to move my left arm since).
+
+
+  <code>
+
+  char* copyNedToTed ( const char* ned)
+
+  {
+
+  char* ted = new char[strlen(ned)] ;
+
+  strcpy(ted, ned);
+
+  return ted;
+
+  }
+
+  </code>
+
+
+  As any good C/C++ coder (read: Not me) should know, this is terrible, terrible code.
+
+  strlen(ned) returns the size of ned.. minus the null character at the end (gasp!)
+
+  That means writing ned to ted, which has been created at size ned-1, will cause
+  a buffer overflow. Ye gads!
+
+
+  <code>
+
+  char* copyNedToTed ( const char* ned)
+
+  {
+
+  char* ted = new char[strlen(ned)+1] ;
+
+  strcpy(ted, ned);
+
+  return ted;
+
+  }
+
+  </code>
+
+
+  And this was the solution. (That''s an example function to showcase the problem,
+  not my real code.)
+
+
+  So... the lesson here is that the only way to really learn C/C++ is to use it like
+  a dumbass until you learn.'

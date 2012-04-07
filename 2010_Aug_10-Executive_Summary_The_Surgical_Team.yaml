@@ -1,0 +1,43 @@
+---
+title: ! 'Executive Summary: The Surgical Team'
+created: '2010-08-10T13:19:50+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=31\">Executive Summary</a>\"
+  articles are highly compressed versions of semi-important things that I've read.
+  </em> \n\n<h3>The Mythical Man-Month : 3 - The Surgical Team </h3>\n\n<h4>The Problem</h4>\n<ul>\n<li>Teams,
+  of course, should not be more than about 10 people.</li>\n<li>Certain employees
+  are much better at producing code than others.</li>\n<li>How do we maintain the
+  conceptual integrity of a single, well-architectured system if there are 10 people
+  building it? \n</ul>\n\n<h4>The Surgical Team</h4>\nInstead of divvying tasks up
+  equally amongst all team members,  Brooks suggests a 'surgical team' - with the
+  bulk of the coding responsibility on one man, and the support tasks divvied out
+  amongst the team members. \n\n<ul>\n<li> <strong>The Surgeon: </strong> Designs
+  the software, writes the software, writes the tests, and writes the documentation.
+  \ He is a very busy man. </li>\n<li> <strong>The Co-Pilot: </strong> The pair-programming
+  partner to <em>The Surgeon</em>, the Co-Pilot understands all of the code, and has
+  more time to discuss it with the rest of the team.</li>\n<li> <strong> The Administrator:
+  </strong> Handles money, people, space, and machines - everything non-technical.
+  \ Can serve multiple teams. </li>\n<li> <strong> The Editor: </strong> The documentation
+  produced by the surgeon is likely to be a bit technical, unclear, and 'engineery'.
+  \ The editor takes that documentation and polishes it like nobody's business. </li>\n<li>
+  <strong> The Secretary: </strong> For filing and typing and answering phones. This
+  book was written in 1975, remember.  Replace this today with <strong>The Bitch</strong>,
+  a young and semi-useless fellow (co-op) used to fetch coffee, make appointments,
+  fill out Sprint charts, test, fix minor bugs, and dance for the entertainment of
+  others.</li>\n<li> <strong> The Program Clerk: </strong> The guy who runs batches.
+  <em>1975</em>. In the case of 2010, replace <em>The Program Clerk</em> with <strong>The
+  Build Engineer</strong> - the guy who manages source control, constant-integration
+  build/compile/test chains, and what-have-you.  Can also serve multiple teams. </li>\n<li>
+  <strong> The Toolsmith: </strong> When <em>The Surgeon</em> says \"I need a library
+  that does X\" or \"I need a tool that does X\", the toolsmith finds or builds it.
+  </li>\n<li> <strong> The Tester: </strong> Writes tests. Executes tests. Manual
+  tests.  The tester wants to break the system. </li>\n<li> <strong> The Language
+  Lawyer: </strong> One guy who knows the language/library/toolkit really, really
+  well, for consultation & code review.  Can serve multiple teams. </li> \n</ul>\n\n<h4>The
+  Benefits</h4>\n<ul>\n<li><em>The Surgeon</em> is the single point of contact for
+  any work on the code, making inter-team collaboration easier.</li>\n<li>If <em>The
+  Surgeon</em> gets <a href=\"http://en.wikipedia.org/wiki/Bus_factor\">hit by a bus</a>,
+  <em>The Co-Pilot</em> can step in right away. </li> \n</ul>"

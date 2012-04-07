@@ -1,0 +1,22 @@
+---
+title: ! 'Humanature Co-Op : Week 2'
+created: '2009-01-16T10:45:22+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "My week has been a loop of:\n\n1. Read some header code.  \n\n2. Look
+  at the underlying implementation, try to determine what’s going on.\n\n3. Discover
+  some syntax of C++ that I don’t understand too well. \n\n4. Read about said feature
+  in a few references (online or at my desk), or ask friends. (“Are C++ binary shift
+  operators sensitive to endianness? No? OH! Now it makes sense!” )\n\n(Repeat 3-4
+  a few times)\n\n5. Attempt to filter the new knowledge of the code into some sort
+  of short, easily understandable summary that manages to be useful and non-obvious.
+  \ (After some time reading the code for a rectangle class, I had an awful hard time
+  thinking of anything other than “YYYup, that’s sure a rectangle. And all the stuff
+  that you’d want to include with a rectangle. ”)\n\n6. Compile Doxygen\n\n7. Check
+  Doxygen-generated page- be unsatisfied with the way the output came out (maybe the
+  comments are in the wrong place or things could be grouped more attractively)\n\n8.
+  Adjust comments, check Doxygen syntax.\n\n(Repeat 6-8 a few times)\n\n9. Get coffee.
+  \n\nI like to think that I’m gradually spending less and less time in the 3-4 loop,
+  but I’m still a tad slow and useless.\n"

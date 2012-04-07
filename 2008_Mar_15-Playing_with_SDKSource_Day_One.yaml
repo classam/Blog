@@ -1,0 +1,48 @@
+---
+title: ! 'Playing with SDK-Source: Day One'
+created: '2008-03-15T00:59:06+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "Okay, so, I'm fiddling with the Half-Life 2 SDK.  I'm curious, darn-it,
+  and I want to see how easy it is to make mods with it. I'm a nerdy guy, right? \n\nMy
+  first step was to install Visual Studio 2005, MSDN, and the free <a href=\"http://www.softimage.com/products/modtool/default.aspx\">Softimage
+  Mod Tools</a>.\n\nNow, there's a <a href=\"http://developer.valvesoftware.com/wiki/My_First_Mod\">tutorial</a>
+  available at Valve's Developer Center.  One thing that I've found so far about the
+  Developer Center is that it's a wiki, not a reference document.  And because it's
+  a wiki, a lot of the articles are confusingly written, and there's a lot of missing
+  information. \n\nImmediately, I encountered my first problem.  When I tried to use
+  the SDK to create a mod, stocked with all of the delicious code required to get
+  started, I had to deal with a confusing error. \"The source code distributed with
+  this version of the Source SDK is not compatible with the \"Orange Box\" version
+  of the Source engine.\"  \n\nSo, now what? \n\n<strong>Solution: </strong>Right-click
+  on Source SDK in Steam, go to Properties, then click on 'Set launch options', and
+  in the box that pops up, type in \"-engine ep1\" (without quotes) and then launch
+  the SDK.\n\nOkay, so I'm running an older version of the Source engine, but I've
+  started. Huzzah! Let's continue.  I just have to load the project file in \nVisual
+  Studio, and I'm ready.\n\nOkay, now for the second problem. The tutorial mentions
+  a file to edit- <code>hl2_dll/weapon_rpg.cpp</code>. This file is nowhere to be
+  found. \n\n<strong>Solution:</strong> Ignore it for now, I'll hunt for it later.\n\nOkay,
+  let's compile!  (compile compile compile).. \n\nAnd 20 minutes later, we're ready
+  to rock! We've now started Half-Life 2: The Modded Version.  It's just like Half-Life
+  2: The Unmodded Version, except that it doesn't have any maps and I can't start
+  a New Game.  This is good, though, at least it works!\n\nOkay, so.. how do I put
+  some maps in the mod? I want to try walking about a bit, at least. \n\n<strong>Solution:
+  </strong>  Download and install <a href=\"http://nemesis.thewavelength.net/index.php?p=26\">GCFScape</a>,
+  then go into the <code>Program Files/Steam/steamapps</code> directory and find <code>half-life
+  2 content.gcf</code>. Open wide, and it's maps directory is full of maps that can
+  then be copied directly into the Maps folder of the mod that we've just cracked
+  open. \n\nUnfortunately, this method, at least according to the tutorial, is illegal
+  if I want to distribute the mod.  There aren't any articles on why (perhaps someone
+  could suck enough information out of the assorted mods to reconstruct HL2 for free?),
+  nor are there any articles on how to legally nab HL2 maps. Maybe it's just not allowed
+  at all? I don't know. \n\nSo, finally, in order to wander in to the map, I need
+  to open the developer console.  Tilde. Tilde. TILDE, dammit! Why won't you come
+  up?\n\n<strong>Solution</strong>: In \"Options\", \"Keyboard\", \"Advanced\", there's
+  a checkbox to enable the developer console. Aha!\n\nAfter dealing with that one,
+  last problem, I'm on my way, running a HL2 mod that has no new content in it whatsoever.
+  It's a start!  I've also come to the conclusion that the Mod documentation needs
+  some serious work.  I'm going to keep a record of my discoveries, and try to keep
+  the Wiki up-to-date so that other people don't have to slog through the same problems
+  that I did. \n"

@@ -1,0 +1,24 @@
+---
+title: In Linux, Road Forks You!
+created: '2007-01-08T01:27:30+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! 'So, I managed to buy a laptop with any number of built-in incompatibilities
+  with linux.
+
+  The Intel GMA 950 is not well supported by Ubuntu and requires a special plugin
+  (called 915resolution, finding which took a couple of hours).
+
+  The Broadcom 4311 built-in wireless chipset requires a painful NDISWRAPPER kludge.
+  (That was 2.5 hours I''ll never get back. I hate working with NDISWRAPPER.)
+
+  But I''ve figured those things out! Huzzah for now! The solutions are in my log
+  book, and as long as I don''t lose said linux-log, I should never have to frustratedly
+  search the internet looking for the correct Ubuntu Howto again! (so many of them
+  fail, you have to absorb the wisdom of 5 or 6 and read about your computer''s specific
+  parts to find a solution to your problem..grah!)
+
+
+  Edit: I''m pretty sure both of these problems were solved in Ubuntu 7.10'

@@ -1,0 +1,27 @@
+---
+title: An Excerpt From The Documentation
+created: '2007-12-06T06:06:14+00:00'
+visible: true
+categories:
+- Humour
+- Needlessly Technical
+content_type: html
+content: ! "I'm working on documenting the stuff that I've built this semester so
+  that the next guy to come along doesn't pull out his hair and/or commit suicide.
+  \n\nHere's some of my classiest stuff from the documentation.  Mmm, professionalism.
+  \n\n\n<h4 style=\"padding-top:20px;\"> Misc: Generate a Password That's Not Very
+  Random.</h4>\n\t\t\n\t\t<div style=\"padding:10px 10px 10px 10px;background-color:
+  black;color: lime;font-family: monospace;\">\n\t\t\tinclude( PATH . \"Tools/Misc.php\"
+  );<br />\n\t\t\t$password = generateRandomPassword();<br>\n\t\t</div>\n\t\t\nThis
+  will generate a password that is not altogether too secure, but is probably a lot
+  of fun to try to say, like \"welimuw0ogrt\", \"8aphapww\" or \"kroofchu\".\n\n\n<h4
+  style=\"padding-top:20px;\"> Misc: Mock the User.</h4>\n\t\t\n\t\t<div style=\"padding:10px
+  10px 10px 10px;background-color: black;color: lime;font-family: monospace;\">\n\t\t\tinclude(
+  PATH . \"Tools/Misc.php\" );<br />\n\t\t\t$nickname = generateRandomCondescendingNickname();<br
+  />\n\t\t</div>\n\t\t\nSometimes, you feel the need to call the user something that
+  seems respectful, but in retrospect was actually kind of condescending.  While using
+  the user's name is easily possible, see \"Session Management\" above - it's more
+  fun to call them 'tiger'.\n\nThis function merely selects from a list of such condesending
+  nicknames- 'captain', 'tiger', 'chief', 'champ', 'sport', \"boss\", 'buddy', 'bucko'
+  or 'kiddo'.\n\nFor reasons that are painfully obvious, this feature is closely integrated
+  with the Error module."

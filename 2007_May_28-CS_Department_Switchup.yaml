@@ -1,0 +1,56 @@
+---
+title: CS Department Switchup
+created: '2007-05-28T22:58:34+00:00'
+visible: true
+categories:
+- University
+content_type: html
+content: ! "<img src=\"http://www.curtis.lassam.net/images/study.png\" alt=\"studyin'\"
+  />\n\n<strong>T</strong>he CS department at SFU is, as always, taking a look at
+  it's undergraduate upper-division requirements.\nThere's a really great <a href=\"http://csss.cs.sfu.ca/forum/read.php?25,4119\">thread</a>
+  about it in the CS forums.\n\n<strong>T</strong>he CS department can teach theory
+  pretty well, I would assume- I mean, the entire faculty is either insane grad students
+  or professors devoted to showing the world that they can (in fact) sort a list in
+  O(n) time, given infinite time and/or space.\n\n<strong>P</strong>eople can also
+  come out of a CS degree having learned nothing whatsoever (You know who you are:
+  You've taken 301. ): These people devalue the degree for everyone.\n\n<strong>T</strong>hose
+  persons looking to become Software Developers, however, will find SFU a pretty fruitless
+  experience.\n\n<strong>H</strong>onestly, SFU's Software Development curricula sucks
+  so hard you shouldn't even be able to stand near it without losing your pants. The
+  only software development methodology that students learn is \"Waterfall\". Source
+  control? Bug tracking? Heck, a programming language that's not Java? Pff! Silliness!
+  \n\n<strong>T</strong>he \"Easy Route\" exists as a kind of throwback- it exists
+  because there's a kind of happy easy space between theory and Software Development
+  where all sorts of useless courses can pop up. (And yes, Software Development is
+  such a mushy area, there's a lot of useless crap packed into it.)\n\n<strong>I</strong>'d
+  recommend just offering a Theoretical Computing Science degree at SFU, and cutting
+  out all of the non-theory courses. It would be hard as beans, 29 people would graduate
+  from the program every year, and they would all go on to grad school. Eventually,
+  most of these people will go on to wear fuzzy sweaters and find everything you say
+  terribly interesting.\n\n<strong>O</strong>ur Software Development? Well, it's such
+  a terrible offering (aside from a few gems like 300, 379, etc..) that it should
+  be abandoned. People looking to learn Software Development can go to BCIT.\n\n..but..\n\n<strong>I</strong>f
+  SFU does want to offer an Applied CS program, it needs to be fixed: People need
+  to learn proper software development practices, basic theory, some more advanced
+  theory, some team dynamics, a little human-interaction psychology, a lot about how
+  to write concisely and effectively, and *tonnes* of tools.\n\n<strong>H</strong>ell,
+  even though it's a misnomer, we could just call it \"Computing Science\". I mean,
+  it wouldn't *really* be CS, but when companies look to a CS program, this is what
+  they actually want from the students.\n\n<strong>N</strong>ow, I bet both of these
+  degrees could start out with the same lower division requirements- Learning how
+  to program, calculus, linear algebra, MACM, some breadth, all that jazz. Then, as
+  soon as students reach that magical upper-division level, the faculty can then nab
+  those 12 talented students marked to become grad students and the rest can toil
+  away in the standard CS degree.\n\n<strong>O</strong>f course, instead of going
+  to all of the trouble of separating the Applied CS students into their own program,
+  we could just offer a special adjunct to the CS degree.. maybe an \"Honours\" degree
+  or something. An \"Honours\" degree filled with all of the theory courses.\n\n<strong>A</strong>nd,
+  of course, thanks to the fact that it's SFU, all of the Software Development courses
+  are going to degenerate into courses that are either super-easy and useless (diluting
+  the value of the degree) or difficult-but-rewarding courses on special subject matter
+  that's one professor's hobby-horse (Graphics, Compilers, maybe a few others).  \n\n<strong>S</strong>o..
+  uh.. if SFU were to follow my recommendations, everything should.. stay exactly
+  the same.\n\n<strong>A</strong>nd I'll stick it out (because of the difficult-but-rewarding
+  courses, some of which are really interesting) but I need some good Co-Ops to make
+  up for it... maybe I'll take a semester off and do some open-source work. And I'll
+  be trying to learn as much as I can on my own, like I've always been doing."

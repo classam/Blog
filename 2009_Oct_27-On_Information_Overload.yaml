@@ -1,0 +1,113 @@
+---
+title: On Information Overload
+created: '2009-10-27T12:28:51+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "On a day to day basis, I find myself at the center of a massive, massive
+  flood of data.\n\n<ul>\n <li> Twitter presents me with a trickle of thoughts and
+  feelings from friends. </li>\n <li> #sfucsss (<a href=\"http://webchat.freenode.net/\">irc.freenode.net</a>)
+  presents me with a flood of small communication between friends. </li> \n <li> Reddit
+  has a set of links for me- about 50 articles a day. </li>\n <li> Google Reader has
+  a much larger set of links for me - maybe 350 articles a day. </li> \n <li> As a
+  web programmer, I work in myriad environments - many languages, many frameworks,
+  and lots of peripheral software. I must manage any data that I acquire for these
+  purposes - books, articles, blog posts, knowledge bases, documentation, and what-have-you,
+  for PHP, Codeigniter, Python, Django, Paste, Javascript, Prototype, jQuery, Sproutcore,
+  MySQL, PostgreSQL, CouchDB, MongoDB, Tokyo Cabinet, Ubuntu, Linux-in-general, Apache,
+  SVN, Git, Scalability, Architecture, Security... all at varying levels of depth.
+  \ Web Programmers are, necessarily, intellectually promiscuous, as new technology
+  floods the scene approximately every twelve seconds. </li> \n <li> As a general-purpose
+  nerd, I have stacks upon stacks of books, articles, blog posts, knowledge bases,
+  documentation, and what-have-you, on topics that interest me.  Design, layout, typography,
+  general sciences, basic finance, science fiction, photography, comics, blogging,
+  etcetera etcetera. </li>\n</ul>\n\n(And here I stop writing for just a moment to
+  check the 10 new items in my Google Reader account.)\n\nIt's addictive.  The more
+  information I have, the more I <em>want</em>. We've all experienced the Wikipedia
+  Branching Nightmare, where something interesting catches our eye in a branching
+  system and we spend days just following links upon links upon links.  This is why
+  sending somebody <a href=\"http://tvtropes.org/pmwiki/pmwiki.php/Main/TVTropesWillRuinYourLife\">to
+  a TVTropes article</a> is so much worse than Rickrolling them - if they're the right
+  sort of person, you may have just trapped them for days in a new wiki. \n\nIt's
+  no wonder that I suffer from that ever-so-common malady of the networked: I am utterly
+  disabled by a totally unmanageable flood of constant information on every topic
+  that I could concievably be interested in.  As a software developer, I am filled
+  with an overwhelming desire to build, but the problem then becomes... what? And
+  how? What contribution could I possibly make that could live up to all of the data
+  that I'm constantly pulling in? \n\nAnd even if I can momentarily decide on something
+  that I might potentially want to build - how do I possibly reconcile all of the
+  development data that I'm surrounded with?  A modern web application is composed
+  of so many moving parts, so many best practices, and so many constant choices that
+  it's difficult to get down so much as a single line of code. It's the Wikipedia
+  branching problem, but distributed across so much data that it's impossible to ever
+  reach an end-point. \n\n<ul>\n<li> What language do I want to program in? PHP? Python?
+  Ruby? Java? C#? Haskell? Lisp? This is the only decision of the lot that's even
+  remotely easy for me - I <em>want</em> to program in Python, although occasionally
+  my resolve weakens and I think of building in PHP instead. PHP is stable and easy
+  to program in, but it's so gritty and basic and unorganized... Python is conceptually
+  pure, but the downside to having a <em>right</em> way to do everything is having
+  to learn the right way to do <em>everything</em>. </li> \n<li> Having decided provisionally
+  on Python, </li>\n<li> Do I build in Django? web.py? TurboGears? do I Paste together
+  a framework of my own with WSGI, SQLAlchemy and Genshi? </li> \n<li> Would it be
+  better to use a SQL based system?  Raw SQL? An ORM? A modern key-value database?
+  Can ORM hold up under heavy load? </li>\n<li> What sort of caching framework am
+  I going to use? How do I make it fast? Squid? Memcached? Horizontally scalable architecturing?
+  </li> \n<li> Do I organize it as a traditional application, or thin-client Javascript,
+  or a REST application paired with a thick-client javascript model, or a REST-backed
+  traditional-style-application-with-optional-thick-client-Javascript-add-ons?</li>\n<li>
+  \  Should I try to architecture with an object-oriented pattern-based style, or
+  a functional style? </li>\n<li> How am I going to handle testing? Unit testing?
+  </li>\n<li> What about source control? Git is popular and powerful and convoluted.
+  \ SVN is easy and light on features.  Bazaar is Python based and ... and... </li>\n<li>
+  Should I host my own source control?  Github/Google Code are powerful and flexible,
+  but I'd have to release my software with an open-source license... what if I want
+  to make money off of the code later? </li> \n<li>  What is the best way to modularize
+  Javascript development - do we separate UI components into discrete units, or build
+  a full-stack MVC javascript framework? Hey, there aren't any really popular full-stack
+  MVC Javascript environments out there yet, maybe I should look around or build one
+  for my application... </li>\n</ul>\n\nThere's much more.  Making the right choice
+  in <em>any</em> of these categories requires a lot of domain knowledge, requires
+  that hours be spent on the internet reading FAQs and docs and articles.  Having
+  made even a few of these decisions, I'm easily derailed by someone posting an article
+  on The Next Big Thing in development, or - even worse - convinced by some developer
+  on a pedestal that the Next Big Thing won't be Thing X that I'm building, but Thing
+  Y that will be the future of Thing.  Or maybe I discover that somebody has already
+  released a product that does 75% of what I was planning to do, anyways.  Every couple
+  of hours, my understanding of What To Build, Why To Build, and How To Build change.
+  \ The only way to get anything done, I suspect, is to just start arbitrarily deciding
+  that <em> I will not learn this thing. </em>\n\nSo I get fed up, I decide just to
+  subsume my natural desire to build things and passively absorb data, instead - which
+  brings me back to my initial problem.\n\nIt is unimaginably difficult to manage
+  this constant flood of data.  I read <em>constantly</em>, but that's not enough.
+  I need some way to manage all of the incoming information, to contextualize it,
+  to remember where it is, to summarize and sort it all, to tell me when there's more
+  (or what's changed).  Google, RSS, the ubiquity of web publishing, Amazon, there's
+  a whole system in place to attempt to manage the process of helping me find the
+  data I need - but this creates the problem: given the ability to nigh-instantly
+  find any information I want, how do I manage it all? How do I remember it all? How
+  do I keep it all straight in my head? And how do I get any work done? \n\nWhen I
+  drop in to a new site or knowledge base, the first thing I always head for is the
+  About Us, or the FAQ.  When I read a book, I always start with the intro, the back
+  cover.  Informational chapters or articles?  The summary.  The first thing I want
+  - the first thing I need - is a quick summary of what's going on, to contextualize
+  any further data on the topic.  Even with short articles or blog posts, I expect
+  the writers to get to the point quickly so that I can get on with my day.  The bigger
+  the block of information, the larger the chance that I'll have to put it down so
+  that I can move on to the next chunk of shiny data - so I prioritize things that
+  can be completed very quickly. \n\nTaking notes helps.  I've been taking notes on
+  course material, on things I've read, all sorts of things, and starting to put these
+  things in a <a href=\"http://ikoverse.com/wiki//Home/Home\">wiki</a>. I'm trying
+  to develop a personal knowledge base - an 'index' of summarized knowledge.  It's
+  slow, though, and disorganized, and it doesn't always mesh with my mental model.
+  \ My attention span is really, _really_ short - stopping to take notes on things
+  focuses me, and I end up with a much stronger understanding of what I'm reading...
+  but it's surprisingly difficult to concentrate on any one item for the time required
+  to get solid notes down.  (Try it, you'll see what I mean.) \n\nEventually, every
+  bit of information will be available on the internet.  If it weren't for restrictive
+  laws and corporate dinosaurs, we'd be almost there already - with public scientific
+  journals, the growing Google Books catalogue, the rise of e-books, various other
+  trends. Things are going that way (and I'd love to see it go faster), and a lot
+  of people are making a lot of money just sorting through it and showing us where
+  to find it all. \n\nThe question then becomes: when we have access to all of the
+  information we could possibly want, how will we possibly deal with it all? "

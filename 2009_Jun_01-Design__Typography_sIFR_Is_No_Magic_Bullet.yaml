@@ -1,0 +1,54 @@
+---
+title: ! 'Design & Typography: sIFR Is No Magic Bullet'
+created: '2009-06-01T23:14:42+00:00'
+visible: true
+categories:
+- Design & Typography
+content_type: html
+content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=24\">Design & Typography</a>\"
+  articles cover a topic near and dear to my heart: Making things look pretty. </em>\n\nSo,
+  I've been experimenting with sIFR, as a way to use Univers fonts on my website without
+  having to generate images for <em>each individual blog-post title on my site</em>.
+  \n\nNow, I love the idea of sprucing up dynamic content with real typography &mdash;
+  but I don't think that sIFR is the answer, at least not yet.\n\n<h3> Slow to Load.
+  </h3>\nYes, okay, we're on the internet of the future, we have infinite bandwidth
+  and all computers are speed demons, sure.  The thing is, though, nothing loads faster
+  as blog title headers than <em>plain text</em>.  sIFR even seems to underperform
+  properly-tweaked images. \n\nSo sIFR is slow.  It feels slow. \n\n<h3> Bug Me Not
+  </h3>\nI'm not sure if you've noticed, but sIFR seems to be cutting off chunks of
+  headline at random on my site.  Not cool! That's a gamebreaking bug for me. \n\nMy
+  first course of action here will be to replace it with sIFR 3, the fresh version.
+  \ Should that fail, I'm back to good ol' fashioned text. \n\n<h3> Search Me Not
+  </h3>\nCan't search through headers.  If, you know, you wanted to. \n\n<h3> Ultimately,
+  the Wrong Solution </h3>\nWhen it comes down to it, dynamically rendering fonts
+  using Flash intuitively feels like it's the wrong solution for web typography.  \n\nFor
+  one thing, most web browsers already render fonts, fine. Why go to all of the extra
+  effort to render additional fonts outside of the browser?\n\nIn an ideal world,
+  one would just be able to embed a font straight-up in the page, file and all.  Most
+  font foudries would, however, get their panties all atwist at the thought of people
+  getting one of their expensive, expensive fonts just... sent to them. Over the internet.
+  \ And now they can use that font for whatever they want, forever. \n\nSo, once again,
+  the mighty beast of copyright stands between us and the most elegant technical solution.
+  \n\nI suppose one could champion a movement for distribution of Creative-Commons
+  or similarly open-licensed fonts.  Perhaps someone could push some of the major
+  browsers to include some fonts from the <a href=\"http://openfontlibrary.org/\">Open
+  Font Library </a> - or at least, allow people to embed fonts in webpages if they
+  are using open license fonts.  (This of course creates the problem of people hacking
+  closed-source fonts to make them appear to be open-sourced fonts. See? This is a
+  tough problem. )\n\nThe Open Font Library itself could use a new influx of life,
+  through more participation from developers and designers.  Developers could introduce
+  some features to make it more relevant and useful, like the ability to preview fonts,
+  sort them by popularity, that sort of good thing. Designers &mdash; well &mdash;
+  Open Typography needs a hero, an Adrian Frutiger, a William Caslon, a John Baskerville,
+  a ... Carol Twombly.\n\nImagine if each Firefox update came with 3 new fonts that
+  Web Developers could count on. Would it be a bad idea? It would make pages less
+  standard, and developers would have to use the font-family tag properly &mdash;
+  first using a OpenFont font, then a Mac Standard, then a Windows Standard, and finally
+  the Default Family. \n\nTypography on the web needs a hero. Or a couple of heroes.
+  Or many heroes.  It's important. \n\n<h3> What Choice Do We Have? </h3>\n\nOf course,
+  until the state of open typography on the web improves, our only option for dynamic
+  fonts are to hack them into either Flash or images - and I think that 'images' might
+  be the more efficient of the two, even if it's the less accessible.\n\nThe best
+  solution, at least in terms of speed, ease, accessibility, and simplicity, seems
+  just be to stick with the small subset of available fonts that come with the system.
+  \ But we can do better, right? "

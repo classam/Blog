@@ -1,0 +1,64 @@
+---
+title: Web Developer Tools
+created: '2009-06-12T01:07:57+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- Web
+content_type: html
+content: ! "I might have posted this before, but for developers looking for a shorn-down
+  Firebug equivalent for Webkit/Safari, you can enter the following snippet into your
+  Mac's Terminal: \n\n<code>defaults write com.apple.Safari WebKitDeveloperExtras
+  -bool true</code>\n\nThis will give you the ability to \"Inspect Element\", which
+  is very, very useful.  It brings up the Mac Web Developer Console, a sort of useful
+  multi-tool for the web.  In fact, after the appearance of the ubiquitous and incredibly
+  useful FireBug, it would seem that most of the major browsers are going the way
+  of integrated web-development tool modules. Nice!\n\n<h3>FireBug</h3> \n\nI'm not
+  going to lie &mdash; FireBug completely changed the way that I write markup.  Instead
+  of laboriously fiddling with a CSS value and refreshing repeatedly (How does 74px
+  look? How does 80px look? ), I just toss in a nonsense value, then inspect the element
+  I'm working with in FireBug.  From there, I can select any of the values that I
+  want to play with, and hold the up/down keys to watch that value change in real-time.
+  \ You can also add new CSS properties on the fly to see how they change the page.
+  Useful!  \n\nThe Safari Web Developer Console allows you to inspect elements and
+  change CSS, but you can't <em>slide</em> elements.  Which is okay, I guess.  I mean,
+  every product works a little bit differently. \n\n<h3>Size</h3>\n\nThe Safari Console
+  *also* allows you to determine the full download size of a page of your website.
+  \ Notably, this website's index page, pictures and all, occupies less than 100kb
+  of space &mdash; but Javascript plugins (jQuery, jQuery UI, and the plugin for code
+  rendering) and sIFR eat up another 400kb of space, making the whole site a bit of
+  a pig.  Alternatively, I've written full-on Wordpress sites that <a href=\"http://www.chownow.ca/blog/\">pack
+  tidily into less than 70kb</a>.  Google's front-page clocks in at a svelte 36kb,
+  and Yahoo's front-page a beefy 1Mb. \n\nNotably, this functionality exists in FireBug,
+  but it's not nearly as pretty or intuitive, so I never really played around with
+  it. \n\nIn fact, the Safari Console has a few features that could be really helpful
+  for someone pulling a page to bits.  It lists all of the images used on the page,
+  where they come from, and their size and dimensions. It also lists all of the stylesheets
+  and javascript elements loaded on a page.  Actually, looking at my site, one of
+  the reasons that it's so big is that the JavaScript Code Highlighter that I'm using
+  depends on a number of 'brush' files (one for each language family being highlighted),
+  each with a very large, identical copyright notice.  I bet trimming <em>that</em>
+  down could cut a couple kilobytes from this site's hefty frame. \n\n<h3>JavaScript</h3>\n\nWhen
+  I started programming in Javascript, I found also that FireBug logs Javascript errors
+  in a tidy format that makes it painfully clear what's gone wrong with the page.
+  As well, you can toss a console.log( \"foo\" ) statement in your page, to print
+  output directly to the FireBug console.  For debugging, this is like <em>sex cheese</em>.
+  \n\nNotably, this also fills me with frustration whenever a jQuery library module
+  starts throwing an obscure error.  Am I doing something wrong? \n\nThe Safari Console
+  seems also to have a console for logging. I haven't really fiddled with it. For
+  that sort of work, I'm almost guaranteed to go to FireBug unless it's a Safari-specific
+  error. \n\n<h3> Okay, Windows, You're Up To Bat </h3>\n\nSo, Safari and Firefox
+  both have robust developer console systems, albeit each one with strengths and weaknesses.
+  \ What does Internet Explorer have? \n\n<em>crickets</em>\n\n<em>tumbleweed</em>\n\nActually,
+  you'd be surprised. Internet Explorer is home to a small set of <a href=\"http://blogs.msdn.com/ie/archive/2007/06/22/from-microsoft-teched-2007-web-development-tools-for-internet-explorer.aspx\">development
+  tools</a> as well, for those developers in the unfortunate circumstance of having
+  to develop for it as a primary.  I haven't tried any of them, and they seem to be
+  quite the mishmash of miscellany, but it's good to know that the tools exist. \n\n<h3>
+  And The Rest </h3>\nGoogle Chrome has a very rudimentary set of built-in developer
+  tools, although it's so small as to be nearly meaningless &mdash you can't even
+  change CSS on the fly.  \n\nThat just leaves Opera, and, while it was an empty field
+  for a while, they're currently working on <a href=\"http://www.opera.com/dragonfly/\">Dragonfly</a>,
+  a yet-another-developer-console, for Opera.  Considering, however, Opera's much-greater-pull
+  in the mobile world, they're integrating a host of tools that work with assorted
+  mobiles.  It's still in 'alpha', though, so the software might not be as rock solid
+  as one might hope. \n\n"

@@ -1,0 +1,88 @@
+---
+title: Theory of Good Documentation
+created: '2008-08-08T13:34:33+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "So, now, I'm reaching the end of a semester-long project at Electronic
+  Arts, and I've been called upon to create a document describing what it is that
+  my software does. \n\nI had to do this near the end of my time at Research in Motion,
+  too.\n\nHere I start my rant- if you're building a user-interface, it shouldn't
+  need a manual- nobody's going to read it anyways- it should be completely usable
+  without so much as glancing at TFM.\n\nOn the other hand, if you build tools or
+  libraries in code- which you inevitably will do, if other people are going to use
+  said code- <strong>if you haven't documented it, it doesn't exist</strong>.\n\nOh,
+  a clever developer can take some time, familiarize himself with your code, understand
+  how it works and what it does- but this is slow, and inconvenient, and a pain in
+  the ass.  Commenting your code makes this faster, but it's still a laborious process
+  for the new guy- and people depending on your code 'externally' don't even want
+  to LOOK in your file, never-mind read the comments.\n\nSo, in order for your library
+  to actually be used, and popularly, it needs to be documented.  But here's the question-
+  how do you write good documentation?\n\nI can't say I've hit upon the perfect formula-
+  I still have no clue how to write good documentation, but here are some little tips
+  I've picked up.\n\n<h3> Introduction </h3>\nI'm starting with obvious tips, of course.
+  \ Start by explaining what the code does, and why it's there. Why is the library
+  there in the first place? What problem does it solve?\n\nFrom there, detail how
+  to install it, and any requirements the code might have- even if these instructions
+  are just \"plunk the code in your directory, and call it using ' include MyLibrary;
+  '. \n\n<h3> Examples, Examples, Examples. </h3>\n\nFrom a purely intellectual standpoint,
+  users can read a function description and know what it's supposed to do- But the
+  entire time they're reading, what they're trying to do is to construct, in their
+  heads, a working example of the thing that you're describing.  \n\nIf you say, \"First,
+  you have to instantiate the class with the value of the website you'll be scraping,
+  then iterate through it by calling the 'read' member function until it returns a
+  null value\", the first thing the developer does is mentally try to map out what
+  you've just said into usable code- say, like this:\n<div class=\"code\">\nScraper
+  foo_scraper = new Scraper(\"http://www.foo.net\");\nstring line = \"\";\nwhile(
+  (line = foo_scraper.read() ) != null )\n&nbsp; // { do stuff with the line}\n</div>\n\nThose
+  of you who are developers will understand the description I gave much-clearer and
+  much-faster when faced with a code example. \n\n<h4> Don't Include A Lot Of Extraneous
+  Stuff In Your Examples </h4>\n\nI know that I've had problems with some programming
+  manuals doing this- not only do they include examples, but their examples are pages
+  long- the examples are entire programs that you're expected to mentally parse and
+  understand for the sake of learning one new concept. Oh, sure, that's a way to go,
+  but that's almost as irritating as being faced with no example at all- you have
+  to work harder to understand the concept in play. \n\nI understand the desire to
+  demonstrate that your examples will work in a large-scale program- but if you're
+  showing off a large chunk of code, it becomes harder and harder to sift through
+  said code to find out where the actually-relevant-and-new parts are.\n\nMost of
+  us already understand how to build a complete program- that's not why we're looking
+  at this example. We're looking at the example to find out exactly how one specific
+  bit of code works. \n\n<h3> What do the parameters do? </h3>\nIf you have a function
+  with a lot of parameters, make sure to explain what the parameters do and what 'valid'
+  input values are for those parameters.  The w3cschools website does a great job
+  of this with <a href=\"http://www.w3schools.com/css/css_table.asp\">CSS Parameters</a>.
+  \n\n<h3> How much text is too much text? How much is too little? </h3>\nAvoid leaving
+  the user with large, continuous blocks of text to deal with- big chunks like that
+  are intimidating and hard to parse.  Breaking up text with headings gives readers
+  a feel of organization, and makes it easier to find pertinent information a second
+  or third time. \n\nAs an example of this, image this exact same article, without
+  any headers. Yeah. \n\n<h3> If you need a picture, take a picture. </h3> \n\nSometimes,
+  a code example just won't cut it- you need to tell the user to 'right click on the
+  button to the far right of the screen', or 'Go to the file -> options -> monkeys'
+  dialog.  Once again, your reader is smart enough to just muddle through with your
+  instructions- but if you want to be absolutely clear, do the thing that you're suggesting,
+  press the \"Print Screen\" button, cut it down to an appropriate size and include
+  it with your documentation. \n\n<h3> Do it while you write it. </h3>\n\nIf you're
+  explaining a step-by-step task, you're not allowed to just try to wing it from memory.
+  \ You'll almost invariably forget a step or an important detail. <strong>Actively
+  go about completing the task that you're describing, while you're describing it</strong>.
+  \n\n<h3> If you need a diagram, make a diagram. </h3>\n\nSome concepts are just
+  better described with a diagram.  If you feel an irresistible urge to illustrate
+  the things you're talking about on a whiteboard as you're talking- by all means,
+  include the diagram you're making with the documentation. \n\n<h3>Stuck? Try the
+  Q&A format. </h3>\n\nSometimes, you just have no idea how to proceed.  What do you
+  need to write down?  Writing in a question and answer format can sometimes provide
+  that additional impetus to get you writing. \n\n<strong> What do you mean? </strong>\n\nWell,
+  if you don't know what to write, just imagine some of the questions that people
+  might have about the thing that you're documenting.. and answer those questions.
+  \ If people ask you real and specific questions about the thing that you're documenting,
+  include those, too! \n\n<strong> That's silly. </strong>\n\nSilly, yes, but if you've
+  got writer's block while you're documenting things, you're in for a world of hurt.
+  Try it before you knock it.\n\n<h3> Make sure people can find it</h3>\n\nDocumentation
+  that nobody can find is as useless as no documentation at all.  Make sure that the
+  documentation isn't just sitting in Sharepoint or Perforce, all alone. \n\nI hope
+  these tips will <del>allow me to avoid writing more documentation for another 30
+  minutes</del> help you produce more useful documentation for your code in the future.
+  \ Good luck! "

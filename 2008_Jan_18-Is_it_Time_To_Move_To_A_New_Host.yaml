@@ -1,0 +1,33 @@
+---
+title: Is it Time To Move To A New Host?
+created: '2008-01-18T07:31:54+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "I've been with Dreamhost for about a year now, and soon I'm going to be
+  with them for a second year.  I think, though, it might be time for me to move to
+  a new host, soon.  Maybe 8 months from now.  Not that I haven't been happy with
+  DreamHost, but there are a few things that I want to fix.\n\n<b>1. Occasional Bouts
+  Of Slow </b>\nWhen it comes down to it, sometimes my blog is just slow.  REEAL slow.
+  \ It's unprofessional, darn it. \n\n<b>2. Everything Is Automatic </b>\nThe \"One-Click
+  Installs\" make me feel like a retarded person.  I like being able to install new
+  instances of Wordpress in One-Click, and the One-Click upgrades are nice, too, but
+  they still feel too easy.  I want some difficulty.  I can handle software installation
+  on my own, and it makes me feel more like I can control my destiny.\n\n<b>3. The
+  High-Capacity Is Useless </b>\nYay, I have tonnes of bandwidth and disk space. With
+  the speed and thin-pipe that I seem to be stuck with, though, filling that disk-space
+  is a non-issue and using that bandwith doesn't seem too much of a problem either.
+  \ What's the point of ridiculous amounts of storage and bandwidth if you can't even
+  come close to using it all? \n\n<b>4. More Control. </b>\nWhen it comes down to
+  it, I want to experiment with Ruby On Rails, with Django and Python, with Lisp and
+  whatever the hell framework works with Lisp, and everything else out there.  I'm
+  young and promiscuous (at least when it comes to new technologies) and DreamHost
+  is just holding me back. I want to run my own server! Oh, I know, if *I'm* in charge
+  of my own server it's going to break way more often and be filled with security
+  holes like some sort of swissed-cheese, but it's worth it for the freedom and knowledge
+  I'd gain.\n\nSo, that's three reasons. And then one more, fourth, reason.\n\nI've
+  been recommended <a href=\"http://www.slicehost.com/\">slicehost</a> for a good
+  solid VPS, so I'll be taking a look at that. Later.\n\nThing is, though, I could
+  just run a dev-server on my home computer, and anything I want on there. I don't
+  have anything yet that needs to be deployed on a better server.  It can wait. "

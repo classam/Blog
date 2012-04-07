@@ -1,0 +1,26 @@
+---
+title: ! 'EA Day 9: Acceptance'
+created: '2008-05-15T11:16:01+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "Okay, gradually, I'm determining that the codebase that I'm working on
+  isn't so bad. \n\nAt first I thought it was ugly and cryptic- a hacked-together
+  mess.  I reserved judgement- complaining about other people's code on your first
+  day is unprofessional at best- and it might actually be laid out in a sensible fashion
+  that I'm just not grasping.  All coders innately hate unfamiliar code, so I try
+  to give things more of a chance. \n\nAnd I discovered that this codebase, it's a
+  hacked-together mess.  But it's that doesn't have a lot of bugs, maintains a lot
+  of internal consistency, and uses functions and classes in a reasonable fashion.
+  \ \n\nCompare this with the PHP App that I was handed at Research in Motion to maintain-
+  an amateurish set of 'scripts', only loosely connected- and this system seems downright
+  pleasant.  Sure there are a lot of ugly decisions, sure there are messy hacks and
+  a lot of things are structurally wrong- but it's all wrong in a consistent way,
+  so once you understand why it's wrong you can adopt it's messy hacks and bad structuring
+  yourself and make it work.\n\nThe worst part is that I'm trying to be subtly wrong
+  in the same way as the last coder, because the internal consistency of the bad architecture
+  is a strong point of the system, and if I were to rebuild a single file or class
+  to make more sense, I'd be compromising a major feature of the system. \n\nSo..
+  this is good, or bad? I don't know.  I'm at least having some fun with it.  Maybe
+  if I'm lucky I'll get to architecture something from scratch. "

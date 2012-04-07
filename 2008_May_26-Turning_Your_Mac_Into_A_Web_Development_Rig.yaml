@@ -1,0 +1,50 @@
+---
+title: Turning Your Mac Into A Web Development Rig
+created: '2008-05-26T21:06:36+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "You all remember that I bought a MacBook, right? \n\nSo, I find myself
+  doing web development, and wondering how to do all of the Linuxy stuff I love without
+  abandoning this Macintosh paradigm that I've grown to enjoy so much in the past
+  few weeks.\n\nSome people- bearded, angry people- might suggest that all platforms
+  are equivalently useful for web development, but I'm a big fan of convenience- and
+  the ability to apt-get things I want is just too useful.  Dependency-management
+  by hand is for <a href=\"http://www.slackbook.org/html/package-management.html\">schmucks</a>
+  and Windows users. \n\nFortunately, <a href=\"http://www.flickr.com/photos/40826399@N00/2511695101/in/photostream/\">IRC
+  </a> came to the rescue once again, and suggested <a href=\"http://en.wikipedia.org/wiki/SSHFS\">sshfs</a>.
+  \ Investigations proved fruitful.\n\n<h3> Virtual Machines </h3>\n\nI'm using VMWare
+  Fusion to run Ubuntu 8.04 Server Edition within the Macbook.\n\nVMWare Fusion makes
+  it almost painfully easy to install an operating system within the Mac.  Download
+  the <a href=\"http://www.ubuntu.com/\">Ubuntu ISO</a>.  In VMWare Fusion, add a
+  virtual machine, select 'Linux' and a few inconsequential configuration options.
+  \n\nUbuntu 64bit or 32bit both work fine.  VMWare Fusion can handle either.  \n\nWhen
+  prompted for the CD, instead \"Browse\" for the Ubuntu ISO that you originally downloaded.\n\nThen
+  you just run through the standard Ubuntu installation. No problem. \n\n<h3>Install
+  SSH</h3>\n\nThe Server edition of Ubuntu comes with SSH already installed.  Should
+  you find yourself without it (maybe you're using the Desktop edition?), just run
+  <code>sudo apt-get install openssh-server</code> and <code>sudo apt-get install
+  openssh-client</code>.  Everything will configure-itself for you. \n\nAt some point,
+  you might need the local IP of your Ubuntu server- <code>ifconfig</code> will produce
+  the information you're looking for. \n\n<h3> Install MacFUZE and MacFusion </h3>\n\nNow,
+  we want to mount the virtual Ubuntu filesystem like it was a local filesystem within
+  the Mac.  Install <a href=\"http://code.google.com/p/macfuse/\">MacFuse</a>, then
+  <a href=\"http://www.sccs.swarthmore.edu/users/08/mgorbach/MacFusionWeb/\">MacFusion</a>.
+  \ It's as easy to install as everything traditionally is on a Mac. (It has clicking
+  AND dragging.)\n\nThe MacFusion program will appear in the toolbar.  Click on it,
+  select 'easy mount', followed by 'SSH', and give it that IP address that you pulled
+  out of your Macbuntu earlier.    \n\nThe name and password are the ones that you
+  initialized the system with. Like magic, this will grant you access to your Ubuntu
+  filesystem from within the Mac.  Glorious! But, of course, it's only good for file
+  editing.  \n\n<h3>Use the power of SSH</h3>\n\nIf you don't already know how to
+  use the Mac's built-in SSH functionality, shame on you.  Find and open the 'Terminal'
+  program, and type in <code>SSH your_ip_address -l your_username</code> \n\nFiguring
+  out what to do with the Ubuntu terminal is beyond the scope of this article- all
+  you need to know is that every system administration task you need to perform can
+  be done from the command line, and if you weren't such a dyed-in-the-wool noob,
+  you'd be able to do text editing from within the command line too. (Don't worry-
+  I prefer graphical text editors, too.)\n\n<h3> Install all of your favourite programs
+  </h3>\n\nSo now, go forth and be fruitful!  Install all of your favourite Linux
+  programs! <code>apt-get</code> is your friend. \n\nOkay, you're set- you've got
+  a sweet development rig for the webternets. Rejoice!"

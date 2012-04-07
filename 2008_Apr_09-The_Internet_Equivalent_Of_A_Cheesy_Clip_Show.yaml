@@ -1,0 +1,49 @@
+---
+title: The Internet Equivalent Of A Cheesy Clip Show
+created: '2008-04-09T20:03:19+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "So, I have two ways of handling Analytics on my website- there's Google
+  Analytics, handily built-in to my blog, telling me that I've had about 775 users
+  hitting my blog in the past month.  The most popular articles are the following:\n\n<ul>\n<li><a
+  href=\"http://www.curtis.lassam.net/?p=403\">My Crowning Achievement In April Fools
+  Prankery</a>, wherein I convince my parents that I've run away to join the army.</li>\n<li><a
+  href=\"http://www.curtis.lassam.net/?p=395\">Television Is Stupid</a>, wherein I
+  poke fun at The Big Bang Theory (the show, not the theory) </li>\n<li> <a href=\"http://www.curtis.lassam.net/?p=397\">The
+  Best Programmers</a>, wherein I question the number 28, and</li>\n<li> <a href=\"http://www.curtis.lassam.net/?p=405\">Inaccuracies
+  and Elaborate Jokes</a>, wherein I respond to Officer Cadet Weissbock and introduce
+  Kanos Bjunorzen </li>\n</ul>\n\nMy most popular articles of all time have been:\n<ul>\n<li><a
+  href=\"http://www.curtis.lassam.net/?p=326\">What Do You Do</a>, describing a CS
+  degree.</li>\n<li><a href=\"http://www.curtis.lassam.net/?p=274\">They</a>, describing
+  the most frustrating of programmers</li>\n<li><a href=\"http://www.curtis.lassam.net/?p=330\">Validation
+  Done Right</a>, a hilarious code snippet from my time at RIM</li>\n<li><a href=\"http://www.curtis.lassam.net/?p=241\">How
+  To Eat Sushi The Japanese Way</a>, a very serious and well-thought-out look at how
+  to respectfully eat sushi that was done much better by <a title=\"Sushi: A Japanese
+  Tradition\" href=\"http://www.videotong.kr/video/pIb6ZSqal64/sushi-japanese-tradition.html\">some
+  other people</a>.  </li>\n</ul>\n\nAnd, while I'm making lists, some of my favourite
+  posts have been:\n<ul>\n<li>The <a href=\"http://www.curtis.lassam.net/?paged=16\">This
+  Was A Triumph</a> series, where I successfully posed as an Aperture Science employee.
+  \ </li>\n<li><a href=\"http://www.curtis.lassam.net/?p=369\">Sloganeering</a>, where
+  I produce a number of potentially lucrative nerd-t-shirt-slogans.</li>\n<li> <a
+  href=\"http://www.curtis.lassam.net/?p=349\">Rosa's and the Olive Garden</a>, where
+  I describe a meal that almost put me in traction.</li>\n<li> <a href=\"http://www.curtis.lassam.net/?p=341\">Travis,
+  Dan, and Dovic Offer Valuable CS Advice</a>, which is self-explanatory. </li>\n<li>
+  <a href=\"http://www.curtis.lassam.net/?p=300\">The Best Movie Ever</a>, where I
+  describe the movie that renewed my faith in Hollywood. </li>\n<li> <strong>Edit:</strong>
+  <a href=\"http://www.curtis.lassam.net/?p=60\">The Sandwich Tao</a>, an in-depth
+  discussion of the craft of sandwichmakery.</li>\n<li> and <a href=\"http://www.curtis.lassam.net/?p=288\">Project
+  300</a>, where I compile an exhaustive list of CS courses offered in the spring
+  and their comparative desirability. </li>\n</ul>\n\nBut there's another set of analytics-
+  I have a cron job periodically producing reports from my site logs using Webalizer,
+  and tossing them in a public folder for <a href=\"http://www.curtis.lassam.net/logs/\">all
+  to see</a>. \n\nBut these site analytics seem shocking and wrong. I can't believe
+  that the bulk of people on the internet come to my domain to see a <a href=\"http://curtis.lassam.net/comics/liottazilla/LiottaZilla.jpg\">doctored
+  picture of Ray Liotta</a> that one of my <a href=\"http://grahamspornemporium.com/\">old
+  coworkers</a> cooked up. \n\nThe <a href=\"http://curtis.lassam.net/glados/\">folder
+  full of GLaDOS clips</a> is more popular than anything on my entire site- and the
+  song, \"<a href=\"http://curtis.lassam.net/comics/music/carlitocarlitocarlito%20-%20Magic%20-%20A%20history%20of%20carlitocarlitocarlito/carlitocarlitocarlito%20-%2010%20-%20Diamonds%20and%20Business.mp3\">Diamonds
+  and Business</a>\" by CarlitoCarlitoCarlito- which is a terrible song, but hilarious-
+  is up there, too. \n\nThe number of people leeching my pictures is surprisingly
+  high, too. \n\nAh, well, such is the internet!"

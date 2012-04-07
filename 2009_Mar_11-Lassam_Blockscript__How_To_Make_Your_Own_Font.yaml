@@ -1,0 +1,37 @@
+---
+title: Lassam Blockscript - How To Make Your Own Font
+created: '2009-03-11T14:41:33+00:00'
+visible: true
+categories:
+- Design & Typography
+content_type: html
+content: ! "Lassam Blockscript (the post before this one) was prepared using Illustrator
+  CS4 and FontLab Studio.\nThe process is illustrated here:<a href=\"http://www.bittbox.com/fonts/how-to-make-a-hand-drawn-font/\">
+  How To Make A Hand-Drawn Font.\n</a>\n\nIllustrator’s Live Trace feature- a sort
+  of spiritual successor to the whole Adobe Streamline package- makes turning hand-drawn-art
+  into vector-art much easier. In fact, I’m strongly thinking that I’ll be doing more
+  with it in the future. (Streamline was half-heartedly discontinued, on account of
+  it’s single-purposeness and development of layers of old cruft- which, when I used
+  it, I experienced first-hand.)\n\nThe first run- the run that I used to prepare
+  most of the font- I just ‘used’ the Live Trace feature, and the result was bumpy
+  and messy- so when I did the second run (the special characters, &, ?, etc…) I fiddled
+  with Live Trace a bit and ended up with a _much_ smoother result, and then had to
+  go back and re-make the bulk font with the new, smoother font set.\n\nOne thing
+  in the tutorial that I found frustrating was that- when you paste a path from Illustrator
+  to FontLab, it doesn't appear at the origin- and being as you're zoomed in at origin,
+  you don't see what you've pasted. (My first time around, I probably pasted the font
+  about twenty times before I figured things out.) Use the Zoom->Fit feature after
+  you paste the path. \n\nFontLab Studio has a \"Metrics\" window which is an excellent
+  tool for kerning- just type letters, and drag them closer to each other or further
+  apart, depending on whether they're 'Tr' or \"OO\". I spent _hours_ Kerning, and
+  I still need to go back and pull some characters closer together or further apart.
+  \ aqawaearatayauaiaoapaaasadafagahajakala.... \n\nI was thinking of using OpenType's
+  automatic ligatures feature to bind letter combinations together with proper ligatures-
+  which can be configured to fire automatically when people use an OpenType-friendly
+  editor- but, being as a lot of my letters just naturally flow into the next character
+  (a and Z, for example), I figured that I'd have to prepare > 100 ligatures for everything
+  to work properly.  If I ever prepare a \"Lassam Blockscript Pro\", it'll have proper
+  ligatures. \n\nEven given that, just putting the font together took about 12 hours
+  in total.  If I were to make another one, it would be much faster- I wouldn't lose
+  all of the time to learning curve.  On the other hand, I'd probably lose a certain
+  amount of time to fiddling with new features..."

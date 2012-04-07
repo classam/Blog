@@ -1,0 +1,104 @@
+---
+title: ! 'Web Basics 3: HTML'
+created: '2009-03-28T20:54:30+00:00'
+visible: true
+categories:
+- Tutorials
+- Web
+content_type: html
+content: ! "Okay, you've got the basics of HTTP down.  Now it's time for HTML.  Thing
+  is, HTML is crazy easy, so I'm just going to show you some and you'll figure it
+  out fine.\n\n<pre class=\"brush: xml\">\n&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD
+  XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;\n\n&lt;html
+  xmlns=&quot;http://www.w3.org/1999/xhtml&quot; dir=&quot;ltr&quot; lang=&quot;en-GB&quot;&gt;\n&lt;head&gt;\n
+  \   &nbsp;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;
+  charset=UTF-8&quot; /&gt;\n    &nbsp;&lt;title&gt;Curtis Lassam&lt;/title&gt;\n
+  \   &nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://www.curtis.lassam.net/wp-content/themes/georgiatheme/style.css&quot;
+  type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;\n&lt;/head&gt;\n&lt;body&gt;\n
+  \   &nbsp;&lt;h1&gt; Header &lt;/h1&gt;\n    &nbsp;&lt;div id=&quot;sidebar&quot;&gt;
+  \n        &nbsp;&nbsp;&lt;h2&gt; Sub-header &lt;/h2&gt;\n        &nbsp;&nbsp;&lt;ul
+  id=&quot;nav&quot;&gt;\n            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;index.php&quot;&gt;
+  Home &lt;/a&gt;&lt;/li&gt;\n            &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;gallery.php&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;about_us.php&quot;&gt;About
+  Us&lt;/a&gt;&lt;/li&gt;\n        &nbsp;&nbsp;&lt;/ul&gt;\n    &nbsp;&lt;/div&gt;\n
+  \   &nbsp;&lt;div id=&quot;main&quot;&gt;\n        &nbsp;&nbsp;&lt;h2&gt; Home &lt;/h2&gt;\n
+  \       &nbsp;&nbsp;&lt;div class=&quot;post&quot;&gt;\n            &nbsp;&nbsp;&nbsp;&lt;h3&gt;
+  Today, I ate some bacon. &lt;/h3&gt;\n            &nbsp;&nbsp;&nbsp;&lt;img src=&quot;bacon.jpg&quot;
+  /&gt;\n            &nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor si amet &lt;strong&gt;bacon
+  bacon&lt;/strong&gt; bacon bacon bacon bacon bacon bacon bacon. &lt;/p&gt;\n            &nbsp;&nbsp;&nbsp;&lt;p&gt;
+  Lorem ipsum dolor si amet bacon bacon. &lt;/p&gt;\n        &nbsp;&nbsp;&lt;/div&gt;\n
+  \       &nbsp;&nbsp;&lt;div class=&quot;post&quot;&gt;\n            &nbsp;&nbsp;&nbsp;&lt;h3&gt;
+  Here's a table of data! &lt;/h3&gt;\n            &nbsp;&nbsp;&nbsp;&lt;table&gt;
+  \n            &nbsp;&nbsp;&nbsp;&lt;tr&gt; &lt;th&gt;Day&lt;/th&gt;     &lt;th&gt;
+  Number of Poops &lt;/th&gt; &lt;th&gt;Amt. Of Bran Eaten (g) &lt;/th&gt; &lt;/tr&gt;\n
+  \          &nbsp;&nbsp;&nbsp; &lt;tr&gt; &lt;td&gt;Monday&lt;/td&gt;  &lt;td&gt;
+  1 &lt;/td&gt;             &lt;td&gt;12&lt;/td&gt;                     &lt;/tr&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;tr&gt; &lt;td&gt;Tuesday&lt;/td&gt;   &lt;td&gt;
+  2 &lt;/td&gt;             &lt;td&gt;22&lt;/td&gt;                     &lt;/tr&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;tr&gt; &lt;td&gt;Wednesday&lt;/td&gt; &lt;td&gt;
+  12 &lt;/td&gt;             &lt;td&gt;100&lt;/td&gt;                     &lt;/tr&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;/table&gt;\n        &nbsp;&nbsp;&lt;/div&gt;\n
+  \       &nbsp;&nbsp;&lt;form action=&quot;thing.php&quot; method=&quot;post&quot;&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;label for=&quot;label_is_for_this_thing&quot;&gt;Username&lt;/label&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;label_is_for_this_thing&quot;
+  name=&quot;username&quot; value=&quot;kurtvonnegut&quot; /&gt;\n            &nbsp;&nbsp;&nbsp;&lt;input
+  type=&quot;password&quot; name=&quot;password&quot; /&gt;\n            &nbsp;&nbsp;&nbsp;&lt;textbox
+  name=&quot;box_of_text&quot;&gt; Put text in here! &lt;/textbox&gt;\n           &nbsp;&nbsp;&nbsp;
+  &lt;select name=&quot;month&quot;&gt;\n                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option
+  value=&quot;1&quot;&gt;January&lt;/option&gt;\n                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option
+  value=&quot;2&quot;&gt;February&lt;/option&gt;\n                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option
+  value=&quot;3&quot;&gt;March&lt;/option&gt;\n            &nbsp;&nbsp;&nbsp;&lt;/select&gt;\n
+  \           &nbsp;&nbsp;&nbsp;&lt;input type=&quot;checkbox&quot; name=&quot;newsletter&quot;&gt;Sign
+  up for our newsletter?&lt;/input&gt;\n            &nbsp;&nbsp;&nbsp;&lt;label for=&quot;video&quot;&gt;What
+  killed the radio star?&lt;/label&gt;\n            &nbsp;&nbsp;&nbsp;&lt;input id=&quot;video&quot;
+  type=&quot;radio&quot; name=&quot;group1&quot; value=&quot;video&quot;&gt;Video&lt;/input&gt;
+  \      \n            &nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; name=&quot;group1&quot;
+  value=&quot;radio&quot;&gt;Better Radio&lt;/input&gt;      \n            &nbsp;&nbsp;&nbsp;&lt;input
+  type=&quot;radio&quot; name=&quot;group1&quot; value=&quot;riaa&quot;&gt;The RIAA&lt;/input&gt;
+  \n            &nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; name=&quot;group1&quot;
+  value=&quot;bullet&quot;&gt;A Bullet&lt;/input&gt;   \n            &nbsp;&nbsp;&nbsp;&lt;input
+  type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Submit!&quot; /&gt;\n
+  \       &nbsp;&nbsp;&lt;/form&gt;\n    &nbsp;&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n</pre>\n\nOkay,
+  let's go into a slightly more in-depth analysis of some of those things.\n\n<h3>Some
+  Rules</h3>\n<ul>\n    <li>All elements need to be closed. &lt;div&gt; &lt;/div&gt;
+  or &lt;div /&gt; </li>\n    <li>Elements can't be closed outside of their containing
+  element.  Good: &lt;div&gt; &lt;span&gt; &lt;/span&gt; &lt;/div&gt; , Bad: &lt;div&gt;
+  &lt;span&gt; &lt;/div&gt; &lt;/span&gt; </li> \n    <li> Blink and Marquee tags
+  are _never_ acceptable. Ever. </li>\n</ul>\n\n<h3>Doctype</h3>\nThe bit at the top
+  is called the \"doctype\".  It contains the exact version of the HTML you're using,
+  along with a big pile of unnecessary bullshit.  It allows an HTML validator to pick
+  at niggling errors in your HTML, and if you have a doctype, IE6 will be ever-so-slightly
+  more likely to display your site properly.\n\n<h3>HTML</h3>\nAll of the page's content
+  goes in between the HTML tags on the outside.  You can also specify additional properties
+  in the HTML element's attributes, such as language and character set. \n\n<h3>Head</h3>\nThis
+  is where header content- anything that doesn't go directly on the page- goes.  The
+  title, links to stylesheets, meta-information, and Javascript all go in here. Everything
+  else goes in the body tag.\n\n<h3>H1, H2, H3.... </h3>\nHeaders.  The big-ass text.
+  \ In the same way that this page has a title (h1), chapter headings (h2), and sub-headings
+  (h3).  In HTML, these are available all the way down to h6.\n\n<h3>ul, ol, li</h3>\n\n<ol>\n
+  \  <li><strong>ol</strong> denotes a numbered list</li>\n   <li> the <strong>ol</strong>
+  tag goes on the outside, and the <strong>li</strong> tags connotate individual list
+  items. </li>\n</ol>\n<ul>\n    <li><strong>ul</strong> denotes an unnumbered list</li>\n
+  \   <li><strong>li</strong> works the same way with <strong>ul</strong> as it does
+  with <strong>ol</strong> </li>\n</ul>\n\n<h3>div, span</h3>\nA 'div' tag doesn't
+  mean anything. It's just a way to group a bunch of similar elements together, usually
+  for the sake of layout or display.\n\nSpan is pretty much the same thing.  The difference
+  between 'div' and 'span' is that div is block-level - a div is a 'block' of content-
+  whereas 'span' is line-level.  It's a tough distinction- you could use a 'span'
+  the way you might use a 'strong' or an 'em' tag, to annotate some text- whereas
+  you might use 'div' around a couple of images - in the way you might use a 'panel'
+  in a more traditional layout environment. \n\n<h3>A Few More Things</h3>\n\n<ul>\n
+  <li> p = paragraph</li>\n <li> blockquote = quoted text </li>\n <li> img=image </li>\n
+  <li> tr = table row </li>\n <li> th = table head </li>\n <li> td = table column
+  </li>\n <li> em = emphasis </li>\n <li> strong = strong emphasis </li>\n <li> small
+  = make this text small </li>\n <li> del = strikethrough </li>\n</ul>\n\n<h3>Form
+  Meets Function</h3>\nThe one element here that might take a little bit more explaining
+  is 'form'.\n\nA 'form' element is the most dynamic part of HTML- it generates a
+  HTTP 'get' or 'post' request, and sends it back to the server- along with the values
+  of all of the contained 'input' elements.\n\nLooking at the form element- the 'action'
+  attribute determines the target of the HTTP request, and the 'method' attribute
+  determines whether the HTTP request is a GET or a POST - remember, GET requests
+  should never change internal state, and they should be both bookmarkable and cacheable.
+  \n\nThe key-value pairs sent with the HTTP request are determined by the 'input'
+  elements inside the form.  In general, the 'name' attribute of the 'input' element
+  corresponds with the key of the key-value pair sent to the server.\n"

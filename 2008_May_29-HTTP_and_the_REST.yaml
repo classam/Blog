@@ -1,0 +1,22 @@
+---
+title: HTTP and the REST
+created: '2008-05-29T15:01:35+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- University
+content_type: html
+content: ! 'So, for a lot of the last class in <acronym title="Web Information Systems">CMPT
+  470</acronym>, <a title="Greg Baker" href="http://gregbaker.ca/blog/">our professor</a>
+  has been delivering an assortment of HTTP-related lessons.
+
+
+  This is actually proving to be mighty interesting- Apache and basic <acronym title="Hypertext
+  Transfer Protocol">HTTP</acronym> have a lot of features that I never knew they
+  had.
+
+
+  It''s also managing to be pretty interesting- because the <acronym title="Representational
+  State Transfer">REST</acronym> web-service architecture is so closely tied to HTTP,
+  all of the stuff we''re learning almost directly applies to some architecturing
+  I''m doing at work.'

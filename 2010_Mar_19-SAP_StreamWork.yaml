@@ -1,0 +1,70 @@
+---
+title: SAP StreamWork
+created: '2010-03-19T02:49:18+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "So, Phil's project at SAP has finally launched! \n\nWhen it was in beta,
+  it was called \"12sprints\", which sounds like sort of a post-37signals Web 2.0
+  name for collaboration software that doesn't really do anything.  If I were a customer,
+  I'd just go with 37signals.  Why? <em>They're 25 higher!</em>. Ba dum-tsh.\n\nIt's
+  critical, when naming your product, not to put yourself down like that. Phil's team
+  should have called it \"74sprints\" - that way, if somebody asked them about the
+  name, they could at least claim to be twice as good as 37signals.\n\nSo, they had
+  to drop \"12sprints\" and go with the new name, \"SAP StreamWork\".  We've gone
+  from a meaningless Web 2.0 name to a meaningless Enterprise name.  SAP StreamWork.
+  \ Well, I was just about to <em>work on some streams</em>, perhaps this software
+  will be useful to me. \n\nLet's look at <a href=\"http://www.sapstreamwork.com/\">the
+  front page</a>, shall we?\n\nNow let's imagine that I have a big red marker, and
+  I can draw RIGHT ON THAT WEBSITE. What will I draw? Well, <a href=\"http://curtis.lassam.net/images/sap_streamwork_1.png\">this</a>.
+  \n\nI want to know about this product.  Let's extract every last juicy tidbit of
+  information from the front page.  \n\nLooking at the whole page, the only words
+  that seem to describe what the software actually <em>does</em> are \"Share documents
+  and data\", and \"Tools for brainstorming and decision-making\". Mmm. It's collaboration
+  software.  Collaboration software? Never heard of it - they do, after all, claim
+  to be \"the <a title=\"37signals\" href=\"http://37signals.com/\">first</a> <a title=\"Sharepoint\"
+  href=\"http://en.wikipedia.org/wiki/Sharepoint\">and</a> <a title=\"Google Wave\"
+  href=\"http://wave.google.com/about.html\">only</a> <a title=\"Everything Else\"
+  href=\"http://curtis.lassam.net/images/business_collaboration_software.png\">solution</a>\".\n\nIf
+  we want to learn more, we're going to have to go on the tour that they've provided.
+  \ It's on YouTube, how bad could it be?\n\nIt's a ... uh... Powerpoint Presentation.
+  \ Without any voice. There's a guitar, though. GUITAR TUNES.  We start with <em>sweeping
+  generalities</em> and move to <em>confusing, directionless screenshots</em>.\n\nOkay,
+  I still have no idea what the hell it is that this software does. On to the <a href=\"http://www.sapstreamwork.com/features/\">features</a>
+  page! \n\nI've taken the liberty of <a href=\"http://curtis.lassam.net/images/sap_streamwork_2.png\">cutting
+  out all of the business mumbo jumbo from this page, to make it a little bit more
+  readable</a>. \n\nThe first feature that they mention on the page is \"notifications,
+  activity streams, and action items\".  Oh, I'm sold.  Just this morning, over an
+  Egg McMuffin and a orange juice, I was saying to my friends, \"do you know what
+  my day is missing?\". \n\n\"What?\", they asked.\n\n\"Activity streams.\" \n\n\"Oh,
+  man, you have <em>got</em> to get some activity streams, \" my friends told me.
+  \"They are awesome.  But at least you have action items, right? \" \n\nShit.  I
+  am a dude without Action Items or Activity Streams.  Do you see the trouble that
+  I am in? Already, this software is right for me. \n\nBut it would be prudent to
+  explore further.  Next, we have integration with a variety of products that business
+  people know how to use and are unwilling to part with. \"Outlook Integration!\",
+  they will go. \"I use Outlook <em>all the time!</em> Once I get the IT guys to configure
+  it properly, it's pretty much the only software I know how to use, except for that
+  Internet thing!\"  Okay, bam, bonus here.\n\nThe next point is that \"all discussions,
+  information, feedback, methods, and decisions are saved and can be shared or re-used.\"
+  \  Okay, so I'm still not sure what it is that the product <em>does</em>, but I
+  know that when it does it, it will do it with <u>Action Streams</u>, it will integrate
+  with my <u>Outlook</u>, and it'll <u>Save a Copy</u>.  Somehow, this combination
+  of features will allow me to <u>drive to a resolution</u>. Excellent.\n\nOkay, I'm
+  not getting anywhere with this.  On to the tutorials. Maybe they will tell me what
+  this product does.\n\n<strong>Creating an Activity.</strong>  Oh, maybe we will
+  find out what an Activity is! Apparetly, an Activity aids in the process of decision-making
+  by:\n<ul>\n<li>Eliminating long, hard-to-follow e-mail threads. <small>You know,
+  like Gmail. Or properly configured mailing lists. Or Google Groups. Or IRC. </small></li>\n<li>Providing
+  a workspace conducive to collaborative decision making. <small>Have you tried open
+  spaces and whiteboards?</small></li>\n<li>Giving the user powerful tools that guide
+  the decision-making process. <small>You mean, like, common sense? </small> </li>\n</ul>\n\nAnd
+  then, what happens afterwards is some sort of ... thing.  The part of my brain that
+  says 'couldn't this all just be resolved with a discussion?' would likely shut down
+  if I watched any more of these tutorials.  \n\nOkay, I give up, I can't figure out
+  what the heck this product is good for.  Heck, I could probably build better collaboration
+  software myself - it'd need to be easy, flexible, well-understood by developers,
+  synchronous to allow for discussion, group-inclusive, and keep a record of past
+  discussions.  You know, like IRC with a decent <a href=\"http://curtis.lassam.net/pierc/\">logger</a>.
+  \n\n\n\n\n\n"

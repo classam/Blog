@@ -1,0 +1,28 @@
+---
+title: Wordpress Is Broken
+created: '2007-06-29T21:29:42+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! '<img src="http://curtis.lassam.net/images/phoenix.png" alt="Phoenix" />
+
+
+  Apparently, there''s a bug in Wordpress that causes the WYSIWYG editor, TinyMCE,
+  to ''not work at all''.
+
+
+  Now, the funny thing is, I almost didn''t notice.
+
+  See, the not-so-rich text editor, the ''plain ol'' code editor'', in my opinion,
+  is actually.. much better. It has a bunch of common html shortcuts to save time,
+  and everything that goes into the box is HTML code.
+
+
+  I like it better that way.
+
+
+  The text-only view (Which I am restricted to, apparently) is smaller, more convenient,
+  and handles spacing in a way that is clear and understandable. So, while a fix may
+  be available for my specific problem, I think I''ll be keeping it like this for
+  a while.'

@@ -1,0 +1,20 @@
+---
+title: ! 'Windows 7 Feature: Use Our Fucking Search Provider'
+created: '2010-01-21T01:54:02+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "Windows Live (the current generation of Outlook Express => Windows Mail
+  => Whatever) offers the following curious pre-checked box during installation: \n\n\"Set
+  Bing as the default search provider in your browser, <em>and prevent programs from
+  interfering with this choice.</em>\"\n\n\"Microsoft Choice Guard is a small piece
+  of software that's downloaded during the Windows Live installation process to carry
+  out any changes that you choose to make to your browser settings. If you choose
+  to change your default search engine, Choice Guard looks for any programs on your
+  computer that might interfere with this process and works around them to let you
+  change your default search engine. Choice Guard does this to help ensure that choosing
+  your default search engine is as easy as possible.\"\n\nRight off the bat, a software
+  called \"Choice Guard\" has me wary. On one hand, preventing 'malicious programs'
+  from setting your homepage to TelusPortal.crap or Toshiba.Aol.blug is probably not
+  a bad thing... on the other hand... well... did you <em>read</em> that? "

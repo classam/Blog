@@ -1,0 +1,89 @@
+---
+title: '169'
+created: '2010-11-09T02:43:27+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "So, I'm home with 'the sickness', was surfing the intertubes, and the
+  plans for a simple-but-fun game jumped into my head. \n\nWell, it started out simple.
+  It got more detailed as time went on. \n\nThe supplies are fairly ornate - a board,
+  containing a 13x13 grid. A deck of cards. 60 tiles. A large handful of tokens, in
+  a different color for each player.  Some form of low-value currency, representing
+  'gold', in increments of 1, 5, and 10. 2-4 people. A 'first player' token. \n\nThe
+  game proceeds as follows: \n\n<h3>Glossary</h3>\n\n<strong>N</strong> - Wherever
+  you see \"N\", it means the number of players.  So, \"N+3\" means 5, if you have
+  2 players, 6, if you have 3 players, and 7, if you have 4 players. \n\n<strong>H</strong>
+  - The number of coordinate cards a player has in his hand. (N/2 = 1, if you have
+  2 cards, 2, if you have 4 cards, 3, if you have 6 cards...) \n\n<strong>Coordinate</strong>
+  - Each spot on the 13x13 board corresponds with an X,Y coordinate. This coordinate
+  matches up with a pair of cards from a standard deck of cards, with 'A' as '1' and
+  K as '13'. \n\n<strong>Coordinate Cards</strong> - Standard playing cards. \n\n<h3>Setup</h3>\nPlace
+  the tiles face down, shuffled, in a large, unwieldy pile.  Glare at the pile. \n\nPut
+  the board on the table, face-up.  Glare at the board. \n\nPut n+3 tiles, face up,
+  in front of each player. Give each player 5 gold. Glare at the players. Give the
+  'first player' token to some lucky schmoe. Glare. Begin the game. \n\n<h3>1. Upkeep</h3>\nAll
+  players receive one gold piece, per turn, regardless of their status. \nShould players
+  have Gold Mines, now is the time to determine how much additional gold they will
+  produce. Hand out the gold.\n\n<h3>2. Get Coordinate Cards </h3>\nEach player receives
+  a hand of 2 co-ordinate cards from the deck. If the player has Roads, they receive
+  more co-ordinate cards. \n\n<h3>3. Buy Tiles</h3>\nThe tiles for sale are the tiles
+  in front of the player with the 'first player' token.  The person who gets to buy
+  first is also the person with the 'first player' token. Players may choose not to
+  buy a tile on their turn. After the first player purchases or declines to purchase
+  a tile, the 'buy' passes clockwise to the player on his left.  Should the first
+  player decline to purchase a tile, he may <em>not</em> decide to purchase a tile
+  again.  Players may purchase as many as H/2 tiles. \n\nAs soon as a player purchases
+  a tile, he must place it on the board, at the set of coordinates defined by two
+  coordinate cards from his hand.  He then must place a token on that tile, to mark
+  it as his, and discard the coordinate cards.  \n\n<blockquote>Say, for example,
+  Jonathan has a 7 and a K in his hand - after Jonathan buys a Farm for 1 gold, he
+  must place it at either coordinate 7K or coordinate K7. </blockquote>\n\n<h4>Tiles
+  are drawn from the following set: </h4>\n\n<ul>\n<li>Quantity: 8, Cost: 0 - Wall(
+  Creatures may not intersect walls. )</li>\n<li>Quantity: 4, Cost: 1 - Farm (Generates
+  3 gold at time of purchase.) </li>\n<li>Quantity: 4, Cost: 2 - Pit (Anything intersecting
+  a pit is consumed. A pit may be played on top of any other tile. A pit may be played
+  anywhere on the board. )</li>\n<li>Quantity: 4, Cost: 3 - Thief ( Kills bureaucrats.
+  Steals property. Moves. )</li>\n<li>Quantity: 4, Cost: 3 - Monster ( Kills thieves
+  & bureaucrats, destroys property. Moves. )</li>\n<li>Quantity: 4, Cost: 3 - Hero
+  ( Kills monsters and thieves.  Moves. ) </li>\n<li>Quantity: 4, Cost: 3 - Bureaucrat(
+  Kills heroes.  Moves. If a bureaucrat is on a property, that property is twice as
+  useful as normal - the Gold Mine produces 1 extra gold during the upkeep phase,
+  the Road produces 1 extra coordinate during the coordinate phase, and a Castle is
+  worth 2 Castles for the purposes of winning the game. )</li>\n<li>Quantity: 4, Cost:
+  3 - Road ( Generates 1 extra co-ordinate card per turn. )</li>\n<li>Quantity: 8,
+  Cost: 4 - Gold Mine ( Generates 1 gold per turn. )</li>\n<li>Quantity: 12, Cost:
+  6 - Castle ( The first player to have (12/N)+1 castles under his control wins the
+  game )</li>\n</ul>\n\nFor the sake of resolving the Thief and Monster special abilities,
+  'property' is the Road, Gold Mine, and Castle tiles. \n\n<strong>Wicked Witch of
+  the East - </strong> A Pit may be dropped on anything.  A wall, farm, gold mine,
+  castle, or road may be dropped on a thief, hero, monster, or bureaucrat, which <a
+  href=\"http://tvtropes.org/pmwiki/pmwiki.php/Main/DroppedABridgeOnHim\">destroys
+  the creature</a>. A creature can <em>not</em> be dropped on another creature, and
+  a property can <em>not</em> be dropped on another property.\n\n<h4> 4. Move </h4>\nStarting
+  with the player with the 'first player' token, everybody may move their creature
+  tiles.  Creature tiles are the Hero, Bureaucrat, Monster, and Thief. Each creature
+  may move three squares in a turn - vertically or horizontally, but not diagonally.
+  \ Each player may move one creature before passing play to the left. If play returns
+  to the original player, he may play another, repeating until all players have moved
+  their creatures. A player declining to move any creatures forfeits his right to
+  move creatures for the rest of the turn. \n\n<strong>Where we're going, we don't
+  need - </strong> Moving into a 'road' tile does not count against movement.  A creature
+  crossing 2 road tiles on his turn would be able to cross 5 tiles worth of space.
+  \n\nCreatures may move across or end their move on Farms, Roads, Castles, Gold Mines
+  or enemy creatures.  They may not move across or end their move on Pits, Walls,
+  or friendly creatures. Should a creature end its move on an enemy creature of the
+  same type (Bureaucrat on Bureaucrat, or Hero on Hero), they are both destroyed.
+  \ All other effects (listed by tile) occur when the creature ends its move.\n\nDestroyed
+  tiles go back into the tile pile. \n\n<h4> 5. Replenish </h4> \nThe player holding
+  the 'first player' token shuffles the tiles in front of him back into the tile pile.
+  He then draws N+3 more tiles. \n\nThe discarded coordinate cards are shuffled back
+  into the deck. \n\n<h3> 6. Player </h3>\nThe player holding the 'first player' token
+  passes that token, clockwise, to the player on his left. \n\n<h3> Variant Rules
+  </h3>\n<strong>2-Player Walled Garden</strong> - The board has a line of 'double-coordinate'
+  squares - (1,1) , (2,2), (3,3), ... (K, K) - Imagine this as a 'property line'.
+  Each player chooses a side of the property line and must play all tiles behind that
+  side of the wall.  Both players can play tiles on the double-coordinate squares.
+  Pits may be played anywhere on the board. \n\n<strong>It's a Small World </strong>
+  - 2 players may wish to discard and re-draw any co-ordinate cards &gt;= 10 to reduce
+  the size of the world on which they play. "

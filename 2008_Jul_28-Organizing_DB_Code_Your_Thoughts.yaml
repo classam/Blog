@@ -1,0 +1,42 @@
+---
+title: ! 'Organizing DB Code: Your Thoughts?'
+created: '2008-07-28T11:03:44+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "I am stuck with a pickle.\n\nI have a large block of code that I edit
+  on a fairly regular basis- and I'm getting slower and slower with this large block
+  of code. It started out small and lithe, but has blown up into 900-lines of spaghetti
+  code- oh, well-structured spaghetti code divided into clearly-named functions, but
+  it's all getting to be too much to fit into my head at once. It's making changes
+  to the code much harder than they should be. \n\nSo, how do things get so out of
+  control? \n\nLet's briefly discuss database code. \n\nWhen you first encounter databases,
+  you almost inevitably have a snippet of database code borrowed straight from <a
+  href=\"http://us2.php.net/manual/en/mysql.examples.php\">The Book</a> just socked
+  right in your site's display code.  This is, of course, messy and horrible.\n\nSoon
+  (for me, it was about 5 minutes), you come to realize that you can fold all of that
+  database code up into a function- saving yourself many hours of time and debugging.
+  \n\nOnce you've done that, it becomes painfully clear that all of the start-up and
+  take-down code for the database is common to all of the database functions.  You
+  set up a database class holding connection data and start-up/take-down code, and
+  then just fill it in with functions for each individual query.  This is how I operated
+  when I was in Waterloo, and it was (overall) a pretty slick system that kept code-bloat
+  down and the codebase organized.\n\nAs a further refinement to the process- having
+  a master class with connection details, then subclassing it into categories based
+  on the sort of data being pulled- turned out to be a pretty good way to keep the
+  files small and easy-to-edit.  No use worrying about Unrelated Table X when I'm
+  making queries against Table Y, right?\n\nBut with the project I'm currently working
+  on, the number of things this one database is called on to do is growing to be larger
+  and larger- and with it, the list of functions.  And, worst of all, a number of
+  these functions depend on one another to operate properly- the database doesn't
+  have a lot of clean 'division lines'. \n\nOn one other, also-large bit of database
+  code, I ended up sorting all of the individual queries into their own tidy-little
+  files, with a master class to handle connection details and any complex multi-query
+  datasets.  It took about a day to set up, but ended up making my life much easier.
+  \ I'm thinking that this may be the way to go with my 900-line monster.\n\nBut before
+  I do, my question is - how do *you* go about organizing large chunks of DB code?\n\nAnd
+  don't say \"With an <a title=\"Wikipedia: Object-Relational Mapping\" href=\"http://en.wikipedia.org/wiki/Object-relational_mapping\">Object-Relational-Mapper</a>\",
+  because that's cheating- well, not really, but I'm in the last few weeks of this
+  project, and it's too late to be fiddling around with .NET's <a title=\"Wikipedia:
+  Language Integrated Query\"  href=\"http://en.wikipedia.org/wiki/LINQ\">LINQ</a>."

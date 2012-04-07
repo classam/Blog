@@ -1,0 +1,10 @@
+---
+title: Browser Compatibility
+created: '2008-05-15T13:29:50+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "Aww, fuck you, EA.\n\n\"The Minimum Browser Requirement is IE5 or Greater\"
+  \n\nFirefox is greater. Can I use that? No. \n\nBrowser-sniffing is unprofessional
+  and you should <strong>never</strong> see it on a modern website. "

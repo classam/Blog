@@ -1,0 +1,40 @@
+---
+title: Yay MySFU!
+created: '2012-04-06T17:52:27-07:00'
+visible: false
+categories: []
+content_type: html
+content: ! '''); adminOverrideExpireDate = com.webobjects.foundation.NSKeyValueCoding$Null;
+  adminOverrideDate = com.webobjects.foundation.NSKeyValueCoding$Null; history = "ca.sfu.acs.amaint.AccountHistory
+  10e111d (com.webobjects.eoaccess.EOAccessFaultHandler _EOIntegralKeyGlobalID[AccountHistory
+  (java.lang.Integer)83230])"; physHomeDir = "/ugrad1/classam"; fixspool = 0; modemResources
+  = "com.webobjects.eocontrol._EOCheapCopyMutableArray 194b8f8 (EOAccessArrayFaultHandler
+  modemResources _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; forwardMail
+  = 0; academicPlans = "com.webobjects.eocontrol._EOCheapCopyMutableArray 86c81d (EOAccessArrayFaultHandler
+  academicPlans _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; sponsor =
+  -1; quotaChanged = 0; migrate = 0; sections = "com.webobjects.eocontrol._EOCheapCopyMutableArray
+  1a99544 (EOAccessArrayFaultHandler sections _EOVectorKeyGlobalID[Login (java.lang.String)classam])";
+  updates = "com.webobjects.eocontrol._EOCheapCopyMutableArray 3557c (EOAccessArrayFaultHandler
+  updates _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; shell = "/bin/csh";
+  owner = "ca.sfu.acs.amaint.Person 859af3 _EOIntegralKeyGlobalID[Person (java.lang.Integer)181701]";
+  adminOverride = com.webobjects.foundation.NSKeyValueCoding$Null; testPwchange =
+  0; seymourPwchange = 0; maillists = "com.webobjects.eocontrol._EOCheapCopyMutableArray
+  17fcdf1 (EOAccessArrayFaultHandler maillists _EOVectorKeyGlobalID[Login (java.lang.String)classam])";
+  gcos = "Curtis Lassam"; gid = 1000; homeDir = "/home/classam"; cipherPassword =
+  "VKJoJ/7IOQI="; destroyDate = com.webobjects.foundation.NSKeyValueCoding$Null; createDate
+  = 2004-06-26 00:54:27 Etc/GMT; accountClass = "U"; anon = 0; uid = 51191; mailserverPwchange
+  = 0; contacts = "com.webobjects.eocontrol._EOCheapCopyMutableArray c3e167 (EOAccessArrayFaultHandler
+  contacts _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; warnDate = com.webobjects.foundation.NSKeyValueCoding$Null;
+  loginMaillists = "com.webobjects.eocontrol._EOCheapCopyMutableArray cb3bd0 (EOAccessArrayFaultHandler
+  loginMaillists _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; username
+  = "classam"; webctPwchange = 0; adminOverrideReason = com.webobjects.foundation.NSKeyValueCoding$Null;
+  catacombPwchange = 0; accountLists = "com.webobjects.eocontrol._EOCheapCopyMutableArray
+  e17436 (EOAccessArrayFaultHandler accountLists _EOVectorKeyGlobalID[Login (java.lang.String)classam])";
+  expireDate = com.webobjects.foundation.NSKeyValueCoding$Null; status = "active";
+  comments = "com.webobjects.eocontrol._EOCheapCopyMutableArray bc1031 (EOAccessArrayFaultHandler
+  comments _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; whistlerPwchange
+  = 0; quota = com.webobjects.foundation.NSKeyValueCoding$Null; deleteDate = com.webobjects.foundation.NSKeyValueCoding$Null;
+  aliases = "com.webobjects.eocontrol._EOCheapCopyMutableArray fba8bf (EOAccessArrayFaultHandler
+  aliases _EOVectorKeyGlobalID[Login (java.lang.String)classam])"; encryptedPassword
+  = "R8mWfto3LyyvA"; }; this = "ca.sfu.acs.amaint.Login 1587782 _EOVectorKeyGlobalID[Login
+  (java.lang.String)classam]'

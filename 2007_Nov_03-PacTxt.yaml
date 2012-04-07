@@ -1,0 +1,52 @@
+---
+title: Pac-Txt
+created: '2007-11-03T12:03:23+00:00'
+visible: true
+categories:
+- Humour
+content_type: html
+content: ! 'You awaken in a large complex, slightly disoriented. Glowing dots hover
+  mouth level near you in every direction. Off in the distance you hear the faint
+  howling of what you can only imagine must be some sort of ghost or several ghosts.
+
+
+  > ls
+
+  Huh?!
+
+
+  > look
+
+  You are in a long corridor. You may go forward or backward and there are glowing
+  dots in every direction. There is a glowing dot hovering near you.
+
+
+  > eat
+
+  You have eaten the glowing dot!
+
+
+  > go forward
+
+  Huh?!
+
+
+  > forward
+
+  You have moved.
+
+
+  > look
+
+  You are at an intersection. You may go forward, backward or right and there are
+  glowing dots forward and right. There is a glowing dot hovering near you.
+
+
+  > eat
+
+  You have eaten another glowing dot!
+
+
+  > forward
+
+  You have moved.'

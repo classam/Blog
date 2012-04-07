@@ -1,0 +1,26 @@
+---
+title: Cool For Cats
+created: '2007-10-03T13:18:13+00:00'
+visible: true
+categories:
+- Links To Other Stuff That Is Good
+- Needlessly Technical
+content_type: html
+content: ! '<img src="http://www.quantumpicture.com/Flo_Control/Bydoorsm.jpg" alt="Flo,
+  the cat." />
+
+
+  Image recognition is a tricky task, and one that computers tend to suck at.  One
+  clever fellow found a way around this by severely restricting the problem space
+  (It''s just dealing with black-on-white, it''s recognizing a shape that remains
+  fairly constant).. but that doesn''t stop <a href="http://www.quantumpicture.com/Flo_Control/flo_control.htm">this</a>
+  from being a super-cool thing to do. The DIY spirit is a good thing!
+
+
+  Of course, if I were to set up something similar, I''d forego the image-checking
+  process and just tell it to keep the door shut one out of ten times, then see how
+  long it takes for the cat to adapt to the door-that-might-not-open. Also, it would
+  be more fun to watch!
+
+
+'

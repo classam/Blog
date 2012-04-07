@@ -1,0 +1,49 @@
+---
+title: ! 'Dear ADV Films: I Hate Your Website.'
+created: '2007-11-28T21:18:57+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "Dear ADV Films:\n\nI'm having trouble with your website.\n\nI'm just quickly
+  going to outline the process of placing an order, from my standpoint.\n\nFinding
+  collections on your site was a difficult process at best.  Searching for the word
+  'collection' didn't produce very good results. I eventually made do by searching
+  for the word 'complete'- being that that word seems to appear in most of your collections.\n\nYour
+  'add to cart' button is a tiny shopping cart. Clever move. \n\nHaving added something
+  to my cart, getting back to search results is a chore.\n\nCheckout started out with
+  the customary 'giving you every possible piece of information about me', just shy
+  of my blood type and obscure sexual preferences.  \n\nClicking 'same as billing
+  address' for the shipping address reloads the page. Fun. Selecting a payment method
+  accomplishes nothing- all I get is a Javascript error. \n\n<blockquote >\nuncaught
+  exception: Security Error: Content at https://www.advfilms.com/Cart/BillingInfo/tabid/90/Default.aspx
+  may not load data from http://www.advfilms.com/DesktopModules/ListX/xListing.IM.aspx?lxC=0&lxP=0&\nlxS=lx&lxSrc=dnn_ctr488_xListing&pt=V&tabid=90&mid=488&tmid=178&RA=61526975
+  \n</blockquote>\n\nOkay. Great.\n\nClicking 'continue', I'm taken to a screen complaining
+  that I've failed to complete the \"Payment Information\" form. Which, of course,
+  is true, because the form died just moments ago.  Filling in my payment information,
+  I'm taken back to the same screen, once again complaining that I've failed to complete
+  the \"Payment Information\" form- not in a pleasant or user-friendly manner, mind
+  you, like so:\n\n<blockquote>\nThe following errors were identified: [ValidationMes,CheckCreditCardFields]\n</blockquote>\n\nClassy.
+  Classy. \n\nIt also kept needlessly insisting that my credit-card number have no
+  spaces or dashes. Of course I had (in fact) entered my credit-card number without
+  any spaces or dashes- but even so, why bother me with such a request when a single
+  line of code on your end could remove the dashes and the spaces from my credit card
+  number? \n\nNevertheless, I'm stuck here. I can't order what I want to order, because
+  your form won't let me. Even clicking on the 'Continue Shopping' button returns
+  me to the same broken billing page. \n\nOkay, let's try placing the entire order
+  again from scratch in Internet Explorer. (I use FireFox as my primary browser, alongside
+  40% of internet browsers.) \n\nRe-purchasing every item was fun. It gave me valuable
+  time to reconsider some of my more impulsive purchases and pare down my order a
+  bit.  This whole process was made more entertaining by the glacial slowness of the
+  website.\n\nOkay, and, checking out again. Except this time, my e-mail address is
+  already within the system.  So I guess I didn't have to re-find all of my purchases
+  after all- except now I have to go back and check to make sure that my cart doesn't
+  have double-the-items in it. Okay, I click the \"Continue Shopping\" button, and
+  it takes me to a page saying \"Server Error in / Application\" in bright red letters.
+  Nice.\n\nThrough some crookery, I find my way back to the main page and -lo and
+  behold-, I have a double-sized order sitting in my cart. Delete delete delete. \n\nOkay,
+  once again, let's try \"Checkout Now\". Okay, good, you've saved my shipping information.
+  Thank you. \n\nOkay, and.. \"Visa\". Nothing.  I'm using Internet Explorer 7, so
+  it doesn't have the common courtesy to tell me when something has failed. \n\nI
+  want to give you money in exchange for goods and services. Please don't make this
+  process any harder than is has to be. "

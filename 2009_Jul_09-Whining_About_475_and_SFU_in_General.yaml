@@ -1,0 +1,72 @@
+---
+title: Whining About 475, and SFU in General.
+created: '2009-07-09T23:17:42+00:00'
+visible: true
+categories:
+- University
+content_type: html
+content: ! "My prof for Software Engineering II is Danny Ridinger.  \n\nAt the beginning
+  of the semester, he professed an interest in iterative methods as opposed to the
+  tired old dinosaur of Waterfall methodology, but it's been several weeks, and it's
+  become painfully apparent that it is impossible to teach an old dog new tricks.
+  \n\nThe course has been an impenetrable fog of scheduling charts, meaningless paperwork,
+  and dated development techniques, straight from a man so ass-deep in \"process\"
+  that I suspect he hasn't seen a line of code in years.  He subscribes to the sort
+  of soul-sucking big-company software development techniques that treat people like
+  replaceable cogs, the ones that require ten pounds of status reports per week, the
+  ones where the entire software product needs to be planned, designed, and scheduled
+  in advance, preferably with as little input as possible from those untrained plebeians
+  who will be actually building the code.\n\nOur first assignment was a \"comparison\"
+  of RUP and Scrum, clearly one designed to paint Scrum in a bad light.  RUP has a
+  complete lifecycle model, while Scrum does not.  Of <em>course</em> Scrum does not
+  have a complete lifecycle model, it's not Waterfall-style development.  No matter
+  how much the RUP tries to come off as an iterative method, when software is developed
+  in discrete phases, each one with pre-planned schedules, and a set deadline, that
+  right there, sir, is Waterfall. Other signs include that an iteration takes 6-8
+  months.  That's not an iteration, captain, that's a full-fledged product.  Budget,
+  then schedule, then design, then code, then test. Waterfall. Bam.\n\nThe rest of
+  the course has been a mixed bag of poorly-presented concepts.  From techniques that
+  are considered niche, even in the software world, to poorly laid out and rambling
+  presentations about valuable real-life strategies.  The day after a 3-hour presentation
+  on Design Patterns, I spent 5 minutes explaining to a fellow student what a design
+  pattern really is, and why he would want to use one.  \"OH! That sounds useful!\"
+  \"They are. I have a book that you could borrow, if you're interested...\" \n\nMany
+  SFU students want the \"Software Engineering\" courses in CS revised to better address
+  new development methodologies - iterative design processes - as well as peripheral,
+  useful technologies like code repositories and debuggers.\n\nI think the problem,
+  though, isn't the syllabus.  The problem is that the people who are teaching the
+  courses just don't have the cutting-edge experience that we desire. They're professors.
+  Professors aren't around to teach cutting-edge software development techniques.
+  \ They're around to learn incredibly difficult and obscure mathematical concepts
+  and then apply them semi-usefully to the world of computers, getting published in
+  journals and slowly advancing the state of computer science.  Then, software R&D
+  departments read the papers published by the professors, filter out the useless
+  bits, and attempt to apply them usefully to new systems.  There is no space in this
+  loop for vocational training. \n\nWhen I came to SFU, I was stoically in support
+  of SFU being the sort of institution where students learned how to <em>develop software</em>.
+  \ I disagreed with some of my friends &mdash; the ones who think that Computing
+  Science and Software Development should be kept to separate institutions. \"If you
+  want to program, go to BCIT.\"  But I'm starting to see the light.  It's not that
+  SFU shouldn't teach software development.  It's that SFU <em>can't</em> teach software
+  development.  SFU, by definition, lacks the sort of people who would teach software
+  development well.  \n\n<em>That</em> is why we so dearly need the co-op program.
+  \ It provides the technical experience that SFU lacks.  I've learned more about
+  software development from my co-ops &mdash; not the theoretical stuff, mind you,
+  the real nitty-gritty <em>coding</em> stuff &mdash; than from all four years of
+  my computing science degree put together. \n\nSFU can teach theoretical computing
+  science well &mdash; it fits the institution like a glove.  SFU is about teaching
+  students Lisp and Haskell, parser theory, grammars, how to write artificial intelligences
+  that actually reason about things, what operating systems do and how they can be
+  made to do these things better, fun times with logic, and enough math to choke a
+  donkey.  What SFU can't do is teach students to code, or how to manage large software
+  projects, or even how to contribute to large software projects.  This is a thing
+  that professors don't <em>do</em>. \n\nThe only professor I've ever met who has
+  been responsible for a large, long-term codebase of his own &mdash; at least one
+  that he was willing to mention in class &mdash; has been Richard Vaughan, with his
+  <a href=\"http://playerstage.sourceforge.net/\">Player</a> robot software.\n\nSo
+  there is no place for Software Engineering I, Software Engineering II, or Information
+  Systems Design at SFU.  They teach fluff, nothing whatsoever.  They fill space.
+  \ They will always be mis-taught, for there is nobody to teach them properly.  I
+  feel that they should be removed entirely from the curriculum to make room for just
+  a little bit more theory. Force students to take Compilers, or Graphics, or something
+  painful and worthwhile, instead.  "

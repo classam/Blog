@@ -1,0 +1,173 @@
+---
+title: ! 'Comments: From First! to the Trees'
+created: '2009-10-30T04:45:47+00:00'
+visible: true
+categories:
+- Web
+content_type: html
+content: ! "Are we building blog software? A comic publishing engine? A CMS? A forum?
+  A photography site? A tutorial? A wiki?  Almost anything we build on the internet
+  is going to want some sort of comment system. As it turns out, <strong> comments
+  are hard.</strong>  In many systems, getting the comments right is the hardest part.
+  \ Some systems - like phpBB - are just comments all the way down. \n\nSo, <em>why</em>
+  are comments hard? \n\nOn many sites, the 'comment' system is the only way that
+  users can interact with a site.  Everything else is just 'passive viewing'. But
+  with user-facing input comes a bevy of new problems.\n\n<h3> Security </h3>\n\nWe
+  now have to guard against <a href=\"http://bobby-tables.com/\">Bobby Tables</a>
+  and <a href=\"http://en.wikipedia.org/wiki/Cross-site_scripting\">XSS injections</a>.
+  \ XSS injections can be sneaky, too - if, for example, we have failed to set a 'charset'
+  encoding for our site, User J can set it for us, and then use the alternate charset
+  to get stuff past our HTML-filtering radar. Bam, all of a sudden we're serving Scareware.\n\n<h3>
+  Spam </h3>\n\nA user-facing input is a target for every spammer and SEO greaseball
+  on the face of the earth.  Be it through Bayesian filtering (Akismet), turing test
+  (CAPTCHA), moderation, popularity ranking, or voodoo magic, the Spam must be managed.\n\n<h3>
+  Hit & Run Comments </h3> \nMost of the time, on a blog, comments are hit-and-run.
+  \ User Q leaves a comment and then escapes, never-to-be-seen again. \n\nOn more-frequented
+  sites, or sites with a little bit of community, if User Q put enough emotional investment
+  into a comment, he might check back once or twice to see if somebody else has responded.
+  One of the critical indicators of whether User Q will come back to check on his
+  or her comment is whether or not he or she believes that it will be responded to
+  - so a high traffic website will do better than a low traffic one.  \n\nThere are
+  numerous where User W has commented on my blog, I've commented 'back', and - I'm
+  sure- User W never returned to see my response. Why would they? \n\nHow do we bring
+  User Q back when somebody has commented on his post?  Some services (Facebook) send
+  an e-mail, which is frustrating and kludgy, but it works.  Some services just assume
+  that they're awesome enough that <em>we will be back</em>, and when we do, there
+  will be a glowing orange envelope to show us that someone has commented on our comments
+  - but this requires <strong>User Registration</strong>, which is a whole <em>new</em>
+  can of worms, because <em>nobody, anywhere, wants to register for anything</em>.\n\n<h3>
+  Structure </h3>\n\n<h4>Flat Chronological</h4>\nOn most blogs, and many forums,
+  commenting is <strong>Flat Chronological</strong> - a single line of comments, top
+  to bottom, in the order that they were posted. Flat Chronological is, easily, the
+  king of the commenting styles - it's the easiest to implement and the most common.
+  We find it in phpBB, twitter, Wordpress, and just about everything else in the universe.
+  \n\nThere are some problems with Flat Chronological, though. \n\n<h5>First!</h5>\nWith
+  chronological comments, the first guy to the party (User A!) will always be the
+  first guy you see in the comments.  Some people take their hunt to be 'first' so
+  seriously that they don't even care what they type, so long as they're at the top.
+  \ So they usually type 'first', as if it is an internet badge.  Sometimes, they
+  say 'frist'. They don't have TIME to correct that bad boy, because nothing's more
+  embarrassing than having \"First!\" be the second comment. \n\n<h5>Scroll Scroll
+  Scroll Scroll Scroll Post</h5>\nSo, User N has read the article. He wants to comment!
+  \ He checks the first few comments to see if anybody has said what he wants to say-
+  nope, they all just read \"First!\".  He immediately scrolls to the very bottom
+  of the 369-comment-pile and <em>makes his voice heard</em>.  Of course, User N's
+  argument has already been made 289 times in the pile.  But he don't care, because
+  who wants to sort through 369 comments? \n\n<h5> Nesting </h5>\nAnd now, User Y
+  and User G want to have a conversation in the comments. How does User G write his
+  comment so that everybody knows that he's calling User Y a \"fudgecaptain\", and
+  not, say, the original-poster?  Well, he has to reference User Y somehow, often
+  by typing \"@UserY\" - of course, anybody who's reading the post now must scroll
+  up to UserY's comment to see what User G was talking about.  So, in order to tidy
+  this up, User G must nest a little bit of context into his post - User Y's comment.
+  \ Modern forum engines do this so often that there's a button for it, and the nesting
+  can go pretty deep. \n\n<h4>Tree Chronological </h4>\nSo, in order to solve the
+  Nesting problem, every techie out there immediately springs to the first solution
+  that comes to mind. A tree. Now, a tree offers a pretty simple tradeoff.  <em>The
+  Good</em> is that it eliminates the nesting problem pretty effectively. <em>The
+  Bad</em> is that it breaks the page's chronology- it's hard to tell when a post
+  was made, based on position.  Determining what's new, and deciding where to start
+  and which leaves to follow, can be disorienting.  <em>The Ugly</em> is that a conversation
+  now takes place along the X axis instead of the Y axis - and browsers do not handle
+  'horizontal' that well. \n\nSo, going full-on Tree Chronological can be sluggish
+  and complicated.  A common solution is to have a broad, flat tree containing 'groups',
+  which contain 'categories', each one containing 'threads', which then contain Flat
+  Chronological content. This would be your canonical 'forum'. \n\n<h4> Flat Popularity
+  </h4> \nLet's say we ignore the Nesting problem and move right on to the Scroll
+  Scroll Scroll Scroll Post problem - in order to sort comments by importance with
+  a chronological list, we have to read every one of them.  That's just ugly - how
+  do we deal with that? \n\nWell, why not rank the comments by importance? That way,
+  we can tell which are the best comments and just push them right to the top. On
+  top of that, spammers can be punished pretty rapidly, and pushed so far down the
+  rankings that nobody will have to look at them. Popularity, though, is hard.\n\nHow
+  do we keep the popularity system from getting gamed?  If we just let people Like
+  or Dislike whatever they want, whenever they want, they'll just upvote themselves
+  until they're at the top. If we limit the votes to once-per-cookie or once-per-IP...
+  well, most of the people I know can think of trivially easy ways to <a href=\"http://musicmachinery.com/2009/04/27/moot-wins-time-inc-loses/\">get
+  around that</a>.  So, then, we can just restrict voting to Registered Users - remembering
+  that <em>nobody, anywhere, wants to register for anything</em>.  People can still,
+  though, register for 30 or 40 accounts by hand and then use a script to automatically
+  upvote their contributions and downvote the contributions of others.  Even if were
+  were to go so far as to CAPTCHA everybody who tries to upvote or downvote something,
+  people could still game the system by forming 'upvote blocs' like the legendary
+  Digg power-user bloc - and there's not a developer out there who thinks a captcha
+  for every upvote is a good idea. \n\nSo, you need a pretty advanced algorithm, social
+  or technical, to reduce the percentage of people who can successfully game the system.\n\nOf
+  course, it need not be that advanced if you don't have a big audience. The level
+  of 'system gaming' is really more determined by the importance of having a top spot.
+  \ A top spot at reddit or digg is worth something - it might mean 9000 or 10000
+  visitors to your site. A top comment at reddit or digg confers temporary bragging
+  rights and permanent-but-meaningless 'karma points'.  A top comment on, say, my
+  blog, wouldn't even be worth gaming the system for. \n\nOkay, so then, you also
+  need to determine which comments you should push to the top - how do you determine
+  which is the 'best' comment? Sorting by average rating is harder than it looks,
+  and the solution is head-splatteringly unpleasant: <a href=\"http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
+  \">How Not To Sort By Average Rating</a> - honestly, the upvotes-minus-downvotes
+  system still works fine for me - while it's not the most accurate, is still my favourite
+  technique.  Everybody understands it, at least. \n\nOkay, so, let's imagine we have
+  a reasonably-secure and reasonably-sensible popularity system for sorting 'reply
+  quality'.  With a 'flat' popularity system, we've totally broken the 'chronology'
+  of the comments - that means, we get single comments that try their very best to
+  shoot to the top, but conversation has died entirely because it's impossible to
+  determine who spoke first. \n\n<h4> Tree Popularity </h4> \nSo, now we have the
+  system of reddit - a <a href=\"http://www.reddit.com/r/programming/comments/9ymja/why_we_dont_support_internet_explorer/\">reply-tree,
+  with nodes sorted by popularity</a>.  We get easily followable nested conversations,
+  and we get sorting-by-importance, both in the same creamy package.  This, of course,
+  suffers from the most technical challenges of the bunch - sorting by popularity
+  and making a tree's \"horizontal\" conversations readable.  It's still hard to find
+  'new' posts. \n\nHaving the popularity on the vertical axis, though, and chronological
+  postings on the horizontal axis, is still a very solid way to organize a discussion.
+  I've certainly sunk enough time into reddit's system. \n\nAlternatively, consider
+  Slashdot - a Tree Chronological that uses popularity to hide unpopular comments
+  and embolden popular comments.  I'd argue that Slashdot has the problem where popular
+  comments responding to unpopular ones are shown with no context. (\"You're wrong.
+  The correct answer is: tumbleberries. +5 Insightful! \") - but it's just another
+  example of the myriad ways that popularity and chronology, trees and 'flat' structures
+  are used to form a comment system. \n\n<h3> Comment Size </h3>\nMoving on, let's
+  consider how much effort people put into individual comments.  The size of the text-box
+  and the tools that one gives a user to work with help determine what the comments
+  look like. Consider, again, reddit.  The reddit comment box is small, and tools
+  to format comments are in some variant of WikiCreole - minimally accessible.  Thus,
+  reddit comments are, on average, very terse.  The very-terse comments work well
+  with reddit's popularity-tree comment structure - some might argue that reddit's
+  comment structure wouldn't work with longer comments. \"Huge wall of text\" reddit
+  conversations, you'll find, can be very hard to follow; A wall of text with a tree
+  structure, like that, gives you a read that feels like a \"Choose Your Own Adventure\"
+  book.\n\nOn the other hand, StackOverflow is designed to support large, verbose
+  comments. It could be considered mostly a \"Flat Popularity\" system - while each
+  \"Answer\" can be commented on, these comments are a second class citizen in the
+  StackOverflow world.  The answers, though, they're big.  When a user writes one,
+  he gets a Big Comment Field and Writing Tools. \n\nReddit is about quick repartee,
+  and Stack Overflow is about blowing your load on a single comment - and you can
+  see it right there in the design of their respective comment systems. \n\n<h3> Personalization
+  </h3>\nOne can also look at how much personalization is allowed (or requested) in
+  comments.  A site has to be pretty popular to get it's users to the point where
+  they're willing to personalize at all - while it might have been popular in the
+  early days of the internet to plaster our mugs on every website that asked for it,
+  this is 2009, and we're all getting sick and tired of writing down our home city,
+  favourite breakfast, or programming-language-of-choice. \n\n<h3> Every System Is
+  Different </h3>\nOf course, there's no \"one true\" comment system - each comment
+  system, each commenting strategy has it's own pros and cons, and creates a slightly
+  different sense of community.  A phpBB forum style, especially one with very many
+  categories, is hopeless for a limited-audience website (say, a blog) - the broad
+  tree and low comment density makes the community feel empty, which means that people
+  will rarely check on their posts, which then means that people will post less often,
+  further lowering the comment density... well, let's just say that it's a spiral
+  that ends in an empty forum.  The best comment system for a low-traffic site is
+  probably a simple Flat Chronological - it's easiest to understand, and nobody wants
+  to have to learn a new system for just one site.  \n\nOn the other hand, some sites
+  - blogs, even- have Flat Chronological comments that get <a href=\"http://www.codinghorror.com/blog/archives/001306.html#comments\"><em>way</em>
+  out of control</a>. \n\nVery-restrictive systems can be good for keeping spam and
+  system abuse under control, but very open systems are more likely to attract people.
+  \n\nSome people like personalization and vast closed systems.  For these people,
+  a Facebook.  Some people like anonymity, an open system, and massive amounts of
+  tentacle rape porn.  For these people, a 4Chan.  \n\n<h3> Conclusion </h3>\n\nSo,
+  I've taken almost 2000 words to say something that everybody already knows: <strong>Comments
+  are hard</strong>, and if you're building a system with comments, you should have
+  a good, solid think about them before you dive in. Maybe you should write a long
+  blog post about them to help clarify your thoughts on the matter. \n\nIt didn't
+  work for me, but you can always try. \n\n<em>Aside: I'm publishing this at 9:45
+  tomorrow morning, because that seems like blog-post prime time. You're at work,
+  sippin' your cup of coffee, you've worked your way through your fast distractions,
+  and you're looking for something to save you from work for another 15-20 minutes.
+  </em> "

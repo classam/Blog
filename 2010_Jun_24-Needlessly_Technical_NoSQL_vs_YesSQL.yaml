@@ -1,0 +1,102 @@
+---
+title: ! 'Needlessly Technical: NoSQL vs YesSQL'
+created: '2010-06-24T14:05:47+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=13\">Needlessly Technical</a>\"
+  articles are dry, and boring, and cover some sort of computer-programming topic.</em>\n\nGreg
+  is currently involved in the process of <a href=\"http://gregbaker.ca/blog/2010/06/24/everything-i-know-about-databases-is-wrong-also-right/\">trying
+  to wrap his head around NoSQL</a>. Technologies such as Cassandra, Memcached, CouchDB,
+  MongoDB, BigTable, SmallTable, MediumTable, KitchenTable, SofaDB, CoffeeTable...\n\nAs
+  a dude who is <del>made of cheese</del> occasionally trying to keep tabs on this
+  whole \"Web Development\" thing, here's what I'm seeing so far. \n\n<h3>Pros</h3>\n\n<h4>NoSQL
+  solutions (Cassandra, Memcached) are trivially parallelizable.</h4>  \n\nFollowing
+  the NoSQL debate in the ACM magazines, industry shills have been sending in article
+  after article complaining that \"<a href=\"http://cacm.acm.org/blogs/blog-cacm/50678-the-nosql-discussion-has-nothing-to-do-with-sql/fulltext\">SQL
+  already does that</a>\".  <blockquote> Every serious SQL DBMS (e.g., Greenplum,
+  Asterdata, Vertica, Paraccel, etc.) written in the last 10 years has provided shared
+  nothing scalability, and any new effort would be remiss if it did not do likewise.
+  </blockquote> - of course, when they say \"Serious SQL DBMS\", they mean SQL databases
+  that independently cost about as much as helicopters.  \n\nMost web development
+  is driven, not by the enterprise crowd, but by the hobbyist crowd, people who can
+  only really afford to use MySQL or PostgreSQL.  MySQL clustering is roughly as complicated
+  and horrifying as testicle surgery, and even then they specify that such a solution
+  will only work well with 'mainly primary key access' and 'simple joins' - essentially,
+  if you don't read the entire book <a href=\"http://oreilly.com/catalog/9780596003067\">High
+  Performance MySQL</a> and follow every dictate to the letter, you're fucked.  Other
+  options include distributing MySQL through an external software solution - sharding.
+  Also complicated and ugly. Distributed, high-availability MySQL requires a \"Database
+  Guy\".\n\nThe NoSQL solutions, however, make parallelization first-class, at the
+  expense of other fun features from MySQL, like complex joins, or data integrity.
+  \ Setting up a four or five computer memcached or Cassandra cluster is as easy as
+  a high-school girl at a college party. \n\n<h4>In NoSQL solutions, the only way
+  is the fast way. </h4>\n\nOnce again, I point at the book <a href=\"http://oreilly.com/catalog/9780596003067\">High
+  Performance MySQL</a>, because this is an important thing to consider - the very
+  importance of this book makes it quite clear that it is possible - nay, easy - to
+  write Low Performance MySQL.  Glancing through the myriad optimizations that one
+  can make to tables and queries - the sheer amount of voodoo required is staggering.
+  \ MySQL is a complex and complicated beast, one that allows the user to do most
+  anything, at the price of making it quite easily to accidentally do things <em>very
+  wrong</em>.\n\nNoSQL solutions are cryptic and difficult to understand, at first,
+  but the most cryptic and difficult thing about them is exactly how limited the querying
+  languages that they express really are. \n\nIn CouchDB, for example, the only way
+  to query is to write a 'map' function - a function that takes a single unit of data
+  and produces a 'key' for that data.  Then, a 'reduce' function, a function that
+  folds keys together.  After that, the software queries against the set of keys produced
+  by the map and reduce functions.  Expressing even simple operations in this manner
+  can be complicated and difficult.\n\nBut being as this is the only way to query
+  CouchDB, it is all-but guaranteed that actually accessing data in this manner will
+  be quite snappy.  There are no thousands of optimizations to be made because the
+  program itself is so much simpler than in MySQL.\n\n<h4> Flexibility </h4>\nNo Schema
+  required for a key-value store.  Chunk any ol' data in there.  This can turn out
+  to be pretty darned handy - in a project that I was working on, one where I took
+  output from Python's staggeringly sextastic <a href=\"http://www.feedparser.org/\">Universal
+  Feed Parser</a> - well, the output from the parser came back as a Python object,
+  a tree, one which serialized quite neatly into JSON and was just as easily crammed
+  into a CouchDB database.  A bot to check RSS feeds and store them in a database,
+  all in about 2 pages of code. \n\n<h4> HTTP/JSON access </h4>\nThis one is MongoDB/CouchDB
+  specific, but the ability to directly query a HTTP database and get a response in
+  JSON is neat for those constructing rich Javascript apps.  There needs to be no
+  intermediate data layer at all, just connect the app right to the DB.\n\n<h3>Cons</h3>\n\n<h4>
+  HTTP/JSON access </h4>\nAgain, MongoDB/CouchDB specific, but the ability to directly
+  query a HTTP database and get a response in JSON is all well and good, but the lack
+  of any authentication layer means that either all of the data is open-access, all
+  of the data is private-to-the-server (which means an intermediary layer is needed),
+  or a homebrew authentication layer needs to be concocted by hand. \n\n<h4>Documentation</h4>\nAs
+  it would turn out, documentation for anything but memcached is spotty at best. Nobody
+  knows quite precisely how to work these glossy new software behemoths, because nobody
+  ever bothered to publish more than the most cursory of docs for them.  And the main
+  database projects, what little documentation they have is better than the individual
+  language adaptations.  Looking at the couchdb-python module, the only way to discern
+  how to use the library at all was to read the code. \n\nIn the words of <a href=\"http://www.infoq.com/articles/API-Design-Joshua-Bloch\">Joshua
+  Bloch</a>, \"Documentation matters. No matter how good an API, it won't get used
+  without good documentation. Document every exported API element: every class, method,
+  field, and parameter.\" (Note that the conference talk he mentions, \"How to Design
+  a Good API and Why it Matters\", was excellent.) \n\n<h4>In NoSQL solutions, the
+  only way is the fast way. </h4>\nI listed this as a \"pro\" before, but ... well,
+  the restrictive query environment is a huge downside, too.  Sometimes it's nice
+  to be able to give SQL some gargantuan query to puzzle over for 10 seconds, eventually
+  producing exactly the report needed, in sorted order.  \n\nIn fact, for complicated
+  web applications - anything with users, user profiles, or <a href=\"http://tf2wiki.net/wiki/Hat\">complicated
+  hat-mechanics</a>, the ability to use INNER JOINs, LEFT JOINs, RIGHT JOINs, UNIONs,
+  INTERSECTs, and SORT BYs can be very, very helpful. \n\n<h4>Structure and Data Constraints</h4>\nWell-structured
+  data can be it's own documentation, sometimes.  Just looking at the \"CREATE TABLE\"
+  statement in a database can tell a developer a great deal about how the software
+  works. This is _not as easy_ in a non-relational database, especially one where
+  any given unit of data can be slightly different. \n\n<h4>MySQL can be pretty damn
+  fast</h4>\nWith a Database Guy on the team, somebody familiar with optimizing MySQL
+  tables and queries, somebody who can shard, shuck, jive, and moustache, MySQL can
+  be very fast, while still offering the modern features (JOINs, sorting, data integrity)
+  that people have come to enjoy from databases. \n\n<h4>That ACID taste in your throat</h4>\nMost
+  NoSQL solutions subscribe to the principle of <a href=\"http://en.wikipedia.org/wiki/Eventual_consistency\">eventual
+  consistency</a> - given enough time, the data will eventually propagate along the
+  entire cluster, but there's no guarantees that data in one place is the same in
+  another.  For non-critical data, like, say, 'blog comments' or 'high scores', this
+  is not a problem.  For other applications - say, payment processing, or perhaps
+  some sort of complicated hat system - ACID consistency is probably not such a bad
+  idea. \n\n<img src=\"http://upload.wikimedia.org/wikipedia/commons/c/ce/Porkpie.jpg\"
+  alt=\"Pork Pie\" />\n\n<h3>Verdict</h3>\n\nI think the verdict here is pretty obvious.
+  \ You should wear more nice hats.  They make you look dapper, and keep your head
+  dry when it rains. "

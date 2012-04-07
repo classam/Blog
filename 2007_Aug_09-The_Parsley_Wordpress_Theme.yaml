@@ -1,0 +1,35 @@
+---
+title: The Parsley Wordpress Theme
+created: '2007-08-09T16:29:57+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "So, my uncle recently requested that I design a website for him.\n\nWe
+  sat down and started to talk about what he wanted to do with his site- Eventually,
+  we worked out that he wanted to write about his experiences as a chef and his thoughts
+  on food and nutrition, slowly build an audience, and then potentially sell some
+  restaurant-planning services. I suggested that instead of building the entire infrastructure,
+  we just build a blog to try to feel-out what he'd be writing, how often, and how
+  we should structure the site in the future. \n\nFrom there, I started working with
+  the 'fresh, simple food' theme that he gave me, and put together a few quick sample
+  themes in Photoshop.  At the time, I was strongly concentrating on designs that
+  were thin - thin designs fit in even the smallest monitors- so I concentrated on
+  delivering the entire experience in less than 770 pixels. \n\n<a href=\"http://www.curtis.lassam.net/images/antoniodesign/picnic%20800x600.png\">Picnic</a>\n<a
+  href=\"http://www.curtis.lassam.net/images/antoniodesign/sushi%20800x600.png\">Sushi</a>\n<a
+  href=\"http://www.curtis.lassam.net/images/antoniodesign/parsley%201024x768.png\">Italian
+  Parsley</a>\n<a href=\"http://www.curtis.lassam.net/images/antoniodesign/curry-1024x768.png\">Curry</a>\n\nLooking
+  back on these designs, I'm actually a bit embarassed about how unpolished they were.
+  \n\nWe eventually decided to work with the \"Italian Parsley\" theme.  The actual
+  construction of the site was very quick- I built the whole thing as a theme for
+  Wordpress, and hosted it with <a href=\"http://www.dreamhost.com/r.cgi?216909\">Dreamhost</a>.
+  \ It tested well in Internet Explorer 7 and Firefox, and only took a couple of days.
+  \ I installed Google Analytics and the Akismet spam-blocker on the site.\n\nUpon
+  delivery of the final product, I gave my uncle a quick run-through on how to use
+  Wordpress, guiding him through the process of logging in, posting an article, editing
+  an article, and checking his site analytics. \n\n<a href=\"http://www.chownow.ca/blog/\">Here's
+  the site</a>.  While my uncle was happy with the final product, he started working
+  on a new restaurant project a good week after the blog was completed, and hasn't
+  posted a single thing on the blog to date.  After a couple of e-mails asking whether
+  he was having trouble with the site or the software, I concluded that he was just
+  too busy to write anything. Ah, well.   "

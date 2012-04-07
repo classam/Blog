@@ -1,0 +1,58 @@
+---
+title: ! 'Web Basics 2: Servers'
+created: '2009-03-27T22:07:55+00:00'
+visible: true
+categories:
+- Tutorials
+- Web
+content_type: html
+content: ! "When it comes to implementing the HTTP protocol in all of it's thorny
+  goodness- and implementing it well - you need a server. \n\nYou are going to be
+  developing on a Linux machine.  No, you are not allowed to complain.  A Linux server
+  is fast, stable, and free- aside from hardware.  If you want a Microsoft server
+  with comparable features, you're looking at a financial outlay in the tens of thousands
+  of dollars for the software alone.  Ubuntu Server Edition is a great choice- it
+  comes with Apache, PHP, and MySQL preinstalled and preconfigured.\n\nFor development,
+  I recommend that you set up Ubuntu Server in a virtual machine on your computer.
+  \ After setting up SSH, you have shell access (which you can use to develop in Vim
+  or Emacs, if you're a hardcore old-school type), or you can mount the SSH drive
+  on your home rig- thus allowing you to develop with whatever editor you feel most
+  comfortable with.\n\nI tried setting up Ubuntu Desktop in a virtual machine on my
+  computer and just developing from that, but I can't stand Gnome.  It makes me want
+  to punch kittens.  If you're more tolerant of Gnome or kittens, you might consider
+  that route.\n\nOnce you have your OS in place, it's time to choose your server!\n\nYour
+  options include\n\n <ul>\n    <li><strong>Apache</strong>, which is heavyweight,
+  feature-rich, and fast.</li>\n    <li><strong>IIS</strong>, which is heavyweight,
+  feature-rich, fast,  proprietary, and mostly limited to proprietary Microsoft technologies.</li>\n
+  \   <li><strong>Lighttpd</strong> (\"Lighty\"), which is lightweight, feature-sparse,
+  and fast. </li>\n    <li><strong>nginx</strong>, which is lightweight-er, feature-sparse-er,
+  and fast. </li>\n    <li>and ... well, countless other possibilities.  <strong>Python's
+  Twisted</strong> libraries even include a little DIY Python web server that you
+  can tweak to your liking. </li>\n</ul>\n\nNotably, they're all fast.  None of these
+  are really a bad choice.  Well, maybe IIS is a bad choice.  However, because I've
+  never really used Lighttpd or nginx, I hate IIS with a fiery passion that will burn
+  throughout the ages, and I'm not in the mood to build my own server, and Ubuntu
+  Server comes with Apache pre-installed, we'll be talking about Apache. \n\n<h3>Apache</h3>\nWith
+  Apache installed, on your Linux machine, you can serve files.  If you are using
+  Ubuntu Server Edition, your document root is /var/www and you're serving files RIGHT
+  NOW. \n\nPut HTML files in there, HTML files will run.  Put images in there, image
+  files will download.  Put code files in there and... code files will download? That's
+  not right.\n\n<h3>CGI</h3>\nSo, you need to tell your web server to run it some
+  code!  This is where CGI (the \"Common Gateway Interface\") comes in. It's just,
+  essentially, a system for telling Apache \"When the user asks for this file, run
+  program X on that file and send the user the output.\"  - so, one might configure
+  Apache to automatically run 'python' on *.py files, and return the output from the
+  files instead of just the raw Python.\n\nThere's only one problem with this model-
+  a new process is spawned for every CGI request.  This gets ugly, fast.\n\nThere
+  are two common ways to get around this....\n\n<h3>FastCGI</h3>\nFastCGI is a special,
+  ultra-sexy CGI that speeds up calls by maintaining an open process and just passing
+  it files to deal with as they come.  FastCGI is popular- with system administrators,
+  because it's highly configurable, and with developers, because it supports just
+  about any language under the sun. \n\n<h3>mod_something</h3>\nHowever, for users
+  of the most popular web programming languages, there's an even faster, even closer-to-the-metal
+  solution.  Such mods as mod_perl, mod_php, and mod_python, embed the language interpreter
+  directly within Apache. \n\n<h3>configuring Apache</h3>\nFind apache2.conf.  Edit
+  it with a text editor.\n\n<h3>Some other fun things you can do with Apache</h3>\n\nGreg
+  Baker has posted a collection of interesting HTTP links, <a href=\"http://www.cs.sfu.ca/CC/470/ggbaker/links/markup\">
+  here</a>.  Of special interest are the links on caching, gzip compression, and load
+  balancing."

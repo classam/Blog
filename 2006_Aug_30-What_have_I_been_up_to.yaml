@@ -1,0 +1,85 @@
+---
+title: What have *I* been up to?
+created: '2006-08-30T03:12:10+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! 'So, my friend (Sarah) asks me to make her a website for her guild.
+
+
+  .. That''s what I''ve been doing. It''s <a href="http://205.250.6.210:8050/">here</a>.
+
+
+  I tossed a mockup of the website Sarah''s way, and she liked it- Wine and black
+  are always an attractive colour combination. The only problem is that her guild''s
+  colours are black and blue... So, I put together a second mockup and haven''t seen
+  Sarah since. No reason to cease work on the site, though.
+
+
+  So, first, I thought that I would do the thing in XHTML and CSS, because I haven''t
+  tried XHTML, yet.  The only problem with that route is that it would require hand-coded
+  XHTML and CSS- and while I know a bit of HTML, I''m much more used to assembling
+  sites using Dreamweaver.  .. Wait, that''s not really a problem, I enjoy coding.
+
+
+  But I thought to myself: If I build it in XHTML, they will have to do all site changes
+  through *me*. Either that or learn the markup language themselves.
+
+
+  Clearly, this site needs some sort of easy content management system. I decided
+  on WordPress, because.. well, I''m familiar with it, and it''s opensource, with
+  a robust theming system.
+
+  Unfortunately, the Wordpress themes look a lot like blogs and very little like Guild
+  websites- and even less like the bright theme that I designed in the first place.
+
+
+  Okay, so I want to fiddle with Wordpress themes.  That means I need a working copy
+  of Wordpress on my own private server. Which means I need my own private server.
+
+  A few l33t hax0rz later, I''ve turned my backup, Ubuntu computer ("Virgo", seen
+  earlier as the box sitting right next to my good comptuer) into a LAMP server. (Linux,
+  Apache, MySQL, PHP)- which is good, because now I can run WordPress off of it.
+
+
+  Okay, LAMP installed, WordPress installed.  Followed that up with phpBB, the forum
+  system- because that also requires a LAMP server, and I have one, so why not? Okay,
+  so now we have WordPress and a forum.. time to get my fingers dirty with the theme.
+
+
+  WordPress themes are written in PHP and CSS. I had to learn a bit of both to get
+  things done: And it took awhile.  I took the "Classic" theme and changed the code
+  a little here, and a little there.. eventually, the theme looked nothing like the
+  way it originally did. By the time I was done, I had a much more solid knowledge
+  of CSS - although because I did it via trial-and-error, some of the rules I could
+  actually read about for greater knowledge.
+
+
+  To strip out the unwanted elements, I had to play with the PHP code- as an example,
+  I didn''t want ''post categories''- categories don''t belong on a guild website,
+  just a blog. I found the code for that little bit and removed it.
+
+
+  After a few days of miscellaneous work, having almost completed the server/code/theme/etc..,
+  I found myself wanting to show it to some people, possibly.
+
+
+  */Confusing technical chunk/* Thanks to port forwarding (yay team router!) all incoming
+  traffic on port 80 is automatically routed to my server- but for some reason, nobody
+  could connect to my website from outside the home network. In fact, using Tor to
+  scramble my IP and connect from somewhere else on the internet caused the system
+  to choke, too. Oh my! It took me quite some time to realize that Telus blocks port
+  80 (as well as port 22, 23, 8080, pretty much anything that could be used as a server.)
+  The only way around such a restriction would be to use an unblocked port- 8050.
+
+  On a side note, I wonder if Tor could be used to cheat the pants off of Google Ads?
+  */Confusing technical chunk/*
+
+
+  That also explained why I couldn''t get SSH access to my Ubuntu box from anywhere
+  but home- SSH port changed as well, to avoid future such issues.
+
+
+  So, having resolved all of the major problems with the site, so far, I feel it''s
+  about time to .. uh.. find Sarah. Otherwise, who do I show it off to?'

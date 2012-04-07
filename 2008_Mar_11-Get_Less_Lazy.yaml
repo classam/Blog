@@ -1,0 +1,18 @@
+---
+title: Get Less Lazy
+created: '2008-03-11T16:56:32+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "The more time I spend with web-technologies, the more it irritates me
+  to see developers specifying that <em>This site must be viewed in FireFox</em>.
+  \ \n\nOkay, it's not quite so bad as specifying that a site <em>must be viewed in
+  Internet Explorer</em>, which is a really anger-generating move.  \n\nEven so, though,
+  at a bare minimum, your site should be usable in Internet Explorer 7, Firefox, Opera,
+  and Safari. If you're really masochistic, you can shoehorn IE6 support in, there,
+  too. Modern standards-compliant browsers can take just about anything you throw
+  at them, if you're using a flexible standards-compliant layout. Occasionally you
+  have to add a couple of extra lines of code to accomodate IE7, but even then it's
+  not too much trouble. \n\n<em>This site must be viewed in FireFox</em> means, to
+  me, <em>too lazy to test in Internet Explorer, Safari, or Opera. </em>"

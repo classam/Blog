@@ -1,0 +1,17 @@
+---
+title: ! 'Extremely Soft Launch: The Watchmaker''s Dilemma'
+created: '2012-01-15T02:44:51+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- The Watchmaker's Dilemma
+content_type: html
+content: ! "So, I've been working on a puzzle game in my spare time as an excuse to
+  dick around with Python, Javascript, and MongoDB. \n\nI've finally reached the point
+  where I have a working prototype.  I haven't applied any style, except for the absolute
+  bare-bones minimum to make a usable product.  Heck, I don't even have the domain
+  set up properly, yet. Darn slow registrar.\n\nIt's still in an unstable 'development'
+  mode ( Thanks to the magic of hooks, when I 'git push' from anywhere, it reboots
+  all the things. Try to get away with that on a production machine. ) - okay, okay,
+  I've prefaced this enough.\n\n<a href=\"http://50.112.114.149/\" title=\"The Watchmaker's
+  Dilemma\">Version 0.5</a>"

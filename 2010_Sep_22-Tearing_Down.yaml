@@ -1,0 +1,27 @@
+---
+title: Tearing Down
+created: '2010-09-22T21:41:35+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "Something about my site design was starting to get to me.  Too ... busy.
+  \ Too much gunk.\n\nSo I tore it all down, and replaced it with much, much less.
+  \n\n<pre>\nbody\n{ \n    /* A non-white background color to reduce glare and eyestrain.
+  */\n    background-color: #EEE;\n}\n\n#page{\n    /* A reasonable maximum width,
+  past which text blocks become unreadably long. */\n    max-width: 550px;\n    /*
+  Centered, for your comfort and mine. */\n    margin: auto;\n    /* A little bigger,
+  to accomodate for my tiny eyes. */\n    font-size: 1.1em;\n    /* With breathing
+  room between the lines. */\n    line-height: 1.4em;\n    /* And using a font that's
+  reasonably readable, and staggeringly common. */\n    font-family: Georgia, \"Times
+  New Roman\", Times, serif;\n}\n\nh2{\n    /* We don't want too much space between
+  the titles and the text. */\n    margin-bottom: 5px;\n}\n\nh2 a{\n    /* And the
+  bright-blue links for article titles is distracting. */\n    color: #111122;\n    /*
+  Might as well take away the wee underlines, too. */\n    text-decoration: none;\n}\n\n#page
+  img{\n    /* Center any images */\n    display: block;\n    margin: auto;\n}\n\nblockquote\n{\n
+  \   /* And finally, display blockquotes in italics. */\n    font-style: italic;\n}\n</pre>\n\nIt's
+  not much - it's really, really not much - but it's something to build on.  It also
+  made me thankful, as always, that I ripped the default Wordpress theme to shreds
+  and replaced it with some very, very light markup.  Even minimual styling makes
+  the site usable. Of course, if you really want usable blogs without any sort of
+  functional styling, you could always talk to my friend <a href=\"http://yangman.ca/\">Yang</a>. "

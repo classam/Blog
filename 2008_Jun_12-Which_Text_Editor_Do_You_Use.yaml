@@ -1,0 +1,77 @@
+---
+title: Which Text Editor Do You Use?
+created: '2008-06-12T19:36:04+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- Tutorials
+content_type: html
+content: ! "One of the most important things that every programmer learns is that
+  just about everything can be opened with in a text editor and fiddled with.  In
+  fact, opening a text editor and fiddling with things is basically what programming
+  is. \n\nClearly, the text editor is the most important tool in the programmer's
+  tool kit, and just as clearly, Notepad shouldn't be that tool.\n\nOh, don't get
+  me wrong- As a Windows user, Notepad is still pretty much my go-to editor for anything
+  that's.. well, a note.  My whole computer is littered with little text files with
+  names like \"Things Ted Has Told Me To Watch\" or \"Bacons Of The World\".\n\nBut
+  when it comes down to editing code, I likes me a good, general text editor with
+  a lot of features. Code highlighting, code-folding, block-indenting, a decent search-and-replace,
+  it's all important stuff.  Without code highlighting, I'm sure I'd make three times
+  as many errors as I forget to notice that I've closed a string or commented out
+  the wrong bits of a code block. \n\nNote how I didn't say IDE- Oh, I like IDEs,
+  too, but an IDE is for programming in an environment.  Visual Studio is for programming
+  in /insert Microsoft Technology here/, Eclipse is for programming in /insert Sun
+  technology here/, and you never want to jump beyond the bounds of their technology
+  barriers. \n\nFor anything that you're editing that's not Java or .NET- and that's
+  a wide world- a nice, general purpose text editor is definitely a must-have.  I've
+  tried a couple, and here's my thoughts on them.\n\n<h3> Notepad </h3>\nDon't use
+  Notepad.\n\nLet's try that again, but louder.\n\n<blockquote> Don't use Notepad.
+  </blockquote>\n\n<h3> gEdit </h3>\n\n<a href=\"http://www.gnome.org/projects/gedit/\">gEdit</a>
+  is notepad for Gnome- the notepad that comes standard in Ubuntu.  While Notepad
+  for Windows is woefully inadequate as a text-editor for code, gEdit is much more
+  multi-purpose.  It has code highlighting and tabbed editing, and- while feature-sparse-
+  is a competent enough little text editor.\n\n<h3> jEdit</h3>\n\nYou may not have
+  heard of <a href=\"http://www.jedit.org/\">jEdit</a>- most people haven't.  It's
+  been my go-to editor for some time, and I am quite fond of it- if anything because
+  I've grown used to it's quirks, ins, outs, etcetera.  \n\nIt's a Java-based text
+  editor, using Java plugins to add functionality for just about everything.  Of course,
+  because all of the plugins are built in Java, most of them don't actually work well
+  or do anything. \n\nThe feature that got me on board more than anything was the
+  dockable file browser.  When I'm working on a project, I like being able to see
+  all of my files from that project in the left-hand pane. Said dockable file browser
+  can also be ham-handedly coaxed into working with FTP or SSH, both convenient bonuses
+  for remote work. \n\nMy love of jEdit, however, is somewhat diluted by that same
+  property that eventually had me migrating from Azureus to uTorrent- Java may be
+  cross-platform, but it's the same across all platforms: clunky, ugly, and hugemongous.
+  \n\n<h3> TextMate </h3>\n\nSo, having recently purchased a computer from the fellows
+  at 1 Infinite Loop, I decided, instead of embracing the way of the cross-platform
+  Java editor, I'd try to see what Apple's large fanbase has cooked up as a way of
+  editing text on the Mac.\n\n<a href=\"http://macromates.com/\">TextMate</a> is *gasp*
+  shareware.  If you want the full package you have to <acronym title=\"pirate it\">pay
+  for it</acronym>.  Now, I'll support that- I use my Text Editor more often than
+  I use Team Fortress 2, Microsoft Office, or toothpaste.  I'm not really willing
+  to pay for it until I've decided that it's a must-have text editor for the Mac,
+  though. \n\nI am impressed by TextMate so far, however.  Like unto jEdit, it has
+  a variety of plugins (in this case, \"bundles\") that can be used to extend the
+  simple text editor into an IDE for every platform.  The difference, however, is
+  that TextMate comes with a whole schwack of good ones. \n\nWhile it's good, though,
+  it hasn't yet blinded me with science. (beep boop) \n\n<h3> Notepad++ </h3>\n\nSeeking
+  a less hefty editor for the PC, I decided to give <a href=\"http://notepad-plus.sourceforge.net/uk/site.htm\">Notepad++</a>
+  a try.  It's rather well-respected.  I've used it maybe two or three times- not
+  a lot, by any means- and it certainly has it's charm.\n\nIt doesn't display comments
+  in a monospace font, though. I'm not sure what to think about that.\n\n<h3> eMacs
+  & vim </h3>\n\nSo, as a programmer, you've long heard that there are two and only
+  two text editors: eMacs and vim.  They are the 'shizzat', the cream of the crop,
+  the top of the heap, and they did it *myyyyyy waaaaaaay*.\n\nSo given the fanfare,
+  I've tried both of them.  Oh, I don't use either- in fact, I find them both quite
+  frustrating.  I don't want to poke any bears- but eMacs and vim are difficult to
+  use, and a lot of their fantastically wonderful functionality have been replaced
+  by a recent technological innovation- the mouse. \n\nOn the other hand- you should
+  pick either emacs or vim and learn enough of it to navigate around. See, the thing
+  is- if you're doing work on a remote server, your choices are limited to emacs/vim
+  or...\n\n<h3> pico/nano </h3>\n\nPico, or Nano by another name, is the command-line
+  equivalent of Notepad, except with even less features.  There's no 'undo', even.
+  \ Honestly, pico/nano is quite possibly one of the worst text editors out there.
+  \ I'm not ragging on pico/nano, here- they're not meant to be big, beefy, powerful,
+  serious text editors- they're designed to be small and convenient, which they manage
+  expertly.\n"

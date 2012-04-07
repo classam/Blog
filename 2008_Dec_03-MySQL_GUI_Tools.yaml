@@ -1,0 +1,14 @@
+---
+title: MySQL GUI Tools
+created: '2008-12-03T04:58:17+00:00'
+visible: true
+categories:
+- Links To Other Stuff That Is Good
+- Needlessly Technical
+content_type: html
+content: While I was working at EA, I became a tad addicted to the <a href="http://dev.mysql.com/downloads/gui-tools/5.0.html">MySQL
+  GUI Tools</a>.  They're convenient and slick, and they make me a happy man. It's
+  the Query Browser, really- functionally equivalent to just opening ssh, logging
+  in, typing in 'mysql', and entering queries manually.  The big difference is the
+  fact that you get a bigger screen, multiple windows, and you can save queries and
+  data.

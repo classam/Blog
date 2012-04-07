@@ -1,0 +1,52 @@
+---
+title: Shawn's SubVersion Server
+created: '2007-06-06T23:37:42+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "<img src=\"http://www.curtis.lassam.net/images/wrenches.png\" alt=\"Wrenches\"
+  />\n\nSo, Shawn was wondering how to set up a SubVersion server...\n\nHere's what
+  you do.\n\n1. Take an old computer. Not a complete heap, but it certainly doesn't
+  need to be capable of mindblowing feats of graphical awesomeness.\n\n2. Go to <a
+  href=\"http://www.ubuntu.com/\">www.ubuntu.com</a>. Download 7.04, the Feisty Fawn.
+  \n\n3. Install Ubuntu on your heap.  While you're at it, you can toss a hard drive
+  or two in said heap and use it as a nifty file-server or music-server (My Ubuntu
+  box is a combination of file-server, music-server, and internet-access-when-my-laptop-is-in-my-bag-and-I'm-too-lazy-to-boot-it-up)\nHaving
+  lots of memory also plays well with SubVersion, which usually ends up holding a
+  lot of code.\n\n(3.5: Learn how to use the command line. Honestly, it's an important
+  skill. Not entirely necessary for what I'm describing here, but still important)\n\n4.
+  Connect your heap to the internet. I'm assuming you know the basics of home networking,
+  so I'm not going to motorboat your balls over this one.\n\n5. Look for online tutorials
+  on how to set up SubVersion on Ubuntu. Chances are, this'll involve something really
+  simple like 'sudo apt-get install subversion'. \n\n6. Do the same for ssh. If you
+  have a SSH client running on your computer, you can login from far-far away and
+  manage the heap- as well, you can use Filezilla's SFTP to access your files with
+  a convenient FTP interface. \n\n7. Go to no-ip.com and hook yourself up with a dynamic
+  DNS service. (Note: You can run the DNS update software on *any computer in the
+  same network as your SubVersion server* and it will work fine. )\n\n8. In your router
+  settings, make sure to forward the Subversion and SSH ports to the IP of your server.
+  If your router is nice-a, you can get it to always give the same IP to the same
+  MAC address (the MAC address of your server). \n\n9. You're pretty much ready. You
+  have a SubVersion server- now you just need to RTFM and set up a repository.\n\n10.
+  Notice that the performance isn't great if you're not in the same house as the server.
+  The upload bandwidth of your standard home connection is pretty limited- this isn't
+  great for media files by any means.\n\nThis is the hardest way to do things. Of
+  course, it's free, and a learning experience you probably won't regret.\nGiven that,
+  if you're looking to set up a SubVersion server much, much faster, get a <a href=\"http://http://www.dreamhost.com/r.cgi?216909
+  \">DreamHost account</a>.\n\nFor $10 a month, (paid a year at a time, pretty much)
+  \ you get 150Gb of space (dropped from an earlier 200Gb), a free domain registration
+  ('jansepar.com', for example) and 1.5 Tb of monthly bandwidth. They're currently
+  running a *ridiculous* offer whereby if you use the promo code 555, you can get
+  $50 off, 500Gb of space, 5Tb of bandwidth, and 5 free domain registrations: Try
+  to hop on that one while it's still available: Good deal.\n\nIf that doesn't work,
+  enter the promo-code SAUSAGEMEAT and you'll get $20.00 off, courtesy of me. (And
+  you'll be helping this blog stay afloat. Woo. )\n\nKeep in mind that filling 200Gb
+  of webspace is nary impossible on a standard DSL line: You'd have to be uploading
+  constantly for weeks.\n\n<a href=\"http://www.dreamhost.com/r.cgi?216909 \">Dreamhost</a>
+  offers amazingly easy SubVersion repository setup, amazingly easy e-mail setup,
+  and a tonne of other perks- at the cost of occasional slowness and downtime- and
+  it's still a shared server, so there are lots of neat things you can't do. It's
+  certainly not the /best/ solution, but if you want to set up a SubVersion repository
+  quick, maybe carve out a little spot for yourself on the internet.. well, it's there
+  for you.\n\n"

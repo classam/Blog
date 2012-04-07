@@ -1,0 +1,87 @@
+---
+title: ! 'Job Interviews : The Lassam Test'
+created: '2009-07-04T00:37:34+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "As a young developer, I've attended more than my share of job interviews.
+  \ They seem always to end up the same way.  You get the \"HR Questions\" - a series
+  of questions about your future aspirations, who you are, basically just talking
+  about yourself at whomever is interviewing you.\n\nInexperienced companies will
+  hire you after the \"HR Questions\", without any sort of verification of your technical
+  abilities. \n\nMore experienced companies, however, will ask you the \"Tech Questions.\"
+  \ The tech questions are a series of knowledge questions about various technologies.
+  \ If they're well chosen, they're a great way to filter people who know what they're
+  doing from people who are utterly clueless.\n\nWell selected questions can be a
+  great boon when it comes to gauging the technical competency of workers when it
+  comes to a specific technology.  If you claim to have 3 years of experience with
+  SQL, and you do not understand what a CREATE statement is, or what relational integrity
+  is, you can be dismissed off-hand as a goon. \n\nTechnical knowledge in a specific
+  domain, however, is not the be-all and end-all of programming.  Many \"domain experts\"
+  can write code that is downright ugly. \n\nThus, I demonstrate the <strong>Lassam
+  Test</strong> &mdash; the point of which is to gauge 'programming instinct'.  It's
+  hard to describe what 'programming instinct' is, but it's that part of every programmer
+  that can successfully identify <a href=\"http://en.wikipedia.org/wiki/Code_smell\">code
+  smells</a> and fix them. \n\nThe <strong>Lassam Test</strong> is as follows: Perform
+  a code review.  Pretend that you are a co-worker who will be responsible for maintaining
+  the code, and you have been tasked with reviewing the following code snippet. \n\nHighlight
+  problems and suggest solutions. \n\n<pre class=\"brush: php\">\n\nfunction display_stuff()\n{\n\tprint
+  \"&lt;ul&gt;\"\n\t$conn = mysql_connect( \"mysql.foo.org:412\", \"skookum\", \"tinydancer\"
+  );\n\tmysql_select_db( \"skookum\", $conn );\t// selects a db\n\t$query = \" SELECT
+  * FROM main WHERE id > \" . $_GET[\"id\"]. \";\";\t\n\t$results = mysql_query( $query,
+  $conn);\n\twhile( $row = mysql_fetch_assoc($result) )\n\t{\n\t\tprint \"&lt;li&gt;\".$row['description'].\"&lt;/li&gt;\";\n\t}\n\tprint
+  \"&lt;/ul&gt;&lt;br /&gt;&lt;ul&gt;\";\n\t$query = \" SELECT * FROM main WHERE id
+  < \" . $_GET[\"id\"]. \";\";\t\n\t$results = mysql_query( $query, $conn);\n\twhile(
+  $row = mysql_fetch_assoc($result) )\n\t{\n\t\tprint \"&lt;li&gt;\".$row['description'].\"&lt;/li&gt;\";\n\t}\n\tprint
+  \"&lt;/ul&gt;\";\n}\n\n</pre>\n\nNow, the code I've presented is literally <em>swimming</em>
+  with bad design decisions and code smells.  \n\nLet's begin. \n\n<ul>\n<li> <code>display_stuff</code>
+  is the second worst possible name for this function. It doesn't tell us anything
+  about what the function does, or why.  </li>\n<li> There's also no function-level
+  comment to clarify what task this function performs.  The only way to truly know
+  what's going on is to peer into the function. </li>\n<li> \n<li> This function combines
+  display, logic, and database code. It's essentially a big wad of loose logic. </li>\n<li>
+  The database connection details are included as hard-coded values.  This suggests
+  that the programmer has been doing this with all of his database code - which means
+  that if said programmer wants to change the database server location, or password,
+  or database name, he is going to need to change the connection details every time
+  they're used in the code. </li>\n<li> Let's not forget that the database API is
+  being directly used in the code, in such a way that switching from, say, mysql to
+  postgresql throughout this codebase would be an utter nightmare. </li>\n<li> The
+  mysql database connection is not checked. What happens if it fails? </li>\n<li>
+  <code>//selects a db </code> as a comment right next to the mysql_select_db function
+  is pretty darned useless. </li>\n<li> The query allows data from the $_GET field,
+  from the user, unfiltered, straight into the database query.  This is quite possibly
+  the most dangerous part of the entire script, as a single little Bobby Tables could
+  take this coder's database down in a flash.</li>\n<li> The SQL query selects \"*\"
+  from main, when all it seems to be using is the 'description' field.  This is inefficient
+  - and it's harder to tell what sort of data will be returned by a query when it
+  is not made explicit as part of the request. </li>\n<li> The results from the SQL
+  query are not checked. What happens if it fails? </li> \n\nThere's more, much more,
+  wrong with this code snippet, much of which is related to it's fundamental lack
+  of architecture.  It's brittle code, and it will break at the first sign of trouble
+  or change. It's also a strong warning sign of a brittle system, one that will, once
+  again, break at the first sign of trouble or change. \n\nMy ultimate recommendation
+  here would be aggressive refactoring of the system to eliminate hard-coded variables,
+  separate display logic from database logic, and include much more robust error-checking
+  and management - with an eye for more descriptive function names & comments. \n\nThis
+  is the underlying concept of the <strong>Lassam Test</strong> &mdash; can your potential
+  hire identify bad code, when he sees it?  Does he see deep structural problems,
+  or does he dwell unnecessarily on trivialities such as brace-style? \n\nIt's not
+  hard to construct additional examples &mdash; just take best-practices and violate
+  them horribly.  Program unsafely.  Fail to anticipate errors or changes in the code.
+  \ Nest 10 deep, and never use a loop when brute force copy-pasting will do.  Construct
+  massive object hierarchies with confusing and contradictory inheritance rules, and
+  then break base-class functionality in child-classes.  Use functional programming,
+  but use it wrong.  Be exceedingly clever, even when you don't have to and nobody
+  wants you to.  Name your variables after favourite childhood pets, letters, or incomprehensible
+  acronyms.  Resist modularization, construct god-objects, and keep large blocks of
+  commented-out code around forever.  Learn <a href=\"http://freeworld.thc.org/root/phun/unmaintain.html\">how
+  to write unmaintainable code</a>, and embrace every <a href=\"http://en.wikipedia.org/wiki/Anti-pattern\">anti-pattern</a>
+  you can get your hands on. I can keep going, on and on, and on and on and on.  There
+  are as many ways to screw up code as there are stars in the sky.  \n\nIf a potential
+  hire can take a red pen, go over the code, and show you what needs to change, why,
+  and how, you've got a keeper on your hands.  I'll admit that calling this <strong>The
+  Lassam Test</strong> demonstrates an awful lot of hubris, but &mdash; well, hell,
+  I just love putting my name on everything. I call that <strong>The Lassam Nomenclature
+  System. </strong>. "

@@ -1,0 +1,76 @@
+---
+title: ! 'Are You Living In A Computer Simulation: Probably Not'
+created: '2009-04-19T03:30:01+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "Those of you who browse reddit frequently may have encountered the following
+  paper: <a href=\"http://www.simulation-argument.com/simulation.html\">Are You Living
+  In A Computer Simulation?</a>.\n\nYou can read it, if you like.  It's a bit wordy,
+  but the gist of the argument is this: start with the postulate that posthuman civilizations
+  will have computing power enormous enough to run 'people simulators'.  The argument
+  is then, either, \n<ol>\n<li> Humans will never reach the 'posthuman' stage. </li>\n<li>
+  Posthuman civilizations will never run 'people simulators', or</li>\n<li> It is
+  almost certain that you are currently running in a computer simulation. </li>\n</ol>\n\nThe
+  author argues that - being as we're unsure as to which one is actually true- we
+  should assign each possibility an equal chance.  \n\nNow, here are my objections
+  to the theory. \n\n<strong>1.  Universes can't be simulated very easily. </strong>
+  While running a 'people simulator' shouldn't be altogether too difficult- I mean,
+  there's only so much 'people' to go around- our environment is a much more tricky
+  matter.  It would be impossible to run a simulation of the universe down to the
+  quantum level- for one thing, storing a universe full of data would require at least
+  an equivalent universe full of data storage.  (If you think about it, even if we
+  used the quantum spin of every electron in the universe to store data, we would
+  only have enough data storage to hold the quantum spin of every electron in a universe.
+  ) \n\n<strong>2. Computers are Hard </strong> When it comes down to it, some computer
+  problems just can't be solved in a reasonable amount of time.  It's easy to work
+  on computers and run into a problem that will take too long to solve, regardless
+  of processor power.  Very large data sets with exponential or factorial solution
+  times become literally impossible to solve for - and n-body simulation of an entire
+  universe would certainly fall under this purview.   Even with nigh-infinite computing
+  power at our fingertips, nigh-more-infinite computing speed would be required to
+  solve some of these problems.  The estimate of 10^36-10^37 operations per second
+  to simulate all of human history seems a bit naively low- keeping track of mere
+  gravity for a single galaxy worth of atoms (10^69 atoms- large data set, and then
+  an exponential growth rate to the algorithm's run time) would require a lot more
+  computing speed than that. \n\n<strong>3. Universe-Spanning Supercomputers are Bound
+  To Be Expensive</strong> - Even expecting that we'll find ways to build planet-sized
+  supercomputers that can perform untold numbers of operations per second and store
+  unimaginable amounts of data - assuming there are no as-yet-undiscovered physical
+  laws of the Universe putting hard universal caps on this sort of thing- putting
+  an entire planet or galaxy to work simulating a little mini-Earth would probably
+  be an expensive task.  We have a limited number of galaxies to work with, you know.
+  \n\n<strong>4. Lossy </strong> So, from 1 and 2, one can then conclude that a Universe
+  simulation would have to be extremely lossy - and by 'lossy' I mean \"If you're
+  not looking at Pluto, it's not there.\" The only trouble is, that means that in
+  order to keep us from discovering that we live in a lossy universe- by simulating
+  universal properties for us to discover- our simulation needs to be both omniscient
+  and super-intelligent.  While computing power may be tremendous in the future, omniscient
+  super-intelligent universe management sounds like a difficult software package to
+  put together, no matter how super-powered the hardware may be.  The Universe would
+  need to be Intelligently Designed- not simulated- and most people with a solid grounding
+  in the sciences have trouble accepting Intelligent Design for a <em>number</em>
+  of reasons. \n\n<strong>5. Infinitely Nested Lossy Universes. </strong> Simply enough-
+  if our Universe is heavily lossy, to save computational time and storage space,
+  we would lack the computational time and storage space to run our own Universe.
+  \ The sub-universe that we run would have to be aggressively simpler.  We then get
+  a sort of Matryoshka doll effect- with each Universe being significantly less complex
+  than the last.  I can't see this being possible for any more than one or two iterations
+  at best.  (In the same way, running a VM in a VM in a VM will suck up all of the
+  system resources of most of the VM's, and going more than a few iterations down
+  becomes extremely inefficient- and sort of pointless. ) \n\nSo, we now have the
+  three original postulates, revamped to address some of my concerns.  Either...\n<ol>
+  \n<li>Humans will never reach the stage where they have enough computing power to
+  simulate entire universes, be it by extinction or sheer lack of Universal computing
+  clout. </li>\n<li> Humans will not be willing to spend the incredible amount of
+  time and resources required to Intelligently Design and Manage every element of
+  a complex universe. </li> \n<li> You are almost certainly living in a computer simulation.
+  </li>\n</ol>\n\nNow, given that these are all unknowns, we could assign them an
+  equal chance of being correct- but that's not how unknowns work.  Instead, we will
+  assign much heavier likelihood to the first two, with a very mild chance that the
+  third- a wacky out-of-third-base theory- might potentially be correct.  In the same
+  way, however, there's a mild chance that the Christian God (or a Greek Pantheon)
+  might be intelligently designing and managing the universe in the same way.  I lend
+  little credence to any of these theories. \n\nThus: Are you living in a computer
+  simulation?  Probably not.  "

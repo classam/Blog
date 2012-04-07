@@ -1,0 +1,14 @@
+---
+title: ! 'This is the coolest thing ever. '
+created: '2007-10-11T19:40:23+00:00'
+visible: true
+categories:
+- Links To Other Stuff That Is Good
+- Needlessly Technical
+content_type: html
+content: ! "No, really, <a href=\"http://www.ted.com/talks/view/id/165\">this</a>
+  is the coolest thing ever.  Hod Lipson creates robots that use evolutionary algorithms
+  to guide themselves.  They flop around, they absorb one another, it's very cool.\n\nHow
+  could anybody concievably disbelieve evolution when we can actually *simulate it*?
+  \n\nIf an AI ever were created, I wonder what the first thing it would say would
+  be.  \"Hello, World\" would be pretty classy, but my money's on \"Kill All Humans.\"."

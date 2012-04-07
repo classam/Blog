@@ -1,0 +1,51 @@
+---
+title: XML/SOAP/WSDL vs. REST/XML for a .NET shop
+created: '2008-05-27T15:21:58+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "Briefly imagine a grizzled old gold prospector going \"I LOOOOVE ACRONYMS.\"
+  \n\n<h3>XML/SOAP/WSDL (.NET Web Services)</h3>\n\t<p><a href=\"http://en.wikipedia.org/wiki/SOAP\">SOAP</a>
+  is a XML-based \"Simple Object Access Protocol\" often used for Remote Procedure
+  Calls- SOAP messages are sent as XML data and responses are recieved as XML data.
+  </p>\n\t<p><a href=\"http://en.wikipedia.org/wiki/Web_Services_Description_Language\">WSDL</a>
+  is an XML-based \"Web Service Definition Language\" which tells clients what the
+  server offers- This means that a clever client can look at the WSDL and automatically
+  provide an API to work with the SOAP-server- which is exactly what .NET does. </p>\n\t<p>SOAP
+  and WSDL 'piggyback' on HTTP, but can be used with other data transfer protocols
+  (even SMTP!) </p>\n\nPros:\n<ul>\n<li>Natively integrated into .NET as a \"Web References\"
+  framework.</li>\n<li>Trivially easy for .NET to produce and consume. </li>\n<li>We
+  already have a SOAP/WSDL/XML .NET Web Service. (Consistency is good!) </li>\n</ul>\n\nCons:\n<ul>\n<li>SOAP's
+  loose coupling with HTTP makes caching much more difficult</li>\n<li>SOAP/WSDL is
+  only just barely a plain-text protocol </li> \n<li> It's complex- .NET can produce
+  and consume it quite easily, but across platforms it can be very ugly to deal with
+  .NET's wayward output. </li>\n<li> The .NET generated SOAP/WSDL is fairly difficult
+  for languages that are not in the .NET family to consume. </li>\n<li> The super-ugly
+  XML in Coding Horror's \"<a href=\"http://www.codinghorror.com/blog/archives/001114.html\">The
+  Angle Bracket Tax</a>\" is SOAP- probably .NET generated.  </li>\n<li> This might
+  discourage external developers from wanting to do anything with your codebase. </li>\n</ul>\n\n<h3>REST/XML</h3>\n\t<p><a
+  href=\"http://www.xfront.com/REST-Web-Services.html\">REST</a>, for \"Representational
+  State Transfer\".  All data requests and retrieval are handled with HTTP GET/PUT/DELETE
+  requests. As an example, you could go to <code>http://sample.net/xml/sandwiches/reuben</code>
+  and retrieve the information for a Reuben Sandwich in XML format. </p> \n\nPros:\n<ul>\n<li>A
+  good REST/XML layout is easy for humans to understand and read - which makes it
+  much easier for developers to work with.</li> \n<li> With a minimal XSLT/CSS layout,
+  the XML output can actually be output in a pleasant, human-readable fashion. </li>\n<li>
+  .NET has fairly robust XML production and consumption tools. </li>\n<li> Javascript
+  has fairly robust XML production and consumption tools. </li>\n<li> Well suited
+  to optimizing for an all-read-no-write system, or a mostly-read-infrequently-write
+  system, on the off chance that that's what you're building.  </li>\n</ul>\n\nCons:
+  \n<ul> \n<li>Automated support for REST/XML is (apparently) planned for ASP.NET
+  3.5 SP 1, but has not been released yet. </li>\n<li>Hand-architecturing and coding
+  a REST system <em>well</em> can be difficult. </li>\n</ul>\n\n\n<h3>REST/JSON </h3>\n\t<p><a
+  href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a>, or \"Javascript Object Notation\",
+  is considered more attractive and readable than XML.  It's also trivially easy to
+  read into Javascript. Otherwise, this is functionally equivalent to REST/XML </p>\n\nPros:\n<ul>\n<li>Trivially
+  easy to read into Javascript</li>\n<li>More attractive than XML</li>\n<li>Good name.
+  \"JSON\". Yeah. It's a lot easier to say than \"XML\". </li>\n</ul>\n\nCons:\n<ul>\n<li>
+  .NET doesn't have native JSON support</li>\n</ul>\n\n<h3>XML-RPC</h3>\n\t<p> XML-RPC
+  is similar to SOAP - in fact, it's an earlier version of SOAP. It's more lightweight
+  and less feature-rich. </p>\n\nPros:\n<ul>\n<li>More lightweight than SOAP. </li>\n</ul>\nCons:
+  \n<ul>\n<li>Not automatically generated/consumed by .NET</li>\n<li>Really, it's
+  SOAP, just older. </li>\n</ul>"

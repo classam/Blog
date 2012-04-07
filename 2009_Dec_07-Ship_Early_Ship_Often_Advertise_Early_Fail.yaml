@@ -1,0 +1,52 @@
+---
+title: Ship Early, Ship Often, Advertise Early, Fail
+created: '2009-12-07T14:27:38+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "The internet is abuzz with response to Jeff Atwood's latest post - \"<a
+  href=\"http://www.codinghorror.com/blog/archives/001313.html\">Version 1 Sucks,
+  But Ship It Anyway</a>\". \n\nYou don't need me to summarize it for you - it's right
+  there.  In the link.  Release early, release often.  It's well known to programmers,
+  thanks to the full chapter devoted to it in the seminal \"<a href=\"http://catb.org/~esr/writings/homesteading/cathedral-bazaar/ar01s04.html\">The
+  Cathedral and the Bazaar</a>\". While open-source software is characterized by RERO,
+  the web lives by it.  Deployment of new features is free, and feedback can be instant.
+  Joy!\n\nHowever, one thing that is frequently ignored is... how soon should I start
+  telling people about my software?  Advertising to people too early in a project's
+  lifespan basically spells instant and permanent death for that product. \n\nWhile
+  it may be good to release early, the 'beta' of a new web service is very, very likely
+  to drive people away with it's lack of polish.  While users love the 'new', users
+  similarly hate products that are unusable, half-baked, or still in development.
+  \ Note that Google Mail, Google Maps, and StackOverflow were all complete products
+  before they started spreading the word amongst their users - while they have enjoyed
+  frequent revision and update, since, their first public offerings were robust enough
+  to draw people in.  They were 'beta' in the sense that they could still use a little
+  bit of revision and polish, not 'beta' in the sense that they were still sussing
+  out fundamental bugs.  World of Warcraft could be considered a product with a release-often
+  mentality, but they did not release early - the WoW beta was a long period of polishing
+  a product that was already seriously ready for prime time - and the people who participated
+  in the beta were among the first subscribers.\n\nNow, on the other hand, the game
+  Cities XL by Monte Carlo enjoyed a beta period that was almost more of an alpha
+  period.  Gamers involved had to deal with buggy client-side and server-side code,
+  forbidding them from communicating with one another, using fundamentally important
+  game features ('trading'), saving, or even connecting with the server much of the
+  time.  First impressions were formed, and while Cities XL did well in reviews as
+  a fairly run-of-the-mill city-builder with a lot of unnecessarily tacked-on MMO
+  features, the game suffered in public opinion as a buggy, underperforming mess of
+  half-implemented features.\n\nLet's also look at <a href=\"http://www.startups.com\">startups.com</a>,
+  a site that reddit has been advertising.  This is a company that raised VC, earned
+  a mention on <a href=\"http://www.techcrunch.com/2009/11/05/startups-com-becomes-a-qa-site-for-business-questions/\">TechCrunch</a>,
+  purchased the domain name for six-figures, purchased the software (from StackOverflow)
+  for another high premium, and then, it would seem, immediately pushed their product
+  into an advertising stage.  I'm not sure how the startups.com community was formed
+  (how is babby formed?), but it would seem that either startups.com tried to outsource
+  community building or they just left it up to whatever spammer came along.  Seriously,
+  this is a company by-the-numbers - it barely even needs a tech person on staff.
+  \ One thing it does need, however, is community building, and advertising it on
+  reddit before it was ready just shot it in the foot.  \n\nSo, while I believe in
+  \"Release Early, Release Often\", I'd like to append two corollories. \n\n<ul>\n<li>
+  <em> Never release anything that's broken. </em> - There's a significant difference
+  between 'needs polish' and 'doesn't work'.</li>\n<li> <em> Do not advertise a product
+  that is not prepared to impress. </em> - Otherwise you're just creating negative
+  word-of-mouth. </li>\n</ul> \n"

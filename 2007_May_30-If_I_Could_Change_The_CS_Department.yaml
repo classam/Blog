@@ -1,0 +1,75 @@
+---
+title: If I Could Change The CS Department...
+created: '2007-05-30T23:45:04+00:00'
+visible: true
+categories:
+- University
+content_type: html
+content: ! "<img src=\"http://www.curtis.lassam.net/images/phoenix.png\" alt=\"Phoenix\"
+  />\n\n<strong>1. 320 (Social Implications of a Computerized Society) really, really
+  has to go.</strong>\n\nIf you don't know why it has to go: It's rambling and useless,
+  and has little to no relevance to a CS degree. \n\nReplace it with a difficult writing
+  course emphasising clear, concise communication. As a project, make the students
+  find something that is painfully difficult to understand, and clearly describe how
+  to use it. Demonstrate the use of a some documentation solutions: Give a one-lecture
+  tutorial on how to use LaTeX effectively.\n\n<em>\"Oh no, CS students won't learn
+  ethics!\"</em>\n\nInclude a 10 minute segue: \"Don't shoot any hoboes. Don't steal
+  code. Don't be evil.\"\n\n\n<strong>2. 275 (Software Engineering) has to be fixed.</strong>\n\nReplace
+  it with 275-276 (Software Engineering I-II). The students will bring a software
+  project from start to completion in 8 months, with a 2 week break in the middle.
+  At the beginning of the course, students will be introduced to Waterfall, and why
+  they should probably not be using it unless they are building software for the Department
+  of Defense.\n\nLay out important things that have been learned in Waterfall, and
+  why we should abandon the mindset (first design, then code) and not the tools (we
+  still need to design before we code, but the design and code cannot occur independently
+  of one another.).\n\nIntroduce development methodologies that have shown success
+  in the past. Emphasize iterative techniques and \"Agile\" programming- But drive
+  home the fact that *methodologies* are just groups of *tools* that help programmers,
+  and sticking to one religiously is a recipe for failure.\n\nIntroduce proper source
+  control- not just a one-day lecture on \"Why Source Control Is Good\" but a good
+  solid amount of time on one specific source control system- with branching, and
+  merging, and all that jazz. In the academic tradition, we could choose something
+  that's interesting and has a lot of cool features, but nobody in the real world
+  uses (<a href=\"http://www.abridgegame.org/darcs/\">Darcs</a>).\n\nIntroduce proper
+  testing- not just how to write a unit test, but how to implement unit testing (JUnit,
+  because this thing's probably going to be written in Java), and what regressive
+  testing and <a href=\"http://www.ericsink.com/articles/Code_Coverage.html\">code
+  coverage</a> are. (Good things)\n\nAbandon Caucus. It's terrible.\n\nShow students
+  how to set up a development server.\n\nRun a tutorial on how to install <a href=\"http://subversion.tigris.org/\">Subversion
+  </a>and maybe <a href=\"http://trac.edgewall.org/\">Trac</a>. (Give them the option
+  to use a different system for source control/wiki/bug tracking if they're advanced,
+  but at least show them how to set up this option). This is one thing that really
+  irked me- 275 recommended Subversion as a source control option, but nobody on our
+  team had a computer with a static IP or any sort of server that we could run Subversion
+  on. Maybe one student in 10 knows about <a href=\"http://www.no-ip.com/\">no-ip.com</a>
+  (the free dynamic DNS service) and not a lot of students in 275 (sadly) know how
+  to set up a <a href=\"http://www.ubuntu.com/products/WhatIsUbuntu/serveredition\">random
+  home computer to serve as an server</a>.\n\nMake setting up a development environment
+  a homework assignment.\n\nAssign the students a fairly large project, but either
+  spend a few weeks teaching SQL in class or don't require database access. Look,
+  expecting a student to learn SQL in his spare time while taking 275 is ridiculous.
+  We usually have a pretty full schedule! If you teach SQL, show students how to set
+  up and maintain a SQL server (even a <a href=\"http://www.sqlite.org/\">really easy
+  one</a>) on their development environment.\n\nChances are, the project is going
+  to be built in Java: Spend a little while teaching the AWT/SWING packages, and maybe
+  a Java GUI Builder, so that students can build a user-interface. Run through a few
+  basics of GUI Design, maybe 10 rules-of-thumb.\n\nTeach some <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">design
+  patterns</a>. \n\nIntroduce students to the <a href=\"http://en.wikipedia.org/wiki/Software_design_pattern\">GPL</a>.
+  (It's good for things that everybody needs, but bad for making poor programmers
+  into rich programmers).\n\nDon't build a Single Transferable Vote counting system.
+  Nobody wants to build one of those. Nobody wants to use one of those.\n\nGive students
+  a choice between a few potential projects, and a few development platforms. (Build
+  a text editor. Ubuntu/Windows/Mac, C++/Python/C#/Java)\n\nAt the end of the course,
+  the student should have a software project that they would be proud to show a potential
+  employer.\n\n<strong>\n3. The \"Information Systems\" path needs to be made much,
+  much harder.</strong>\n\nPeople take 301 (Information Systems Management) and 370
+  (Information Systems Design) because they're easy, GPA-boosting courses. People
+  take 354 (Database Systems) because either (a: they need to know how to use a database
+  || b: they already know how to use a database, but want to take one of the myriad
+  courses that has 354 as a prerequisite and want some easy GPA-boosters).\n\nThanks
+  to the poor way that 275 is put together, 475 is regarded (unfairly? I don't know)
+  as a similarly soul-crushingly bad and pointless course. That leaves Databases 2,
+  Special Topics in Databases, and Web Information Systems (A course that most CS
+  students want to take because apparently Greg is an awesome prof.)\n\n\n<strong>4.
+  354 (Databases) should be a lower-division required course, and required for admission
+  to the co-op program (as well as 275-276)</strong>\n"

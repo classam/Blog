@@ -1,0 +1,11 @@
+---
+title: Find The Shortest Path Between Any Two Wikipedia Articles
+created: '2008-05-27T15:48:45+00:00'
+visible: true
+categories:
+- Links To Other Stuff That Is Good
+content_type: html
+content: ! "This <a href=\"http://www.netsoc.tcd.ie/~mu/wiki/\">site</a> allows you
+  to find the shortest path to click from any article in Wikipedia to any other. \n\nIt's
+  usually only 2 or 3 clicks, surprisingly enough. \n\n<a href=\"http://www.netsoc.tcd.ie/~mu/cgi-bin/shortpath.cgi?from=Representational+State+Transfer&to=Civil+War\">Here's</a>
+  the first one *I* did.  (The site should cache results!)"

@@ -1,0 +1,66 @@
+---
+title: Anything Is Better Than Nothing.
+created: '2009-06-04T18:36:58+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- University
+content_type: html
+content: ! "In my CMPT 475 (Software Engineering 2) class, the professor has repeatedly
+  posited that \"Something Is Always Better Than Nothing\" &mdash; so far, in reference
+  to the development of naming standards and the adoption of development methodologies.\n\nHorseshit.\n\nNow,
+  'no development methodology' may be a disorganized way to go about development,
+  but a small team can make things work with little more than a source control system
+  and a little bit of proximity. \n\nIt's easy, however, to imagine both development
+  methodologies and naming standards that would be actively detrimental to a project,
+  both in terms of wasting time and in terms of actively confusing the system.\n\n<h3>
+  Naming </h3>\n\nStarting with naming schemes&mdash; first and foremost, we can easily
+  imagine a naming scheme that is actively detrimental to any project.\n\n<blockquote>
+  Start at n = 1.  Every variable will be named _n, where 'n' is the order of introduction
+  of the variable in the program. </blockquote> \n\nThis is, of course, a horrible,
+  <em>horrible</em> naming scheme.  A single line might end up looking like <code>_12
+  = _14 + _29; </code>. The only sensible way to make it work would be to maintain
+  a table of data, mapping 'n' values to variable contents (maybe in code comments)?
+  &mdash; nevertheless, there is no way that this naming scheme could be made elegant.
+  \n\nThat's&mdash; of course&mdash; a theoretical naming standard, and a pretty nonsensical
+  one at that.  Similar naming systems have popped up at theDailyWtf &mdash; the 'a,
+  b, c, aa, bb, cc' variable naming standard seems to appear a lot, agonizingly enough.
+  \ In general, though, we'll consider this scheme totally nonsensical.\n\nThere are
+  other schemes, however, that are very serious and standard, and still actively detrimental
+  to a project.  Here I refer to Hungarian Notation&mdash; and by Hungarian Notation,
+  I mean \"Systems Hungarian\", not the original \"Apps Hungarian\".  Apps Hungarian,
+  when applied judiciously, can be a good thing for a project.  Joel Spolsky wrote
+  an entire article about it, <a href=\"http://www.joelonsoftware.com/articles/Wrong.html\">here</a>:\n\n<blockquote>\nApps
+  Hungarian had very useful, meaningful prefixes like “ix” to mean an index into an
+  array, “c” to mean a count, “d” to mean the difference between two numbers (for
+  example “dx” meant “width”), and so forth.\n\nSystems Hungarian had far less useful
+  prefixes like “l” for long and “ul” for “unsigned long” and “dw” for double word,
+  which is, actually, uh, an unsigned long. In Systems Hungarian, the only thing that
+  the prefix told you was the actual data type of the variable.\n\nThis was a subtle
+  but complete misunderstanding of Simonyi’s intention and practice, and it just goes
+  to show you that if you write convoluted, dense academic prose nobody will understand
+  it and your ideas will be misinterpreted and then the misinterpreted ideas will
+  be ridiculed even when they weren’t your ideas. So in Systems Hungarian you got
+  a lot of dwFoo meaning “double word foo,” and doggone it, the fact that a variable
+  is a double word tells you darn near nothing useful at all. So it’s no wonder people
+  rebelled against Systems Hungarian.\n</blockquote>\n\nWhen it comes down to it,
+  Systems Hungarian has some uses&mdash; but in many, many arens &mdash; for example,
+  a small project in a dynamically typed language &mdash; it is utterly useless. It's
+  just a waste of time that introduces unnecessary code ugliness. \n\n<h3> Methodology
+  </h3>\n\nOkay, development methodology can contribute a lot to the success of a
+  project, I will admit.  A carefully selected methodology can help a software project
+  come in on time and on budget. \n\nThe trouble is, however, the postulate that any
+  development methodology is better than no development methodology.\n\nOnce again&mdash;
+  two guys with a subversion repository &mdash; with no development methodology at
+  all &mdash; will likely outperform two guys using a heavyweight system like the
+  <a href=\"http://en.wikipedia.org/wiki/RUP\">RUP</a>.  The amount of overhead and
+  paperwork involved in a heavyweight methodology almost necessitate a full&mdash;time
+  project manager to learn it and deal with it all.  Sure, for larger, longer projects
+  where you're managing hordes of replaceable cogs, you're going to need some serious
+  Process &mdash; but if you're building a little blog package with one other guy,
+  well, too much Process just wastes your time and holds you back. \n\n<h3> Conclusion
+  </h3>\n\nSeriously, the 'anything is better than nothing' mindset is almost always
+  a <em>very bad idea</em> in the tech world.  Most of the time, 'something is better
+  than nothing' &mdash; I'd rather have the Vault or even Microsoft SourceSafe (shudder)
+  than no source control at all &mdash; but we must not confuse minimally functional
+  solutions with actively detrimental solutions. "

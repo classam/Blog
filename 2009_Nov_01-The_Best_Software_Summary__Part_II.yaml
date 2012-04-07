@@ -1,0 +1,206 @@
+---
+title: The Best Software Summary - Part II
+created: '2009-11-01T15:28:44+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! '<h3 id="Great_Hackers_-_Paul_Graham">Great Hackers - Paul Graham</h3>
+
+
+  <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span><p
+  class="line867"><a class="http" href="http://www.paulgraham.com/gh.html">http://www.paulgraham.com/gh.html</a>
+  <span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><ul><li>In
+  software design, the difference in productivity between programmers can be orders
+  of magnitude <span class="anchor" id="line-85"></span></li><li>Who are the most
+  productive in programming? "Hackers"  <span class="anchor" id="line-86"></span></li><li>Hackers
+  want: <span class="anchor" id="line-87"></span><ul><li>Good money (but not ''spectacular
+  money'')  <span class="anchor" id="line-88"></span></li><li>Great tools <span class="anchor"
+  id="line-89"></span><ul><li><p class="line862">UNIX/Linux, more obscure programming
+  languages &lt;-- these attract a different kind of developer.  <span class="anchor"
+  id="line-90"></span></li><li>Open-source software (so that they can fix it if it
+  breaks) <span class="anchor" id="line-91"></span></li><li>To find the _real_ tools
+  to use, look at the tools your developers use in their spare time.  (GIT/Python)  <span
+  class="anchor" id="line-92"></span></li></ul></li><li>Offices <span class="anchor"
+  id="line-93"></span><ul><li>Places to pace, to read, to nap, to doodle and fiddle
+  and problem-solve <span class="anchor" id="line-94"></span></li></ul></li><li>Interesting
+  Projects <span class="anchor" id="line-95"></span><ul><li>Search was boring, until
+  Google redefined it as an Interesting Project <span class="anchor" id="line-96"></span></li><li>Steve
+  Jobs made Apple development difficult by having high standards and asking developers
+  to make it beautiful.  <span class="anchor" id="line-97"></span></li></ul></li></ul></li><li>Non-hackers
+  can''t determine who''s a hacker- they''re easy to take advantage of? <span class="anchor"
+  id="line-98"></span></li><li>Hackers like problems that are big and hard - research
+  and what-have-you, not problems that are small and nasty, like ''bugs''.  <span
+  class="anchor" id="line-99"></span><ul><li>One doesn''t learn anything from "Nasty
+  Little Problems", so hackers avoid them. <span class="anchor" id="line-100"></span><ul><li><p
+  class="line862">Large companies put the smart people in R&amp;D <span class="anchor"
+  id="line-101"></span></li><li><p class="line862">Small companies put the smart people
+  in charge of tools &amp; libraries <span class="anchor" id="line-102"></span><ul><li>In
+  this way, Junior and Weaker developers just have to snap well-constructed components
+  together with glue code.  <span class="anchor" id="line-103"></span></li></ul></li></ul></li></ul></li><li>High
+  tech areas spring up around universities - there''s an endless supply of smart hacker
+  types. <span class="anchor" id="line-104"></span></li><li>It''s hard to tell who''s
+  a great hacker- or even if you are a great hacker.   <span class="anchor" id="line-105"></span></li><li>How
+  to be a hacker? <span class="anchor" id="line-106"></span><ul><li><p class="line862">It''s
+  important to be smart, of course, but it''s more important to be <em>curious</em>
+  <span class="anchor" id="line-107"></span></li><li><p class="line862">Hackers have
+  to <em>concentrate</em> <span class="anchor" id="line-108"></span></li><li>"Never
+  work on boring projects, but never do a half-assed job." <span class="anchor" id="line-109"></span><span
+  class="anchor" id="line-110"></span></li></ul></li></ul><p class="line867">
+
+
+  <h3 id="The_Location_Field_is_the_New_Command_Line_-_John_Gruber">The Location Field
+  is the New Command Line - John Gruber</h3>
+
+  <span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><ul><li
+  style="list-style-type:none"><p class="line891"><a class="http" href="http://daringfireball.net/2004/06/location_field">http://daringfireball.net/2004/06/location_field</a>
+  <span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span></li><li
+  class="gap">Benefits of web-apps:  <span class="anchor" id="line-115"></span><ul><li>Available
+  anywhere with a browser <span class="anchor" id="line-116"></span></li><li>No installation
+  <span class="anchor" id="line-117"></span></li><li>Upgrades are very easy <span
+  class="anchor" id="line-118"></span></li></ul></li><li>The ability to build OS-neutral
+  applications is bad for API developers (Microsoft, Apple)  <span class="anchor"
+  id="line-119"></span><ul><li>Microsoft wanted to keep browsers from becoming dominant,
+  so they built IE to cripple Netscape. <span class="anchor" id="line-120"></span><span
+  class="anchor" id="line-121"></span></li></ul></li></ul><p class="line867">
+
+  <h3 id="Starbucks_Does_Not_Use_Two-Phase_Commit_-_Gregor_Hohpe">Starbucks Does Not
+  Use Two-Phase Commit - Gregor Hohpe</h3>
+
+  <span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span><ul><li
+  style="list-style-type:none"><p class="line891"><a class="http" href="http://www.eaipatterns.com/ramblings/18_starbucks.html">http://www.eaipatterns.com/ramblings/18_starbucks.html</a>
+  <span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span></li><li
+  class="gap">Starbucks maintains a separate, asynchronous Cashier (to take orders
+  and money) and Barista (to fill orders) <span class="anchor" id="line-126"></span></li><li>Timing:
+  In order to be maximally efficient, Baristas often do similar drinks in batches
+  - which means that certain customers get drinks before others. <span class="anchor"
+  id="line-127"></span></li><li>Correlation: With an asynchronous process like this,
+  matching cup-to-customer is difficult. Starbucks either takes down a name or does
+  it by drink-type. <span class="anchor" id="line-128"></span></li><li>Exception Handling:  <span
+  class="anchor" id="line-129"></span><ul><li>Write-Off: If a drink is abandoned or
+  not-paid for, it is discarded. <span class="anchor" id="line-130"></span></li><li>Retry:
+  If a drink is made improperly, it is remade <span class="anchor" id="line-131"></span></li><li>Compensating
+  Action: If a drink is unavailable, it is refunded.  <span class="anchor" id="line-132"></span></li></ul></li><li>Two
+  Phase Commit: The customer would have the money on the table, the cashier would
+  place the drink on the table, and then the drink and money would swap.  This is
+  ''simple'', but it processes orders much more slowly.  <span class="anchor" id="line-133"></span></li><li><p
+  class="line862">Starbucks is more a Conversation ( <a class="http" href="http://www.eaipatterns.com/ramblings/09_correlation.html">http://www.eaipatterns.com/ramblings/09_correlation.html</a>
+  ) - Short synchronous tasks (ordering &amp; payment) followed by long asynchronous
+  tasks ( preparing &amp; receiving drinks )  <span class="anchor" id="line-134"></span><span
+  class="anchor" id="line-135"></span></li></ul><p class="line867">
+
+
+  <h3 id="Passion_-_Ron_Jeffries">Passion - Ron Jeffries</h3>
+
+  <span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><p
+  class="line874">Mission Statement, re: Passion, as thus:  <span class="anchor" id="line-138"></span><span
+  class="anchor" id="line-139"></span><p class="line867"><a class="http" href="http://xprogramming.com/xpmag/jatpassion">http://xprogramming.com/xpmag/jatpassion</a>
+  <span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><ul><li>I
+  want to stay the course with the people who converse with me, not just drift away
+  as if no longer interested. <span class="anchor" id="line-142"></span></li><li>I
+  want to argue passionately without rancor, let you call me names in the morning
+  and drink in peace and affection with me that night. <span class="anchor" id="line-143"></span></li><li>I
+  want to hold others in the true respect that allows them to be what they are, act
+  like they will, while working as hard as possible to influence them to try other
+  things. <span class="anchor" id="line-144"></span></li><li>I want to give my ideas
+  away, confident that my little gift will come back to me manyfold. <span class="anchor"
+  id="line-145"></span></li><li>I want to try every way I can to communicate with
+  my colleagues, to get my ideas across and to get their ideas back in return. <span
+  class="anchor" id="line-146"></span></li><li>I want to honor the passion that people
+  feel, to honor the strongly held beliefs and ideas of others as much as I honor
+  my own <span class="anchor" id="line-147"></span></li><li>I want to crash-test those
+  beliefs and ideas hard against each other, confident that even better ideas will
+  come out of the testing. <span class="anchor" id="line-148"></span></li><li>I want
+  to assume that we do this from love, that we care about each other, and that we
+  welcome the crackle of real passion, real work, the real interaction of ideas. <span
+  class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span></li></ul><p
+  class="line867">
+
+  <h3 id="C.2B-.2B-_-_the_Forgotten_Trojan_Horse_-_Eric_Johnson">C++ - the Forgotten
+  Trojan Horse - Eric Johnson</h3>
+
+  <span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><p
+  class="line867"><a class="http" href="http://ejohnson.blogs.com/software/2004/11/i_find_c_intere.html">http://ejohnson.blogs.com/software/2004/11/i_find_c_intere.html</a>
+  <span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span><ul><li>C++
+  snuck past the radar to become the dominant programming language <span class="anchor"
+  id="line-155"></span></li><li>The existing environment was mostly Fortran/C/COBOL,
+  with C dominant  (On a spectrum of Academic to Business, with C in the middle) <span
+  class="anchor" id="line-156"></span></li><li>C++ gained popularity as a pile of
+  ''additional features'', backwards compatible with C <span class="anchor" id="line-157"></span></li><li>This
+  made it popular for C developers to move entire codebases to C++ without much trouble.  <span
+  class="anchor" id="line-158"></span></li><li><p class="line862">Then C developers
+  started to use C++ Objects &amp; References &amp; whatnot - now the codebase can''t
+  be switched back. Victory! <span class="anchor" id="line-159"></span><span class="anchor"
+  id="line-160"></span></li></ul><p class="line867">
+
+
+  <h3 id="How_Many_Microsoft_Employees_Does_It_Take_To_Change_A_Lightbulb_-_Eric_Lippert">How
+  Many Microsoft Employees Does It Take To Change A Lightbulb - Eric Lippert</h3>
+
+  <span class="anchor" id="line-161"></span><span class="anchor" id="line-162"></span><p
+  class="line867"><a class="http" href="http://blogs.msdn.com/ericlippert/archive/2003/10/28/53298.aspx">http://blogs.msdn.com/ericlippert/archive/2003/10/28/53298.aspx</a>
+  <span class="anchor" id="line-163"></span><span class="anchor" id="line-164"></span><ul><li>To
+  write a 5-line ActiveX mod, for a private company, takes 5 lines - maybe an hour,
+  tops. <span class="anchor" id="line-165"></span></li><li>To write a 5-line ActiveX
+  mod, for Microsoft, takes... <span class="anchor" id="line-166"></span><ul><li><p
+  class="line862">A dev to write it &amp; security-test it <span class="anchor" id="line-167"></span></li><li>A
+  PM to write the spec, add the security model to the spec,  <span class="anchor"
+  id="line-168"></span></li><li>A few testers to test for security issues, write the
+  test plan, and hunt for bugs <span class="anchor" id="line-169"></span></li><li>A
+  test lead to update the test schedule <span class="anchor" id="line-170"></span></li><li>One
+  tech writer to write the documentation <span class="anchor" id="line-171"></span></li><li>One
+  tech reviewer to read the documentation <span class="anchor" id="line-172"></span></li><li>One
+  copy editor to read the documentation (again) <span class="anchor" id="line-173"></span></li><li>One
+  documentation manager to integrate the documentation  <span class="anchor" id="line-174"></span></li><li>One
+  usability expert  <span class="anchor" id="line-175"></span></li><li>25-or-so translaters
+  to translate everything into assorted languages.  <span class="anchor" id="line-176"></span></li><li>One
+  localization expert to make sure everything is translatable into assorted languages.  <span
+  class="anchor" id="line-177"></span></li><li>A team of senior managers to co-ordinate
+  all of these people.  <span class="anchor" id="line-178"></span><span class="anchor"
+  id="line-179"></span></li></ul></li></ul><p class="line874">So, doing things ''right''
+  is very, very time consuming and expensive.  New features, therefore, must be ''widely
+  popular'' to be considered.  <span class="anchor" id="line-180"></span><span class="anchor"
+  id="line-181"></span><p class="line867">
+
+
+  <h3 id="What_To_Do_When_You.27re_Screwed_-_Rands">What To Do When You''re Screwed
+  - Rands</h3>
+
+  <span class="anchor" id="line-182"></span><span class="anchor" id="line-183"></span><p
+  class="line867"><a class="http" href="http://www.randsinrepose.com/archives/2004/07/10/what_to_do_when_youre_screwed.html">http://www.randsinrepose.com/archives/2004/07/10/what_to_do_when_youre_screwed.html</a>
+  <span class="anchor" id="line-184"></span><span class="anchor" id="line-185"></span><ul><li>"I''m
+  missing a document and people are yelling at me!"  <span class="anchor" id="line-186"></span><ul><li>Screwedness:
+  Low. <span class="anchor" id="line-187"></span></li><li>Who is asking for the document,
+  and why?  <span class="anchor" id="line-188"></span></li><li>Don''t be a perfectionist.  <span
+  class="anchor" id="line-189"></span></li><li>Face-to-face communication with the
+  requestor to talk about the document and issues involved.  <span class="anchor"
+  id="line-190"></span></li></ul></li><li>"A Significant Development Tool Does Not
+  Exist on My Team" <span class="anchor" id="line-191"></span><ul><li>If your team
+  lacks Editor, Compiler, Version Control, or Bug Tracker, you''re screwed. <span
+  class="anchor" id="line-192"></span></li><li>Your number one priority becomes ''getting
+  these things in place'' <span class="anchor" id="line-193"></span></li></ul></li><li>"Don''t
+  like my Production Manager/ Don''t have a Production Manager" <span class="anchor"
+  id="line-194"></span><ul><li>Screwedness: Medium <span class="anchor" id="line-195"></span></li><li>A
+  production manager gets software from ''completed and compiled'' to ''boxed and
+  shipped'' <span class="anchor" id="line-196"></span></li></ul></li><li>"My Product
+  is Nowhere Near Complete"  <span class="anchor" id="line-197"></span><ul><li>Screwedness:
+  Medium <span class="anchor" id="line-198"></span></li><li>You''re too close to it.  Grab
+  a test user - do they think it''s horribly broken? <span class="anchor" id="line-199"></span></li><li>You''d
+  be surprised at how much leeway good companies expect of software teams.  <span
+  class="anchor" id="line-200"></span></li><li>If you''re going to be late, tell people
+  early instead of 10 minutes before deadline.  Nobody likes surprises. <span class="anchor"
+  id="line-201"></span></li></ul></li><li>"My Job Sucks" <span class="anchor" id="line-202"></span><ul><li>Screwedness:
+  High <span class="anchor" id="line-203"></span></li><li>If the company is sinking
+  and you know it, it''s best to build a liferaft and jump ship, instead of waiting
+  for the whole thing to sink. <span class="anchor" id="line-204"></span></li><li>You
+  want to work for a company where you''re  <span class="anchor" id="line-205"></span><ul><li>Getting
+  a raise <span class="anchor" id="line-206"></span></li><li>Getting a promotion <span
+  class="anchor" id="line-207"></span></li><li>Getting to do something that interests
+  you <span class="anchor" id="line-208"></span></li><li>Working for a company that
+  doesn’t suck <span class="anchor" id="line-209"></span></li></ul></li><li>Maintain
+  ''velocity'' - constant forward momentum.  <span class="anchor" id="line-210"></span><span
+  class="anchor" id="line-211"></span><span class="anchor" id="line-212"></span><span
+  class="anchor" id="line-213"></span></li></ul></ul><span class="anchor" id="bottom"></span></div>
+
+
+'

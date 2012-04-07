@@ -1,0 +1,77 @@
+---
+title: The Many Trials And Tribulations Of The php_oci8 Module.
+created: '2007-11-27T16:05:44+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "There is nothing in my life quite so exquisitely frustrating as trying
+  to install Oracle support for PHP, under Windows.\n\nHere's the canonical process
+  that you have to follow- the long form is available <a href=\"http://www.oracle.com/technology/pub/notes/technote_php_instant.html\">here</a>-
+  and boy, do I wish I had found that website earlier.\n\n1. Download the Oracle Instant
+  Client Basic package for Windows from the Oracle Developer's Network. \n2. Unzip
+  and place somewhere.\n3. Edit the Windows Environment variable, and add \"c:\\-LOCATION-OF-INSTANT-CLIENT-\"
+  to the System path.\n4. Uncomment 'extension=php_oci8.dll'\n5. Restart Apache.\n\nNow,
+  first of all, installing this on my local instance of Windows was a chore.  For
+  some reason, Oracle.com wouldn't load on my computer. Nothing would make it load.
+  I assumed it was down, and went about other business for a couple of days.  Eventually,
+  I had reached the point where I couldn't take it any longer and tried Internet Explorer
+  instead of Firefox- and lo and behold, the site appeared.  Odd.\n\nI eventually
+  downloaded the Instant Client and tossed it into a generic folder, somewhere. Having
+  not read the all-important step three of the above 5-step process (unaware, even,
+  of it's existence), I spent a great deal of time playing with the PHP configuration
+  at php.ini, trying to tell PHP that \"THE INSTANT CLIENT FILES ARE RIGHT HERE, PLEASE
+  NOTICE THEM\".\n\nHunting about for instructions online did nothing to ease my pain.
+  \ I had yet to find the guide that I linked to at the top of this page- the guide
+  that would have explained this process to me. \n\nEventually, through some combination
+  of hook and crook, I discovered the guide and successfully installed Oracle support
+  into my local instance of PHP. Great, I can develop the thing I was working on!
+  (FYI: A quick-admin web interface for <a href=\"https://h10078.www1.hp.com/cda/hpms/display/main/hpms_content.jsp?zn=bto&cp=1-11-127-24%5E1131_4000_100__\">Quality
+  Center</a>, because, as terrible software, adding users and groups from within the
+  software is a painful and slow process, and the COM API they provide is useless
+  at best.) \n\nSo now, it's time to roll everything out to the Test Server, ye grand
+  repository of half-baked program bits.  I went through the entire process as last
+  time.. and .. nothing happened.  What? I don't understand!   Okay, so, clearly,
+  I'm doing something wrong here.  More fiddling occurred with the php.ini file, and
+  more, and eventually (give this a couple of hours, mind you), I came to the conclusion
+  that *nothing* that I was doing to the php.ini file was recognized at all by PHP.
+  \ Okay, that's a little strange- some searching revealed that there were 5 separate
+  php.ini files on the computer.  Some further individual experimentation showed that
+  not a single one of those php.ini files actually controlled PHP's configuration
+  in any way, shape or form- it was just using it's default out-of-the-box settings.
+  \ In fact, this instance of PHP wasn't running as an Apache module at all- but as
+  a CGI. What the hell? \n\nA fresh installation of PHP as an Apache Module resolved
+  this problem for me, and the PHP CGI was killed.  \n\nI then changed a few settings
+  in the php.ini file. The last person to develop in my position clearly thought that
+  \"Register Globals\" was a good idea, and had this beautiful tendency to pass session
+  global variables all throughout the program- skipping, even, such PHP classics as
+  $_SESSION, $_POST, or even $_GET.   While any bit of code that *I* touch had to
+  be reworked to .. eschew such poor practices, I'm only one man- one <em>lazy</em>
+  man- and I'm not going to rewrite the entire codebase from scratch just because
+  of one or two displays of egregious ass-hattery.  (Plus, I'm young. I'm sure my
+  code is riddled with stupidity.)\n\nThe next step in the chain would be to enact
+  the same change on the production server.  Now, being as the production server is
+  a moderately sensitive environment that real people (well, other developers) actually
+  use for things, I was less inclined to tool about in a silly fashion. I did what
+  any responsible human being would do, and tried to push the problem on my boss.
+  \ \"This change could clearly effect some other tools! Could you find out what other
+  tools are running on the server and get back to me?\"\n\nNow, this is one of my
+  favourite techniques for avoiding work- putting external requirements in the hands
+  of people who are lazy, busy, forgetful, or some combination of the three.  The
+  whole debacle could wait until I had finished development on the tool and needed
+  Oracle on the production server.  Weeks passed.\n\nJust recently, my boss needed
+  the Oracle module installed in PHP, on the production server, for some new tool
+  that's being developed- and since I've been the poor bastard installing it on everything,
+  it should fall to me to install it on the production server. (Shouldn't it fall
+  to IT? No.) And, in response to my question of a few weeks ago, we're the only team
+  running any PHP on the server, so we can fiddle as much as we want and not cause
+  anybody any grief.\n\nSo, this time, everything came off without a hitch... except
+  that PHP refused to acknowledge the change in the windows PATH environment variable.
+  \ I restarted Apache a few times, poked at the php.ini file, and did everything
+  short of restarting the server- which, of course, would require the permission of
+  three teams and a signed affidavit from the Pope himself.  \n\nAfter puzzling for
+  a few minutes, I eventually just gave up and popped the entire set of Oracle files
+  into a directory that was already on the path- C:/Program Files/PHP.  It's an ugly
+  win, but I'll take it.\n\nAs a final note, children, when you grow up, never, EVER,
+  <strong>EVER</strong> run a Windows web server. (Or Oracle, for that matter. Quality
+  Center is out, too.)"

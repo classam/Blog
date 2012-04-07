@@ -1,0 +1,60 @@
+---
+title: The Great Waterloo Adventure, Day 8
+created: '2007-09-10T10:46:22+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "<img src=\"http://www.curtis.lassam.net/images/blackberry.jpg\" alt=\"Blackberry\"
+  />\n\nWell, my weekend was pretty uneventful.\n\nOn Friday, I went out to Molly
+  Bloom's Irish Pub with Mike and some of his friends.  I discovered that Mike's female
+  friend.. I think a girlfriend of one of Mike's friends or something.. well, she's
+  easily poked vis-a-vis her Polish ancestry.\n\n\"Hey? How many Germans does it take
+  to invade Poland?\"\n\"Just one- to forget to leave the parking brake off on his
+  tank. Whoops! Invaded Poland!\"\n\nEheh heh. Bad jokes are fun. I had a Strongbow
+  for way too much money, and we sat around listening to the kinda-crappy live music
+  and trying to hold a conversation at the top of our lungs. \n\nMike said, \"The
+  next thing that these guys are going to play is 'Wonderwall' by Oasis.\", and I
+  didn't believe him. \"Really?\" \"Yeah, whatever bar I'm in, the live band always
+  plays Wonderwall.\"\n\nThe next song was \"500 Miles\", by the Proclaimers, and
+  I was disappointed.. until the band played their next song, which was Wonderwall.
+  Good call, Mike!\n\nAs a caveat, here, Waterloo is full of things called \"Beer
+  Stores\".  You walk right in and get a selection of beers that would knock your
+  socks off, all cheap and cold.  Unfortunately, that's *all* that the beer store
+  carries. No ciders. No hard liquors. Just beer.  \n\nSaturday was my \"Do Nothing\"
+  day.  \n\nWe finally got hooked up with The Internets, and I had a chance to call
+  Kristen and Mom.  It's nice to talk to people back home!  I couldn't get a hold
+  of Dad or Tracy right away, but I ended up calling them on Sunday.  I'm using SkypeOut
+  Unlimited right now, which gives me unlimited long-distance calls to Canada or the
+  United States, for $29.95/yr. That's per-year, not per-month. Inexpensive! The quality
+  of the calls has been pretty good so far.\n\nWe also met our new roommate, Ben.
+  \ He's actually not a RIM employee, but a 4th year Math Major at the University
+  of Waterloo.  He's very quiet, so far, and he seems to be the same kind of nerdy
+  as the rest of us, so things look good.\n\nHaving completed those onerous tasks,
+  I spent the remainder of the day on the couch, playing Super Paper Mario. \n\nI
+  managed to eat some of that pasta sauce I made.  Let me tell you, any bad things
+  I might have said about that sauce in the past, I take back. It was delicious- even
+  better than the first one I made.  Those who forget the pasta are condemned to reheat
+  it.  I'm using whole-wheat noodles, because I lubs them, and salting the water like
+  there's no tomorrow. I'm not sure who said it, but \"The noodles that you boil pasta
+  in should be as salty as the Mediterranean\". It really does add a lot of flavor
+  to the noodles. Mmm.\n\nSunday was a combo day.  A nice, long shower and a trip
+  to the supermarket really rounded out the day.  I picked up fruit, vegetables, yogourt,
+  juice, milk, chocolate milk, taco powder, salsa, a little bit of everything.  Then,
+  home, laundry, and more Super Paper Mario.  I ended up finishing the game at about
+  2:30 in the morning. Ha! Success!\n\nSo, today I'm back at work.  I spent the morning
+  removing a variable from the entire codebase that was irritating me: $BasePath,
+  which was designed to find a directory right under the base directory... except
+  it frequently failed and was a bit on the ugly, terrible side.  I replaced just
+  about every instance of $BasePath with ../ , making my life considerably easier
+  and the code significantly less ugly.  On top of that, the 4-part calculation required
+  to generate $BasePath was just copy/pasted into every single page. *shudder*.\n\nAnd
+  this code is pretty ugly.  It's not divided in any reasonable way into HTML, PHP,
+  or Database calls- it's just all smooshed together in one hugely long script that
+  manages to get the job done.  There are about 5 functions, most of which can be
+  traced back to the last guy's \"Refactoring of the code\". \n\nRight now, I'm pulling
+  all of the database calls out of the script and putting them in classes where they
+  belong. More needs to be done, though- so much more.  I haven't even eaten lunch,
+  yet- I'm just so absorbed in the puzzle of making this codebase less ugly. \n\nIt's
+  frustrating, but fun.  Cleaning, organizing, and architecturing code is (surprisingly)
+  something I like! Go team OCD! \n\nSee you all tomorrow!"

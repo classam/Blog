@@ -1,0 +1,46 @@
+---
+title: ! 'Potater Design Folio - Part 1: Concept'
+created: '2009-11-02T13:30:18+00:00'
+visible: true
+categories:
+- Misc
+content_type: html
+content: ! "<em>\nIn <a href=\"http://www.curtis.lassam.net/?p=962\">Beaten To The
+  Punch</a> I described Potater, a startup concept I was developing, and the company
+  that already does most of what I imagined that Potater would do - <a href=\"http://disqus.com/\">Disqus</a>.
+  \ In the comments you can find much of the justification for while I'll probably
+  end up building Potater anyways. \n\nSo now, I've decided to put the entire design
+  process online, and ask that you comment on each stage with thoughts, ideas for
+  improvement, and what-have-you. </em>\n\nLet's start with the elevator pitch for
+  Potater.  What is Potater?\n\n<strong>Potater is a tool for annotating URI's with
+  additional data. </strong> \n\nWhat possible use could that be? Well, first of all,
+  let's imagine that the web works roughly the way that it is 'supposed' to - everything
+  has a URI, one that, largely, <a href=\"http://www.w3.org/Provider/Style/URI\">doesn't
+  change</a>.  If there is a <a href=\"http://curtis.lassam.net/images/android_hell.jpg\">picture</a>,
+  it is just a picture. What sort of metadata could we possibly add to a picture?
+  \n\n<ul>\n<li> <strong>Discussion</strong>: Comments. (\"What the hell? A tree?\")
+  </li>\n<li> <strong>Summary</strong>: A description of the picture. (\"A tree\")
+  (\"A tree with a dude behind it\") (\"Two trees.\")</li> \n<li> <strong>Taxonomy</strong>:
+  Tags for the picture. (\"Trees\") </li>\n<li> <strong>Context</strong>: Where was
+  the picture taken? Why? With what sort of camera, using which settings? </li>\n<li>
+  <strong>Rating</strong>: Some measure of notability or popularity. ( \"This is interesting.\"
+  \ \"This is not interesting.\" ) </li>\n</ul>\n\nNow, this all seems a little feature-heavy
+  for a picture  Complicated, hard-to-implement, what-have-you.  Let us simplify.\n\nWe
+  can combine \"Summary\", \"Context\", and \"Discussion\" into a single <a href=\"http://www.curtis.lassam.net/?p=944\">intelligent
+  commenting system</a>, folding in \"Rating\" as a method of organizing comments.
+  \n\nWe can use tagging to sort all of the data, autotagging a URL with it's 'host'
+  at the very minimum. \n\nNow, what use is all of this data?  Well, for one, it becomes
+  easy for a website to view or load comments on any arbitrary 'thing' - just link
+  to <code>potater.com?URI</code>, or pull data from <code>potater.com?URI</code>
+  to populate a comments field.  \n\nOn top of that, <em>we</em> now have access to
+  a block of data - a huge collection of URI's that are interesting enough for people
+  to want to comment on them- if we're lucky, they're even tagged.  If we play our
+  cards right, we can pick an arbitrary tag (\"javascript\"), determine the N highest
+  ranked articles for that tag, for that day, and cram them into a RSS feed. \n\nBuilding
+  a forum or a community just requires the creation of a 'tag'.  Being as URI's don't
+  actually have to *lead* anywhere, 'empty' URI metadata can just be a discussion
+  on any ol' topic. (See reddit's 'self' posts.)\n\nOf course, the 'underlying flexibiliy'
+  of the software need not be revealed everywhere.  While the 'base functionality'
+  of Potater may be flexible and open, the systems that are built on top of it (Potater
+  Commentator, Potater Forumator, Potater Communitator, Potater Aggregator...) can
+  be simple and single-task. "

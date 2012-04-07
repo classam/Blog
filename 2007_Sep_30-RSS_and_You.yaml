@@ -1,0 +1,52 @@
+---
+title: RSS and You!
+created: '2007-09-30T09:43:34+00:00'
+visible: true
+categories:
+- Tutorials
+content_type: html
+content: ! "<img src=\"http://tbn0.google.com/images?q=tbn:E7AiYQxRtAKKgM:http://www.thy.com/images/help/feed-icon-128x128.gif\"
+  alt=\"Giant RSS Button\" />\n\nAre you tired of checking your favourite websites
+  daily to see if they've posted anything?  It's a pain in the butt, isn't it? \n\nWell,
+  worry not! There's a technology specifically designed to check your favourite websites
+  *FOR* you and let you know if anything's changed. In fact, it's been around for
+  8 years! It's called... RSS!  (Okay, all my friends in the crowd can roll their
+  eyes and go back to what they were doing.) \n\nWith a good RSS Reader, you get updated
+  whenever one of your favourite website makes an update.  Then, all you need to do
+  is check on your RSS Reader once in a while, and you're good.  \n\nThe easiest way
+  to use RSS is simply to use <a href=\"http://www.mozilla-europe.org/en/products/firefox/\">FireFox</a>'s
+  built-in RSS support.  If you're browsing the internet, you're browsing it with
+  Internet Explorer or <a href=\"http://www.mozilla-europe.org/en/products/firefox/\">FireFox</a>.
+  \ Check in the very top top right of your screen- there's either a little blue 'e'
+  or a little orange blob doing terrible, unholy things to a little blue blob. If
+  it's the 'e', you have Internet Explorer- Shame on you, you should have <a href=\"http://www.mozilla-europe.org/en/products/firefox/\">FireFox</a>,
+  which is more secure and feature-rich! (FireFox also downloads all of your bookmarks
+  and settings from Internet Explorer when you install it, so it's not hard to switch).
+  \  If you have the orange and blue blobs in your top-right corner, you're already
+  running FireFox. Good for you!\n\nOnce you're browsing the net using FireFox, all
+  you need to do is go to an RSS enabled page.  At the very top of the page, next
+  to the address-bar, there should be an RSS button.\n<img style=\"float:left;\" src=\"http://curtis.lassam.net/images/rss_example.png\"
+  alt=\"RSS Example\" />\nYours will probably be bright orange, lookin' kinda like
+  the button at the top of this post.\n\nAfter you click on that RSS button, you'll
+  get a prompt asking how you want to subscribe to the feed. \n<img style=\"float:left;\"
+  src=\"http://curtis.lassam.net/images/rss_example2.png\" alt=\"RSS Example 2\" />\nIf
+  you want to experiment with a real RSS reading program, Google Reader or Bloglines,
+  or a downloadable RSS program, these can also be used here.  I'm going to show you
+  Live Bookmarks, though. Select Live Bookmarks, and \"Subscribe Now.\"\n\nIt'll ask
+  you what you want to name the bookmark, and where you want to put it.  You can just
+  leave these things to their default values- although I like to use my Bookmarks
+  Toolbar folder to hold things that I visit very frequently - these bookmarks appear
+  at all times right under the FireFox address bar. \n\nOnce you're done, in your
+  bookmarks folder, a new RSS folder will appear- containing a list of all the posts
+  that have been made recently by that website. \n\n<img style=\"float:left;\" src=\"http://curtis.lassam.net/images/rss_example3.png\"
+  alt=\"RSS Example 3\" />\n\nIf the site's been updated, a new post will appear at
+  the top of the list. \n\nIf you're using <a href=\"http://www.google.com/reader/view/#overview-page\">Google
+  Reader </a> or <a href=\"http://www.bloglines.com/\"> Bloglines</a>, you just need
+  to log in to your Google Reader or Bloglines accounts, and they'll display a list
+  of all of the sites that've been updated recently.\n\nIf you read a group of websites
+  compulsively- say, <a href=\"http://www.joelonsoftware.com/\">Joel on Software</a>,
+  <a href=\"http://www.codinghorror.com/blog/\">Coding Horror</a>, <a href=\"http://www.paulgraham.com/\">Paul
+  Graham's Essays</a>,  <a href=\"http://software.ericsink.com/\">Eric Sink's Blog</a>,
+  \ <a href=\"http://www.randsinrepose.com/\">Rands In Repose</a>, <a href=\"http://steve-yegge.blogspot.com/\">Steve
+  Yegge's Blog</a>, or heck, even a *tonne of webcomics*... RSS becomes an invaluable
+  tool. "

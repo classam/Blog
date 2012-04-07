@@ -1,0 +1,13 @@
+---
+title: Stop! It's UNIX time!
+created: '2008-11-29T23:02:17+00:00'
+visible: true
+categories:
+- Needlessly Technical
+content_type: html
+content: ! "So, I was encoding timing data right into my Python programs - for performance-measurin'
+  purposes, for a project I'm working on.\n\nBut, lo and behold, I discovered the
+  unix 'time' function.\n\nJust run <code> time python yourfunction.py </code>, and
+  it will merrily run your code, then produce timing data.  It's not just for python,
+  it works for any command-line function. \n\nAh, UNIX- whenever I need to do something,
+  you've probably already done it, and better."

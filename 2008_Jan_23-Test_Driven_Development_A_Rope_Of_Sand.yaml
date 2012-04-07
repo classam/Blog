@@ -1,0 +1,174 @@
+---
+title: ! 'Test Driven Development: A Rope Of Sand'
+created: '2008-01-23T15:53:19+00:00'
+visible: true
+categories:
+- Needlessly Technical
+- University
+content_type: html
+content: ! "Hello, all. For my CMPT 379 class- that's Technical Writing- I've been
+  assigned to sock together a recommendation vis-a-vis Test Driven Development for
+  a small team. Let's see what we've got.\n\n<b>What Is Test-Driven Development?</b>\n\nLet's
+  start with a quick summary of what is and what isn't Test-Driven Development.\n\nCheese
+  isn't Test-Driven Development.\n\nMuffins aren't Test-Driven Development.\n\nKittens
+  aren't Test-Driven Development.\n\nOkay, defining Test-Driven Development negatively
+  like that is going to take a while.  Let's start with what it is. \n\nTest-Driven
+  Development is a method of program design and layout. Test-Driven Development tends
+  to proceed as follows:\n\n<blockquote>\n<ol>\n<li>Look at the current system, even
+  if it's a blank slate. What functionality isn't there that should be?</li>\n\n<li>Write
+  tests to check that functionality. These tests will, of course, fail immediately.</li>\n\n<li>Write
+  code to pass those tests.</li>\n\n<li>Imagine boundary conditions, extreme input,
+  and other potential ways to break the code.</li>\n\n<li>Write tests to check those
+  points of failure. These tests will, of course, fail immediately.</li>\n\n<li>Refactor
+  the code to pass those tests.</li>\n\n<li>Imagine some sort of overarching major
+  design for the system and how your feature will fit into it.</li>\n\n<li>Write tests
+  to check that the design is in place. These tests will, of course, fail immediately.</li>\n\n<li>Refactor
+  the code to pass those tests.</li>\n\n<li>Repeat until the entire system is built.</li>\n\n<li>$$
+  PROFIT $$</li>\n\n</ol>\n</blockquote>\nAnd that's it- that's Test-Driven Development.
+  \n\n<b> It's A Highly Modular Black-Box Bottom-Up Design Method </b>\n\nIn Test-Driven
+  Development, individual features tend to be designed from the bottom up. Writing
+  the tests before the code mean that before we put any code down on paper, we're
+  thinking about the interface that we want to use for the code- and that encourages
+  good design principles.\n\nFunctional Programming is currently en-vogue for it's
+  many apparent benefits- writing a program out of many small functions with clearly-defined
+  interfaces that have no side-effects. That's justs a recipe for easy debugging,
+  easy parallelization, and stable, manageable code. In Steve McConnell's \"Code Complete\",
+  he makes it very clear that functions should do exactly what they say they do and
+  nothing more, with no side effects. Planning out a function beforehand and building
+  it independendly of the system is a good way to write this sort of modular code.\n\nOn
+  top of that, the functions are tested all to hell before they are used anywhere
+  in the system. Being able to treat functions as trusted little black-boxes with
+  well-defined tasks makes development faster and easier.\n\n<b> Having Tests Makes
+  For Easier Development </b>\n\nWith tests available for development, checking the
+  correctness of your function merely requires the press of a button. Compile and
+  check your test result. If it's green, you're good. Having a design in mind and
+  a set of small, easily achievable goals can make development a much simpler process.\n\nFrom
+  <a title=\"Wikipedia: Test Driven Development\" href=\"http://en.wikipedia.org/wiki/Test_driven_development\">Wikipedia</a>:\n\n<blockquote>
+  \nProgrammers using pure TDD on new projects report they only rarely feel the need
+  to invoke a debugger. Used in conjunction with a version control system, when tests
+  fail unexpectedly, reverting the code to the last version that passed all tests
+  may often be more productive than debugging.\n</blockquote>\n\n<b> Regression Testing
+  is a Very Good Thing </b>\n\nOnce you've built all of these tests, you can always
+  immediately find out if some change in your code has broken any part of the system.
+  While the system's loose-coupling hopes to reduce the possibility of this happening,
+  it still makes debugging much, much easier if you don't follow the \"Fix one bug,
+  accidentally introduce three\" model. \n\nWith regression testing and version control,
+  it's much harder to get into the sort of situation where nobody wants to touch the
+  code for fear of breaking everything forever.\n\n<b> You're Going To Hear The Word
+  Granularity Bandied About A Lot </b>\n\nWhen talking about Test-Driven Development,
+  it's common to talk about how much of the code is being tested at one time. Some
+  developers like to write a lot of small tests and refactor the code each time- this
+  would be considered a very low granularity. Some developers like to write entire
+  test suites before getting started with their coding- this would, of course, be
+  high granularity.\n\n<b> Okay, So What's Wrong With Test Driven Development, Then?
+  </b>\n\nAha, here's the really juicy part, the part you've all been waiting for.
+  Let's rip into Test Driven Development, shall we? Let's really tear it a new one!
+  \n\nSurprise! I actually think that Test Driven Development is a fantastic thing.\n\nWhy
+  would I advise against it, then? Am I a schizophrenic? Perhaps I have a short memory?\n\nNo,
+  none of those things. I feel that \"Test Driven Development\" combines three problems
+  that I find in a lot of software development- it's too formal, a bit heavyweight,
+  and it's not comprehensive enough.\n\n<b> Not Comprehensive Enough </b>\n\nLet's
+  start with the most important criticism. Test Driven Development is a way to test
+  systems, but it's not the only way. Unit testing is only one element in a whole
+  toolkit of testing types - and the other types of development are very important
+  as well. Joel Spolsky wrote a very critical review of unit-test-only development
+  in his <a title=\"Joelonsoftware\" href=\"http://www.joelonsoftware.com/items/2007/12/03.html\">recent
+  talk at Yale</a>:\n\n<blockquote> \nThis seems like a kind of brutal example, but
+  nonetheless, this search for the holy grail of program quality is leading a lot
+  of people to a lot of dead ends. The Windows Vista team at Microsoft is a case in
+  point. Apparently - and this is all based on blog rumors and innuendo - Microsoft
+  has had a long term policy of eliminating all software testers who don't know how
+  to write code, replacing them with what they call SDETs, Software Development Engineers
+  in Test, programmers who write automated testing scripts. \n\nThe old testers at
+  Microsoft checked lots of things: they checked if fonts were consistent and legible,
+  they checked that the location of controls on dialog boxes was reasonable and neatly
+  aligned, they checked whether the screen flickered when you did things, they looked
+  at how the UI flowed, they considered how easy the software was to use, how consistent
+  the wording was, they worried about performance, they checked the spelling and grammar
+  of all the error messages, and they spent a lot of time making sure that the user
+  interface was consistent from one part of the product to another, because a consistent
+  user interface is easier to use than an inconsistent one. \n\nNone of those things
+  could be checked by automated scripts. And so one result of the new emphasis on
+  automated testing was that the Vista release of Windows was extremely inconsistent
+  and unpolished. Lots of obvious problems got through in the final product... none
+  of which was a 'bug' by the definition of the automated scripts, but every one of
+  which contributed to the general feeling that Vista was a downgrade from XP. The
+  geeky definition of quality won out over the suit's definition; I'm sure the automated
+  scripts for Windows Vista are running at 100% success right now at Microsoft, but
+  it doesn't help when just about every tech reviewer is advising people to stick
+  with XP for as long as humanly possible. It turns out that nobody wrote the automated
+  test to check if Vista provided users with a compelling reason to upgrade from XP.
+  \n</blockquote>\n\nThere are major types of testing that Test-Driven Development
+  will fail to provide.\n\n<b> Pain And Suffering </b>\n\nThere is no match for the
+  rigour and meaningless destruction that experienced QA testers and real beta testers
+  can wreak on your system. The simple unit tests provided by Test-Driven Development
+  are just too easy to pass. The real test comes when raving masses hit your program
+  with ridiculous input, strange ways of using your software, and malicious attacks.
+  Writing automated tests to ensure that you're never revealing too much data to the
+  user, or to check if you're allowing for XSS vulnerabilities- well, that would be
+  unwieldy and incredibly time-consuming. \n\nGetting the full Automated Test Suite
+  to pass means, quite simply, that everything works, in one way, on one system. That's
+  a very narrow definition of success, one that may not translate well into the real
+  world.\n\n<b> White-Box Testing Required </b>\n\nSome systems just require some
+  white-box testing. Networking protocols, SQL queries, these all handle things outside
+  outside of the purview of the program. In order to make sure these things are working
+  properly, it's best to take a look at the details of what the system is actually
+  doing behind thes scenes. A class handling SQL queries can be tested, but in order
+  to really know if it's doing the right thing, I have to check the database itself
+  to make sure that the data looks correct and nothing silly is happening. \n\n<b>
+  You Just Can't Test Some Things </b>\n\nFinally, it's incredibly difficult to test
+  some things. User Interfaces and Design are two examples of things that cannot be
+  tested without some sort of test framework olympics in place- and those are things
+  that can either be wrong or right. Usability, consistency, and visual appeal are
+  only testable in aggregate, and even then they're slippery slopes. \n\nThese things
+  can be much more adequately tested with 5-Minute-Random-User-Tests, code reviews,
+  QA testing, beta testing, many other techniques- but they are almost impossible
+  in terms of unit testing. \n\n<b> So What? </b>\n\nTest-Driven development is meant
+  to be paired with other techniques to ensure that the software gets tested every-which-way-but-loose.\n\nMy
+  argument is that Test-Driven development puts too strong an emphasis on the \"Unit
+  Test\" portion of development and not enough on the others.\n\nWhile unit-testing
+  is an important part of the software process, it shouldn't edge out any other method
+  of testing. In order for our company to produce high quality software, we need to
+  embrace all of the different methods of testing, as opposed to concentrating heavily
+  on only one element of the process.\n\n<b> Formal Processes Guarantee Only What's
+  Covered Within The Process </b>\n\nSoftware is a difficult balance. A good function
+  is well-written. It is unit tested, it checks preconditions, it checks postconditions,
+  it even checks impossible things. It's well documented. It fits in with the design
+  principles and coding standards that the rest of the system uses. It is tested by
+  hand a little bit, to check for stuff too silly to even write unit tests for. It
+  has personality.\n\nTo specifically mandate all of these things about a function
+  in a codified set of processes is certainly the holy grail for some companies, but
+  it comes at the expense of anything that's not covered in the formal process. \n\n<b>
+  It's Too Heavyweight </b>\n\nThere's a certain point where the work involved in
+  setting up test frameworks exceeds the benefit of dealing with reams of unit tests
+  and the management involved.\n\nHere's a quote from Wil Shipley, author of the Del.Icio.Us
+  JavaScript libraries.\n\n<blockquote> \nYou should test. Test and test and test.
+  But I've NEVER, EVER seen a structured test program that (a) didn't take like 100
+  man-hours of setup time, (b) didn't suck down a ton of engineering resources, and
+  (c) actually found any particularly relevant bugs. Unit testing is a great way to
+  pay a bunch of engineers to be bored out of their minds and find not much of anything.
+  [I know -- one of my first jobs was writing unit test code for Lighthouse Design,
+  for the now-president of Sun Microsystems.] \n\nWhen it comes down to it, having
+  some unit testing in place for the purpose of regression testing is a good thing.
+  This doesn't, however, require a massive unit-testing framework. A bundle of external
+  assert statements to check that the code isn't doing anything too naughty would
+  be almost as effective, with far less set-up and takedown time.\n\nAt some point,
+  the benefits of setting up unit testing are just outweighed by the massive amount
+  of effort that goes into the construction of reams and reams of tests. It would
+  be best just to find a happy medium at some point in the testing- a point where
+  there's enough testing to catch major bugs and fix-one-introduce-two bugs, but not
+  enough to require a couple of dedicated software engineers to manage.\n</blockquote>\n\n<b>
+  Finally. </b>\n\nSo what should we do? \n\nI believe that Test-Driven Development
+  is too formal, too heavyweight, and not comprehensive enough a strategy. It will
+  eat time and energy that would best go towards a more balanced and comprehensive
+  testing strategy.\n\nI suggest, as an alternative, Ridicule-Driven Development.
+  \n\nJust like in Test-Driven Development, we should individually build one function
+  or process at a time and build it well. When we're building functions, we write
+  unit tests and documentation at the same time. When we're finally reasonably sure
+  our functions are ready, it's time to hand them off to our coworkers, where they
+  will be torn to pieces, viciously mocked, and ridiculed heavily. Coding standards
+  will develop organically and be enforced via ridicule as the project continues.\n\nIn
+  order to keep the peer ridicule (er, 'review') sharp and pointed, we'll offer weekly
+  seminars on various important topics- documentation, testing, automated tests, anything
+  that catches our eye that week. A corporate philosophy of constant improvement is
+  certainly nothing to scoff at.\n\nAnd now.. awaaay! "
