@@ -27,9 +27,8 @@ content: |
   The entirely static website output is fast. Very fast. There is almost zero server overhead to doling out flat files.
   You can, should you so choose, page through my entire website, pretty quickly.  Page load times are in the 100 millisecond range.
 
-  Of course, I'll bloat that up with unnecessary javascript glitz as soon as I get the opportunity, but you get the point, at least. 
-  
-  Of course, Wordpress handles that same problem well with the wp_cache plugin. 
+  Of course, Wordpress handles that same problem well with the wp_cache plugin. And I'll bloat that 100 milliseconds up with
+  unnecessary javascript glitter as soon as I can. But still! 
 
   Okay, the much bigger difference? I wrote it myself. And the codebase is quite small. Yes. Nigh-infinite customization is at 
   my fingers. If I want to write blog posts in [markdown](http://daringfireball.net/projects/markdown/syntax)? 
