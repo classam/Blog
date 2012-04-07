@@ -1,0 +1,4 @@
+#!/bin/bash
+
+(cd /Users/curtis/code/busbus; ruby busbus_compiler.rb -i /Users/curtis/code/generated -t /Users/curtis/code/busbus_theme -o /Users/curtis/code/website -r file:///Users/curtis/code/website/)
+

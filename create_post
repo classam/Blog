@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gvim `( cd /Users/curtis/code/busbus; ruby create_post.rb -o /Users/curtis/code/generated/ -t "$1")`
+
