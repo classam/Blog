@@ -1,4 +1,5 @@
 #!/bin/bash
 
 (cd /home/classam/code/busbus; ruby busbus_compiler.rb -i /home/classam/code/Blog -t /home/classam/code/busbus_theme -o /home/classam/code/blog_generated -r file:///home/classam/code/blog_generated/)
+(cd /home/classam/code/busbus; ruby busbus_compiler.rb -i /home/classam/code/Blog -t /home/classam/code/cubedrone_theme -o /home/classam/code/cube_generated -r file:///home/classam/code/cube_generated/ --single_category "Cube Drone")
 
