@@ -14,18 +14,17 @@ content: |
   applications? Should I keep my own token, or use the session-management 
   built in to my framework?" 
 
+  My answer? 
 
-  This question has been addressed, in a slightly different form, at length, here: 
-
-  http://stackoverflow.com/questions/319530/restful-authentication
+  This question has been addressed, in a slightly different form, at length, 
+  in [this StackOverflow answer about RESTful authentication](http://stackoverflow.com/questions/319530/restful-authentication).
 
   But this addresses it from the server-side. Let's look at this from the client-side. Before we do that, though, there's an important prelude:
 
   ## Javascript Crypto is Hopeless ##
 
-  Matasano's article on this is famous, but the lessons contained therein are pretty important:
-
-  http://www.matasano.com/articles/javascript-cryptography/
+  [Matasano's article](http://www.matasano.com/articles/javascript-cryptography/)
+  on this is famous, but the lessons contained therein are pretty important:
 
   To summarize: 
 
@@ -50,23 +49,23 @@ content: |
 
   This is the most RESTful solution. The server requires no knowledge of state whatsoever and authenticates every individual interaction with the user. Some REST enthusiasts (mostly strawmen) insist that maintaining any sort of state is heresy and will froth at the mouth if you think of any other authentication method. There are theoretical benefits to this sort of standards-compliance - it's supported by Apache out of the box - you could store your objects as files in folders protected by .htaccess files if your heart desired!
 
-  The **problem**? You are caching on the client-side a username and password. This gives evil.ru a better crack at it - even the most basic of XSS vulnerabilities could result in the client beaming his username and password to an evil server. You could try to alleviate this risk by hashing and salting the password, but remember: **JavaScript Crypto is Hopeless**. You could alleviate this risk by leaving it up to the Browser's Basic Auth support, but.. ugly as sin, as mentioned earlier. 
+  The _problem_? You are caching on the client-side a username and password. This gives evil.ru a better crack at it - even the most basic of XSS vulnerabilities could result in the client beaming his username and password to an evil server. You could try to alleviate this risk by hashing and salting the password, but remember: _JavaScript Crypto is Hopeless_. You could alleviate this risk by leaving it up to the Browser's Basic Auth support, but.. ugly as sin, as mentioned earlier. 
 
   ## HTTP Digest Auth ##
 
-  http://stackoverflow.com/questions/5288150/digest-authentication-w-jquery-is-it-possible
+  [http://stackoverflow.com/questions/5288150/digest-authentication-w-jquery-is-it-possible](http://stackoverflow.com/questions/5288150/digest-authentication-w-jquery-is-it-possible)
 
-  A more "secure" auth, this is a request/response hash challenge. Except **JavaScript Crypto is Hopeless**, so it only works over SSL and you still have to cache the username and password on the client side, making it more complicated than HTTP Basic Auth but _no more secure_.
+  A more "secure" auth, this is a request/response hash challenge. Except _JavaScript Crypto is Hopeless_, so it only works over SSL and you still have to cache the username and password on the client side, making it more complicated than HTTP Basic Auth but _no more secure_.
 
   ## Query Authentication with Additional Signature Parameters. ##
 
   Another more "secure" auth, where you encrypt your parameters with nonce and timing data (to protect against repeat and timing attacks) and send the. One of the best examples of this is the OAuth 1.0 protocol, which is, as far as I know, a pretty stonking way to implement authentication on a REST server. 
 
-  http://tools.ietf.org/html/rfc5849
+  [RFC 5849: OAuth 1.0](http://tools.ietf.org/html/rfc5849)
 
   Oh, but there aren't any OAuth 1.0 clients for JavaScript. Why?  
  
-  **JavaScript Crypto is Hopeless**, remember. JavaScript can't participate in OAuth 1.0 without SSL, and you still have to store the client's username and password locally - which puts this in the same category as Digest Auth - it's more complicated than HTTP Basic Auth but it's _no more secure_. 
+  _JavaScript Crypto is Hopeless_, remember. JavaScript can't participate in OAuth 1.0 without SSL, and you still have to store the client's username and password locally - which puts this in the same category as Digest Auth - it's more complicated than HTTP Basic Auth but it's _no more secure_. 
 
   ## Token ##
 
