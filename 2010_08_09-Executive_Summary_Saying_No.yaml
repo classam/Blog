@@ -3,11 +3,9 @@ title: ! 'Executive Summary: Saying No'
 created: '2010-08-09T01:15:03+00:00'
 visible: true
 categories:
-- Executive Summaries
+- Tech
 content_type: html
-content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=31\">Executive Summary</a>\"
-  articles are highly compressed versions of semi-important things that I've read.
-  </em> \n\n<h3> Saying \"No\" </h3>\n<a href=\"http://www.alistapart.com/articles/no-one-nos-learning-to-say-no-to-bad-ideas/\">Here</a>\n\n<h4>Reasons
+content: ! "<h3> Saying \"No\" </h3>\n<a href=\"http://www.alistapart.com/articles/no-one-nos-learning-to-say-no-to-bad-ideas/\">Here</a>\n\n<h4>Reasons
   to Say No:</h4>\n<ul>\n<li> Kill a bad idea. </li>\n<li> Keep a project on time/budget
   </li>\n</ul>\n\n<h4>Ways to Say No: </h4>\n\n<ul>\n<li><strong>Cite Best Practices:</strong>
   Educate your customers. If everybody else is doing it, it's probably for a reason.

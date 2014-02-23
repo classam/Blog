@@ -3,11 +3,9 @@ title: ! 'Executive Summary: The Surgical Team'
 created: '2010-08-10T13:19:50+00:00'
 visible: true
 categories:
-- Misc
+- Tech
 content_type: html
-content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=31\">Executive Summary</a>\"
-  articles are highly compressed versions of semi-important things that I've read.
-  </em> \n\n<h3>The Mythical Man-Month : 3 - The Surgical Team </h3>\n\n<h4>The Problem</h4>\n<ul>\n<li>Teams,
+content: ! "<h3>The Mythical Man-Month : 3 - The Surgical Team </h3>\n\n<h4>The Problem</h4>\n<ul>\n<li>Teams,
   of course, should not be more than about 10 people.</li>\n<li>Certain employees
   are much better at producing code than others.</li>\n<li>How do we maintain the
   conceptual integrity of a single, well-architectured system if there are 10 people

@@ -3,7 +3,7 @@ title: Public key for xvidcore rpm is not installed
 created: '2010-04-19T14:35:05+00:00'
 visible: false
 categories:
-- Misc
+- Tech
 content_type: html
 content: ! "So, I was following the standard instructions for installing FFMpeg on
   CentOS- add the dag repository, yum install ffmpeg, easy peasy, and I ran into the

@@ -5,8 +5,7 @@ visible: false
 categories:
 - Needlessly Technical
 content_type: html
-content: ! "<em>\"<a href=\"http://www.curtis.lassam.net/?cat=13\">Needlessly Technical</a>\"
-  articles are dry, and boring, and cover some sort of computer-programming topic.</em>\n\nGreg
+content: ! "Greg
   is currently involved in the process of <a href=\"http://gregbaker.ca/blog/2010/06/24/everything-i-know-about-databases-is-wrong-also-right/\">trying
   to wrap his head around NoSQL</a>. Technologies such as Cassandra, Memcached, CouchDB,
   MongoDB, BigTable, SmallTable, MediumTable, KitchenTable, SofaDB, CoffeeTable...\n\nAs
