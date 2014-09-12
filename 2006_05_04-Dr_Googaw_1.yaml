@@ -4,6 +4,6 @@ created: '2006-05-04T14:49:34+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: <img src="http://www.curtis.lassam.net/comics/peakarchives/drgoogaw1_cafeteria_burger.gif"
-  />
+- Ancient
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/drgoogaw1_cafeteria_burger.gif"

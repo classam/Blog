@@ -4,12 +4,6 @@ created: '2006-04-04T22:33:30+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: ! '<img src="http://www.curtis.lassam.net/comics/peakarchives/cream_atorium.jpg"
-  alt="Creamy" align="top" height="400" width="600" />
-
-
-  This is Dock&#39;s clever idea.&nbsp; When he told me the premise, I laughed so
-  hard that I nearly cried. Most other people don&#39;t find it quite so funny, which
-  suggests that my art doesn&#39;t do a very good job getting the idea across. Ah,
-  well, such is life.&nbsp;'
+- Ancient
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/cream_atorium.jpg"

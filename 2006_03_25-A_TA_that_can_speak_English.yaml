@@ -4,9 +4,6 @@ created: '2006-03-25T18:18:14+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: ! 'Word on the street is, this one was pretty popular.
-
-  <a href="http://www.curtis.lassam.net/comics/peakarchives/magic-TA-ball.jpg"><img
-  width="661" height="420" src="http://www.curtis.lassam.net/comics/peakarchives/magic-TA-ball.jpg"
-  /></a>'
+- Ancient
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/magic-TA-ball.jpg"

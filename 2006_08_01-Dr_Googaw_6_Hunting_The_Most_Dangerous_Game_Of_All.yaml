@@ -4,6 +4,6 @@ created: '2006-08-01T21:26:31+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: <img src="http://www.curtis.lassam.net/comics/peakarchives/drgoogaw6_the_most_dangerous_game_of_all-.jpg"
-  height="592" width="650" />
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/drgoogaw6_the_most_dangerous_game_of_all-.jpg"
+alt-text: "Tenure."

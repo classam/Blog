@@ -4,7 +4,6 @@ created: '2006-03-25T18:15:34+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: <a href="http://www.curtis.lassam.net/comics/peakarchives/the_devil_wears_criminology.jpg"><img
-  width="604" height="792" src="http://www.curtis.lassam.net/comics/peakarchives/the_devil_wears_criminology.jpg"
-  /></a>
+- Ancient
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/the_devil_wears_criminology.jpg"

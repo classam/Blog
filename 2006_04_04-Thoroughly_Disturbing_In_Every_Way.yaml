@@ -4,6 +4,6 @@ created: '2006-04-04T22:40:02+00:00'
 visible: true
 categories:
 - Comics
-content_type: html
-content: <img src="http://www.curtis.lassam.net/comics/peakarchives/domino_such_a_fucking.jpg"
-  alt="Ahoy!" height="491" width="500" />
+- Ancient
+content_type: comic
+comic: "http://curtis.lassam.net/comics/peakarchives/domino_such_a_fucking.jpg"
