@@ -1,30 +1,7 @@
 --- 
-content_type: html
 title: Cube Drone - Automated Testing and Inversion of Control
 categories: ["Cube Drone", "Tech", "Video"]
 visible: true
 created: "2012-08-12T22:40:48-07:00"
-content: "<iframe width=\"640\" height=\"480\" src=\"http://www.youtube.com/embed/GSqrmuZQxz0\" frameborder=\"0\" allowfullscreen></iframe><br/> 
-
-A short lecture on the value and practice of unit testing.
-
-<h3>Notes/References: </h3>
-
-<ol>
-<li>Clone High, Episode 1. (I call 'fair use' - but I'll probably have to produce a version of this video without the clips eventually. For now, they're in.) </li> 
-<li>The Jeff Atwood quote is from <a href='http://www.codinghorror.com/blog/2006/07/i-pity-the-fool-who-doesnt-write-unit-tests.html'>\"I Pity The Fool Who Doesn't Write Unit Tests\"</a> </li> 
-<li>Transformers: The Movie, 1986</li>
-<li>The Dave Thomas quote is from <a href='http://www.artima.com/intv/dry3.html'>\"Orthogonality and the DRY Principle\"</a></li> 
-<li>I wrote the specific wording of this car analogy, but the _idea_ of a car analogy came from <a href='http://www.youtube.com/watch?v=wEhu57pih5w'>an excellent Google Code Talk on Unit Testing</a>.</li>
-<li>My Little Pony: Friendship is Magic, Season 1, Episode 2. Don't you judge me. </li>
-<li><a href='http://www.crummy.com/software/BeautifulSoup/'>BeautifulSoup</a> is a Python library for parsing HTML and XML. It's excellent. I haven't read his novel about alien video games, but I'm sure it's also worth a look. </li> 
-<li>Unit tests shouldn't be your _only_ documentation. Sweet lord no. Just part of the puzzle. </li> 
-<li>I cooked up a build-server in my own time using <a href='http://curtis.lassam.net/post/2012_05_20-Jenkins.html'>Fabric, VirtualBox and Jenkins</a>, but I'm right now experimenting with Vagrant and Chef in lieu of Fabric and they're much better (for this specific use-case).</li>
-<li>The original impetus for this talk was a <a href='http://curtis.lassam.net/post/2012_03_27-A_complete_intro_to_unit_testing_as_described_in_20_minutes_of_IRC_chatter.html'>blog post/irc conversation about unit testing.</a></li> 
-<li>Mythbusters, Season 4, Episode 27 - \"Holiday Special\".  They eventually got the Rube Goldberg machine to run properly.</li> 
-<li>The \"Mock vs. Stub\" terminology I use here is one interpretation out of dozens, and kind of an oversimplification. <a href='http://martinfowler.com/articles/mocksArentStubs.html'>Martin Fowler's article</a> is a much more complete look at the topic.</li>  
-<li>Too much setup (excessive 'arranging') and too much testing (excessive 'asserting') in one test are often signs of a architectural issue.  In a system that I worked on, many of our objects communicated through an object that - while it wasn't technically 'global', for all intents and purposes WAS global, because it was passed around _everywhere_. Setting up that object before Every Single Test started to get really cumbersome during the late stages of the project, which reduced the amount of tests that we produced. A prime candidate for refactoring! </li>
-</ol>
-
-
-"
+content_type: 'youtube'
+youtube: 'GSqrmuZQxz0'

@@ -1,10 +1,7 @@
 --- 
-content_type: html
 title: Cube Drone - Source Control
 categories: ["Cube Drone", "Tech", "Video"]
 visible: true
 created: "2013-02-02T10:10:10-07:00"
-content: "<iframe width=\"640\" height=\"480\" src=\"http://www.youtube.com/embed/jGnrRub3YzQ\" frameborder=\"0\" allowfullscreen></iframe><br/> 
-
-Words! 
-"
+content-type: 'youtube'
+youtube: 'jGnrRub3YzQ'

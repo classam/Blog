@@ -1,11 +1,7 @@
 --- 
-content_type: html
 title: Cube Drone - Quicksort in 60 Seconds
 categories: ["Cube Drone", "Tech", "Video"]
 visible: true
 created: "2014-03-08T10:40:48-07:00"
-content: "<iframe width=\"640\" height=\"480\" src=\"http://www.youtube.com/embed/q4WmZhMoh5I\" frameborder=\"0\" allowfullscreen></iframe><br/> 
-
-I'm probably not the first person dumb enough to think that a quick video 
-about quicksort is a funny idea. 
-"
+content-type: 'youtube'
+youtube: 'q4WmZhMoh5I'

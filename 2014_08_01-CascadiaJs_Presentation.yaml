@@ -1,8 +1,7 @@
 --- 
-content_type: html
 title: CascadiaJS Presentation - Hash Functions Taste Great with Anything
 categories: ["Cube Drone", "Tech", "Video"]
 visible: true
 created: "2014-08-01T08:00:48-07:00"
-content: "<iframe width=\"640\" height=\"480\" src=\"http://www.youtube.com/embed/5HS8eeRgeiw\" frameborder=\"0\" allowfullscreen></iframe><br/> 
-"
+content-type: 'youtube'
+youtube: '5HS8eeRgeiw'

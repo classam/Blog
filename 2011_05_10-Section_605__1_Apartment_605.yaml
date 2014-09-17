@@ -5,8 +5,5 @@ visible: true
 categories:
 - Comics
 - Section 605
-content_type: html
-content: ! '<img src="http://www.curtis.lassam.net/comics/section_605/1.png" title="Even
-  when the pictures were taken. " />
-
-'
+comic: "http://curtis.lassam.net/comics/section_605/1.png"
+alt-text: "Even when the pictures were taken."

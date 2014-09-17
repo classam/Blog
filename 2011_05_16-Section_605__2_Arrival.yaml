@@ -1,15 +1,10 @@
 ---
-title: ! 'Section 605 – #2: Arrival'
+title: ! 'Section 605 - #2: Arrival'
 created: '2011-05-16T20:19:19+00:00'
 visible: true
 categories:
 - Comics
 - Section 605
-content_type: html
-content: ! '<img src="http://curtis.lassam.net/comics/section_605/2.png" alt="Section
-  605 - 2" title="I''m pretty sure that Ash is a better artist than I am, but that''s
-  really hard to communicate, unless I make it an informed ability. (See TVTropes
-  for more information on what an Informed Ability is.) " />
-
-
-'
+content_type: comic
+comic: "http://curtis.lassam.net/comics/section_605/2.png"
+alt-text: "I'm pretty sure that Ash is a better artist than I am, but I can't really DRAW that, now, can I?"

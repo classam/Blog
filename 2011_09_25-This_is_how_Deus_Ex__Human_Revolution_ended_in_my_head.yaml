@@ -4,7 +4,6 @@ created: '2011-09-25T21:10:48+00:00'
 visible: true
 categories:
 - Comics
-- Cube Drone
-content_type: html
-content: ! '<img src="http://curtis.lassam.net/comics/daytime.png" alt="Deus Ex :
-  Alternate Ending" />'
+content_type: comic
+comic: "http://curtis.lassam.net/comics/daytime.png"
+alt-text: "Alternate Ending"
